@@ -1,0 +1,1755 @@
+﻿# Equal Terms mod - Created for X-com in 2000 by Ickschuss & Shortstop4313
+# version 1.03 for OpenXcom
+items:
+  - type: STR_MACHINE_PISTOL
+    listOrder: 2001
+    size: 0.1
+    costBuy: 800
+    costSell: 600
+    weight: 2
+    bigSprite: 901
+    floorSprite: 903
+    handSprite: 96
+    bulletSprite: 1
+    fireSound: 905
+    compatibleAmmo:
+      - STR_MACHINE_PISTOL_CLIP
+    accuracyAuto: 35
+    accuracySnap: 50
+    accuracyAimed: 80
+    tuAuto: 30
+    tuSnap: 13
+    tuAimed: 40
+    battleType: 1
+    invWidth: 1
+    invHeight: 2
+    maxRange: 100
+    aimRange: 30
+    snapRange: 10
+    autoRange: 5
+    dropoff: 5
+    autoShots: 6
+  - type: STR_MACHINE_PISTOL_CLIP
+    listOrder: 2002
+    size: 0.1
+    costBuy: 70
+    costSell: 52
+    weight: 1
+    bigSprite: 4
+    floorSprite: 4
+    hitSound: 22
+    hitAnimation: 26
+    power: 30
+    damageType: 1
+    clipSize: 18
+    battleType: 2
+    armor: 12
+  - type: STR_MAGNUM
+    listOrder: 2003
+    size: 0.2
+    costBuy: 2200
+    costSell: 1600
+    weight: 5
+    bigSprite: 701
+    floorSprite: 703
+    handSprite: 706
+    bulletSprite: 1
+    fireSound: 705
+    compatibleAmmo:
+      - STR_MAGNUM_AMMO
+    accuracySnap: 45
+    accuracyAimed: 90
+    tuSnap: 23
+    tuAimed: 45
+    battleType: 1
+    invWidth: 1
+    invHeight: 2
+    maxRange: 100
+    aimRange: 45
+    snapRange: 15
+    minRange: 1
+    dropoff: 4
+  - type: STR_MAGNUM_AMMO
+    listOrder: 2004
+    size: 0.1
+    costBuy: 270
+    costSell: 120
+    weight: 1
+    bigSprite: 702
+    floorSprite: 704
+    hitSound: 22
+    hitAnimation: 26
+    power: 42
+    damageType: 1
+    clipSize: 5
+    battleType: 2
+    armor: 12
+  - type: STR_SMG
+    listOrder: 2601
+    size: 0.2
+    costBuy: 2000
+    costSell: 1600
+    weight: 3
+    bigSprite: 501 #
+    floorSprite: 503 #
+    handSprite: 506 #
+    bulletSprite: 1 # Same as Pistol
+    fireSound: 84  
+    compatibleAmmo:
+      - STR_SMG_CLIP
+    accuracyAuto: 55
+    accuracySnap: 65
+    accuracyAimed: 90
+    tuAuto: 26
+    tuSnap: 30
+    tuAimed: 40
+    battleType: 1
+    twoHanded: false
+    invWidth: 1
+    invHeight: 2
+    maxRange: 125
+    autoRange: 25
+    aimRange: 50
+    snapRange: 17
+    dropoff: 3
+    autoShots: 5
+  - type: STR_SMG_CLIP
+    listOrder: 2602
+    size: 0.1
+    costBuy: 100
+    costSell: 70
+    weight: 2
+    bigSprite: 502 #
+    floorSprite: 504 #
+    handSprite: 32
+    hitSound: 22
+    hitAnimation: 26
+    power: 25
+    damageType: 1
+    clipSize: 35
+    battleType: 2
+    invWidth: 1
+    invHeight: 1
+  - type: STR_ASSAULT_RIFLE
+    listOrder: 2201
+    size: 0.2
+    costBuy: 3000
+    costSell: 2250
+    weight: 5
+    bigSprite: 301
+    floorSprite: 302
+    handSprite: 305
+    bulletSprite: 2
+    fireSound: 82
+    compatibleAmmo:
+      - STR_ASSAULT_RIFLE_CLIP
+    accuracyAuto: 45
+    accuracySnap: 60
+    accuracyAimed: 110
+    tuAuto: 35
+    tuSnap: 25
+    tuAimed: 50
+    battleType: 1
+    twoHanded: true
+    invWidth: 1
+    invHeight: 3
+    maxRange: 200
+    aimRange: 100
+    snapRange: 25
+    autoRange: 22
+    minRange: 3
+    dropoff: 3
+    autoShots: 5
+  - type: STR_ASSAULT_RIFLE_CLIP
+    listOrder: 2202
+    size: 0.1
+    costBuy: 200
+    costSell: 150
+    weight: 2
+    bigSprite: 303
+    floorSprite: 304
+    hitSound: 22
+    hitAnimation: 26
+    power: 45
+    damageType: 1
+    clipSize: 30
+    battleType: 2
+  - type: STR_MARKSMANS_RIFLE
+    listOrder: 2501
+    size: 0.3
+    costBuy: 4000
+    costSell: 3000
+    weight: 8
+    bigSprite: 401 #
+    #floorSprite: 1
+    #handSprite: 0
+    floorSprite: 402 #
+    handSprite: 403 #
+    bulletSprite: 11 
+    fireSound: 83 
+    compatibleAmmo:
+      - STR_MARKSMANS_RIFLE_CLIP
+    accuracySnap: 70
+    accuracyAimed: 120
+    tuSnap: 30
+    tuAimed: 55
+    battleType: 1
+    twoHanded: true
+    invWidth: 1
+    invHeight: 3
+    maxRange: 200
+    aimRange: 125
+    snapRange: 35
+    minRange: 4
+    dropoff: 2
+  - type: STR_MARKSMANS_RIFLE_CLIP
+    listOrder: 2502
+    size: 0.1
+    costBuy: 250
+    costSell: 200
+    weight: 2
+    bigSprite: 405 #
+    floorSprite: 406 #
+    handSprite: 32
+    hitSound: 22
+    hitAnimation: 26
+    power: 55
+    damageType: 1
+    clipSize: 20
+    battleType: 2
+    invWidth: 1
+    invHeight: 1
+  - type: STR_SNIPER_RIFLE
+    listOrder: 2401
+    size: 0.3
+    costBuy: 6400
+    costSell: 4800
+    weight: 12
+    bigSprite: 57
+    floorSprite: 79
+    handSprite: 129
+    bulletSprite: 11
+    fireSound: 81
+    compatibleAmmo:
+      - STR_SNIPER_RIFLE_AMMO
+    accuracySnap: 50
+    accuracyAimed: 150
+    tuSnap: 40
+    tuAimed: 70
+    battleType: 1
+    twoHanded: true
+    invWidth: 1
+    invHeight: 3
+    maxRange: 200
+    aimRange: 150
+    snapRange: 15
+    minRange: 8
+    dropoff: 2
+  - type: STR_SNIPER_RIFLE_AMMO
+    listOrder: 2402
+    size: 0.1
+    costBuy: 300
+    costSell: 225
+    weight: 4
+    bigSprite: 58
+    floorSprite: 80
+    hitSound: 13
+    hitAnimation: 26
+    power: 80
+    damageType: 1
+    clipSize: 6
+    battleType: 2
+    invWidth: 1
+    invHeight: 1
+  - type: STR_SAW
+    listOrder: 2801
+    size: 0.3
+    costBuy: 13500
+    costSell: 10125
+    weight: 10
+    bigSprite: 801
+    floorSprite: 803
+    handSprite: 806
+    bulletSprite: 2
+    fireSound: 805
+    compatibleAmmo:
+      - STR_SAW_AP_AMMO
+    accuracyAuto: 35
+    accuracySnap: 50
+    accuracyAimed: 85
+    tuAuto: 35
+    tuSnap: 35
+    tuAimed: 60
+    battleType: 1
+    twoHanded: true
+    invWidth: 2
+    invHeight: 3
+    maxRange: 200
+    aimRange: 75
+    snapRange: 22
+    autoRange: 35
+    minRange: 3
+    dropoff: 2
+    autoShots: 7
+  - type: STR_SAW_AP_AMMO
+    listOrder: 2802
+    size: 0.1
+    costBuy: 500
+    costSell: 400
+    weight: 6
+    bigSprite: 802
+    floorSprite: 804
+    hitSound: 13
+    hitAnimation: 26
+    power: 40
+    damageType: 1
+    clipSize: 50
+    battleType: 2
+    invWidth: 2
+    invHeight: 1
+  - type: STR_ROCKET_LAUNCHER
+    size: 0.4
+    costBuy: 4000
+    costSell: 3000
+    weight: 10
+    bigSprite: 15
+    floorSprite: 15
+    handSprite: 72
+    bulletSprite: 0
+    fireSound: 52
+    compatibleAmmo:
+      - STR_SMALL_ROCKET
+      - STR_LARGE_ROCKET
+      - STR_INCENDIARY_ROCKET
+      - STR_APFSDS_ROCKET
+    accuracySnap: 40
+    accuracyAimed: 125
+    tuSnap: 40
+    tuAimed: 75
+    battleType: 1
+    twoHanded: true
+    invWidth: 2
+    invHeight: 3
+    maxRange: 200
+    aimRange: 100
+    snapRange: 15
+    minRange: 10
+    dropoff: 1
+    listOrder: 2301
+  - type: STR_SMALL_ROCKET
+    size: 0.1
+    costBuy: 500
+    costSell: 350
+    weight: 4
+    bigSprite: 692 #
+    floorSprite: 16 #
+    hitSound: 0 #
+    hitAnimation: 0 #
+    power: 100 # Same as SSRL
+    damageType: 3
+    clipSize: 1
+    battleType: 2
+    invWidth: 1
+    invHeight: 2
+    listOrder: 2302
+  - type: STR_APFSDS_ROCKET
+    size: 0.2
+    costBuy: 900
+    costSell: 650
+    weight: 6
+    bigSprite: 691
+    floorSprite: 16
+    hitSound: 0
+    hitAnimation: 0
+    power: 150
+    damageType: 1
+    clipSize: 1
+    battleType: 2
+    invWidth: 1
+    invHeight: 3
+    listOrder: 2303
+  - type: STR_LARGE_ROCKET
+    power: 150 # 100
+    blastRadius: 9 # 0
+    listOrder: 2304
+  - type: STR_INCENDIARY_ROCKET
+    power: 120 # 90
+    blastRadius: 11 # 0
+    listOrder: 2305
+  - type: STR_INCENDIARY_GRENADE
+    size: 0.1
+    costBuy: 200
+    costSell: 150
+    weight: 3
+    bigSprite: 601 #
+    floorSprite: 602 #
+    power: 60
+    damageType: 2
+    battleType: 4
+    blastRadius: 7
+    listOrder: 3401
+  - type: STR_SSRL
+    size: 0.4
+    costBuy: 1750
+    costSell: 850
+    weight: 7
+    bigSprite: 666
+    floorSprite: 667
+    handSprite: 230
+    bulletSprite: 17
+    fireSound: 668
+    power: 100
+    accuracySnap: 55
+    accuracyAimed: 100
+    tuSnap: 40
+    tuAimed: 66
+    maxRange: 200 # 0
+    aimRange: 80 # 0
+    snapRange: 15 # 0
+    minRange: 8
+    dropoff: 2
+    clipSize: 1
+    battleType: 1
+    twoHanded: true
+    invWidth: 1
+    invHeight: 3
+    armor: 20
+    damageType: 3
+    blastRadius: 2
+    hitSound: 64
+    listOrder: 3404
+  - type: STR_LASER_PISTOL
+    power: 45 # 46
+    accuracyAuto: 45 # 28
+    accuracySnap: 50 # 40
+    accuracyAimed: 70 # 68
+    tuAuto: 35 # 25
+    tuSnap: 16 # 20
+    tuAimed: 45 # 55
+    maxRange: 100 # 0
+    aimRange: 25 # 0
+    snapRange: 9 # 0
+    autoRange: 9 # 0
+    dropoff: 1 # 0
+    autoShots: 4 # 0
+  - type: STR_LASER_RIFLE
+    accuracyAuto: 55 # 46
+    accuracySnap: 50 # 65
+    accuracyAimed: 100 # 84
+    tuAuto: 30 # 34
+    tuSnap: 25 # (unchanged)
+    tuAimed: 55 # 50
+    maxRange: 200 # 0
+    aimRange: 90 # 0
+    snapRange: 24 # 0
+    autoRange: 19 # 0
+    minRange: 3
+    dropoff: 1 # 0
+    autoShots: 3 # 0
+  - type: STR_HEAVY_LASER
+    power: 120 # 85
+    accuracyAimed: 130 # 84
+    accuracySnap: 50 # ??
+    tuSnap: 40 # 33
+    tuAimed: 75 # (unchanged)
+    maxRange: 200 # 0
+    aimRange: 140 # 0
+    snapRange: 13 # 0
+    minRange: 8
+    dropoff: 1 # 0
+  - type: STR_GRENADE
+    weight: 2 # 3
+    power: 75 # 50
+  - type: STR_HIGH_EXPLOSIVE
+    weight: 4 # 6
+    power: 150 # 110
+    blastRadius: 2 # 0
+  - type: STR_ALIEN_GRENADE
+    power: 100 #90
+    blastRadius: 6 # 5
+  - type: STR_HEAVY_PLASMA
+    accuracyAuto: 42 # 50
+    accuracySnap: 50 # 75
+    accuracyAimed: 90 # 110
+    tuAuto: 40 # 35
+    tuSnap: 30 # (unchanged)
+    tuAimed: 65 # 60
+    maxRange: 200 # 0
+    aimRange: 90 # 0
+    snapRange: 20 # 0
+    autoRange: 25 # 0
+    minRange: 6
+    dropoff: 3 # 0
+  - type: STR_HEAVY_PLASMA_CLIP
+    power: 110 # 115
+  - type: STR_PLASMA_RIFLE
+    accuracyAuto: 40 # 55
+    accuracySnap: 55 # 86
+    accuracyAimed: 105 # 100
+    tuAuto: 35 # 36
+    tuSnap: 25 # 30
+    tuAimed: 55 # 60
+    maxRange: 200 # 0
+    aimRange: 85 # 0
+    snapRange: 25 # 0
+    autoRange: 20 # 0
+    minRange: 4
+    dropoff: 2 # 0
+  - type: STR_PLASMA_PISTOL
+    accuracyAuto: 38 # 50
+    accuracySnap: 55 # 65
+    accuracyAimed: 75 # 85
+    tuAuto: 33 # 30
+    tuSnap: 20 # 30
+    tuAimed: 40 # 60
+    maxRange: 100 # 0
+    aimRange: 30 # 0
+    snapRange: 8 # 0
+    autoRange: 8 # 0
+    dropoff: 3 # 0
+  - type: STR_PLASMA_PISTOL_CLIP
+    power: 65 # 52
+  - type: STR_SHOTGUN
+    size: 0.2
+    costBuy: 3000
+    costSell: 2000
+    weight: 7
+    bigSprite: 60
+    floorSprite: 74
+    handSprite: 128
+    bulletSprite: 2
+    fireSound: 55
+    compatibleAmmo:
+      - STR_SHOTGUN_SHELLS
+      - STR_ALLOY_SHOTGUN_SHELLS
+    accuracySnap: 66
+    accuracyAimed: 80
+    tuSnap: 30
+    tuAimed: 45
+    battleType: 1
+    twoHanded: true
+    invWidth: 1
+    invHeight: 3
+    listOrder: 2901
+    aimRange: 20
+    snapRange: 8
+    dropoff: 5
+  - type: STR_REINFORCED_SHOTGUN
+    size: 0.2
+    costSell: 4000
+    weight: 5
+    bigSprite: 61
+    floorSprite: 75
+    handSprite: 136
+    bulletSprite: 2
+    fireSound: 56
+    compatibleAmmo:
+      - STR_SHOTGUN_SHELLS
+      - STR_ALLOY_SHOTGUN_SHELLS
+      - STR_ELERIUM_SHOTGUN_SHELLS
+    accuracySnap: 70
+    accuracyAimed: 85
+    tuSnap: 30
+    tuAimed: 45
+    battleType: 1
+    twoHanded: true
+    invWidth: 1
+    invHeight: 3
+    listOrder: 3002
+    aimRange: 25
+    snapRange: 9
+    dropoff: 5
+    requires:
+      - STR_REINFORCED_SHOTGUN
+  - type: STR_SHOTGUN_SHELLS
+    size: 0.1
+    costBuy: 200
+    costSell: 150
+    weight: 3
+    bigSprite: 62
+    floorSprite: 76
+    hitSound: 22
+    hitAnimation: 26
+    power: 15
+    damageType: 1
+    clipSize: 8
+    battleType: 2
+    listOrder: 2903
+    shotgunPellets: 8
+  - type: STR_ALLOY_SHOTGUN_SHELLS
+    size: 0.1
+    costSell: 400
+    weight: 3
+    bigSprite: 63
+    floorSprite: 77
+    hitSound: 22
+    hitAnimation: 26
+    power: 25
+    damageType: 1
+    clipSize: 8
+    battleType: 2
+    listOrder: 2904
+    shotgunPellets: 6
+    requires:
+      - STR_ALLOY_SHOTGUN_SHELLS
+  - type: STR_ELERIUM_SHOTGUN_SHELLS
+    size: 0.1
+    costSell: 800
+    weight: 3
+    bigSprite: 64
+    floorSprite: 78
+    hitSound: 22
+    hitAnimation: 36
+    power: 35
+    damageType: 1
+    clipSize: 8
+    battleType: 2
+    listOrder: 2905
+    shotgunPellets: 5
+    requires:
+      - STR_ELERIUM_SHOTGUN_SHELLS
+  - type: STR_KEVLAR_ARCTIC
+    size: 0.8
+    costBuy: 4000
+    costSell: 3100
+    listOrder: 10499
+  - type: STR_CORPSE_KEVLAR_ARCTIC
+    name: STR_CORPSE
+    weight: 24
+    bigSprite: 64
+    floorSprite: 77
+    invWidth: 2
+    invHeight: 3
+    armor: 30
+    recover: false
+  - type: STR_KEVLAR_JUNGLE
+    size: 0.8
+    costBuy: 4000
+    costSell: 3100
+    listOrder: 10499
+  - type: STR_CORPSE_KEVLAR_JUNGLE
+    name: STR_CORPSE
+    weight: 24
+    bigSprite: 64
+    floorSprite: 77
+    invWidth: 2
+    invHeight: 3
+    armor: 30
+    recover: false
+  - type: STR_KEVLAR_URBAN
+    size: 0.8
+    costBuy: 4000
+    costSell: 3100
+    listOrder: 10499
+  - type: STR_CORPSE_KEVLAR_URBAN
+    name: STR_CORPSE
+    weight: 24
+    bigSprite: 64
+    floorSprite: 77
+    invWidth: 2
+    invHeight: 3
+    armor: 30
+    recover: false
+  - type: STR_TACTICAL_URBAN
+    size: 0.8
+    costBuy: 6000
+    costSell: 4500
+    listOrder: 10499
+  - type: STR_CORPSE_TACTICAL_URBAN
+    name: STR_CORPSE
+    weight: 28
+    bigSprite: 64
+    floorSprite: 77
+    invWidth: 2
+    invHeight: 3
+    armor: 30
+    recover: false
+  - type: STR_TACTICAL_JUNGLE
+    size: 0.8
+    costBuy: 6000
+    costSell: 4500
+    listOrder: 10499
+  - type: STR_CORPSE_TACTICAL_JUNGLE
+    name: STR_CORPSE
+    weight: 28
+    bigSprite: 64
+    floorSprite: 77
+    invWidth: 2
+    invHeight: 3
+    armor: 30
+    recover: false
+  - type: STR_TACTICAL_ARCTIC
+    size: 0.8
+    costBuy: 6000
+    costSell: 4500
+    listOrder: 10499
+  - type: STR_CORPSE_TACTICAL_ARCTIC
+    name: STR_CORPSE
+    weight: 28
+    bigSprite: 64
+    floorSprite: 77
+    invWidth: 2
+    invHeight: 3
+    armor: 30
+    recover: false
+# Adjustment to armor
+  - type: STR_PERSONAL_ARMOR
+    size: 0.8
+    weight: 3
+    costSell: 54000
+# disable deleted weapons
+  - type: STR_PISTOL
+    require: STR_ALIENS_ONLY
+    costBuy: 0
+  - type: STR_PISTOL_CLIP
+    require: STR_ALIENS_ONLY
+    costBuy: 0
+  - type: STR_RIFLE
+    require: STR_ALIENS_ONLY
+    costBuy: 0
+  - type: STR_RIFLE_CLIP
+    require: STR_ALIENS_ONLY
+    costBuy: 0
+  - type: STR_HEAVY_CANNON
+    require: STR_ALIENS_ONLY
+    costBuy: 0
+  - type: STR_HC_AP_AMMO
+    require: STR_ALIENS_ONLY
+    costBuy: 0
+  - type: STR_HC_HE_AMMO
+    require: STR_ALIENS_ONLY
+    costBuy: 0
+  - type: STR_HC_I_AMMO
+    require: STR_ALIENS_ONLY
+    costBuy: 0
+  - type: STR_AUTO_CANNON
+    require: STR_ALIENS_ONLY
+    costBuy: 0
+  - type: STR_AC_AP_AMMO
+    require: STR_ALIENS_ONLY
+    costBuy: 0
+  - type: STR_AC_HE_AMMO
+    require: STR_ALIENS_ONLY
+    costBuy: 0
+  - type: STR_AC_I_AMMO
+    require: STR_ALIENS_ONLY
+    costBuy: 0
+armors:
+  - type: STR_KEVLAR_ARCTIC_UC
+    spriteSheet: XCOM_1a.PCK
+    spriteInv: MAN_1a
+    corpseItem: STR_CORPSE_KEVLAR_ARCTIC
+    storeItem: STR_KEVLAR_ARCTIC
+    loftemps: 3
+    weight: 5
+    frontArmor: 16
+    sideArmor: 9
+    rearArmor: 14
+    underArmor: 5
+    stats:
+      tu: -2
+      stamina: -2
+      reactions: -1
+      throwing: -2
+      strength: 0
+    damageModifier:
+      - 1.0
+      - 0.9
+      - 0.9
+      - 0.97
+      - 0.98
+      - 1.0
+      - 1.0
+      - 0.95
+      - 1.0
+      - 1.0
+  - type: STR_KEVLAR_JUNGLE_UC
+    spriteSheet: XCOM_1j.PCK
+    spriteInv: MAN_1j
+    corpseItem: STR_CORPSE
+    storeItem: STR_KEVLAR_JUNGLE
+    loftemps: 3
+    weight: 5
+    frontArmor: 16
+    sideArmor: 9
+    rearArmor: 14
+    underArmor: 5
+    stats:
+      tu: -2
+      stamina: -2
+      reactions: -1
+      throwing: -2
+      strength: 0
+    damageModifier:
+      - 1.0
+      - 0.9
+      - 0.9
+      - 0.97
+      - 0.98
+      - 1.0
+      - 1.0
+      - 0.95
+      - 1.0
+      - 1.0
+  - type: STR_KEVLAR_URBAN_UC
+    spriteSheet: XCOM_1u.PCK
+    spriteInv: MAN_1u
+    corpseItem: STR_CORPSE_KEVLAR_URBAN
+    storeItem: STR_KEVLAR_URBAN
+    loftemps: 3
+    weight: 5
+    frontArmor: 16
+    sideArmor: 9
+    rearArmor: 14
+    underArmor: 5
+    stats:
+      tu: -2
+      stamina: -2
+      reactions: -1
+      throwing: -2
+      strength: 0
+    damageModifier:
+      - 1.0
+      - 0.9
+      - 0.9
+      - 0.97
+      - 0.98
+      - 1.0
+      - 1.0
+      - 0.95
+      - 1.0
+      - 1.0
+  - type: STR_TACTICAL_JUNGLE_UC
+    spriteSheet: XCOM_1DSj.PCK
+    spriteInv: MAN_1DSj
+    corpseItem: STR_CORPSE_TACTICAL_JUNGLE
+    storeItem: STR_TACTICAL_JUNGLE
+    loftemps: 3
+    weight: 7
+    frontArmor: 22
+    sideArmor: 16
+    rearArmor: 18
+    underArmor: 10
+    stats:
+      tu: -4
+      stamina: -5
+      reactions: -3
+      firing: -1
+      throwing: -3
+    damageModifier:
+      - 1.0
+      - 0.8
+      - 0.75
+      - 0.90
+      - 0.95
+      - 0.98
+      - 0.97
+      - 0.92
+      - 1.0
+      - 1.0 
+  - type: STR_TACTICAL_URBAN_UC
+    spriteSheet: XCOM_1DSu.PCK
+    spriteInv: MAN_1DSu
+    corpseItem: STR_CORPSE_TACTICAL_URBAN
+    storeItem: STR_TACTICAL_URBAN
+    loftemps: 3
+    weight: 7
+    frontArmor: 22
+    sideArmor: 16
+    rearArmor: 18
+    underArmor: 10
+    stats:
+      tu: -4
+      stamina: -5
+      reactions: -3
+      firing: -1
+      throwing: -3
+    damageModifier:
+      - 1.0
+      - 0.8
+      - 0.75
+      - 0.90
+      - 0.95
+      - 0.98
+      - 0.97
+      - 0.92
+      - 1.0
+      - 1.0
+  - type: STR_TACTICAL_ARCTIC_UC
+    spriteSheet: XCOM_1DSa.PCK
+    spriteInv: MAN_1DSa
+    corpseItem: STR_CORPSE_TACTICAL_ARCTIC
+    storeItem: STR_TACTICAL_ARCTIC
+    loftemps: 3
+    weight: 7
+    frontArmor: 22
+    sideArmor: 16
+    rearArmor: 18
+    underArmor: 10
+    stats:
+      tu: -4
+      stamina: -5
+      reactions: -3
+      firing: -1
+      throwing: -3
+    damageModifier:
+      - 1.0
+      - 0.8
+      - 0.75
+      - 0.90
+      - 0.95
+      - 0.98
+      - 0.97
+      - 0.92
+      - 1.0
+      - 1.0
+ufopaedia:
+  - id: STR_AVALANCHE
+    type_id: 2
+    section: STR_XCOM_CRAFT_ARMAMENT
+    text: STR_AVALANCHE_NONUKE_UFOPEDIA
+  - id: STR_SMALL_RADAR_SYSTEM
+    type_id: 6
+    section: STR_BASE_FACILITIES
+    text: STR_SMALL_RADAR_ETSYSTEM_UFOPEDIA
+  - id: STR_LARGE_RADAR_SYSTEM
+    type_id: 6
+    section: STR_BASE_FACILITIES
+    text: STR_LARGE_RADAR_ETSYSTEM_UFOPEDIA
+  - id: STR_MACHINE_PISTOL
+    listOrder: 2006
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_MACHINE_PISTOL_UFOPEDIA
+  - id: STR_MAGNUM
+    listOrder: 2008
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_MAGNUM_UFOPEDIA
+  - id: STR_ASSAULT_RIFLE
+    listOrder: 2206
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_ASSAULT_RIFLE_UFOPEDIA
+  - id: STR_SNIPER_RIFLE
+    listOrder: 2406
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_SNIPER_RIFLE_UFOPEDIA
+  - id: STR_SAW
+    listOrder: 2806
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_SAW_UFOPEDIA
+  - id: STR_MARKSMANS_RIFLE
+    listOrder: 2906
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_MARKSMANS_RIFLE_UFOPEDIA
+  - id: STR_SMG
+    listOrder: 3006
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_SMG_UFOPEDIA
+  - id: STR_SSRL
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_SSRL_UFOPEDIA
+    listOrder: 3201
+  - id: STR_ROCKET_LAUNCHER
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_ROCKET_LAUNCHER_UFOPEDIA
+    listOrder: 3301
+  - id: STR_MACHINE_PISTOL_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+  - id: STR_MAGNUM_AMMO
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+  - id: STR_ASSAULT_RIFLE_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+  - id: STR_SNIPER_RIFLE_AMMO
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+  - id: STR_SAW_AP_AMMO
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+  - id: STR_MARKSMANS_RIFLE_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+  - id: STR_SMG_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+  - id: STR_KEVLAR_ARCTIC_UC
+    type_id: 5
+    section: STR_WEAPONS_AND_EQUIPMENT
+    listOrder: 7699
+    text: STR_KEVLAR_ARCTIC_UFOPEDIA
+  - id: STR_KEVLAR_JUNGLE_UC
+    type_id: 5
+    section: STR_WEAPONS_AND_EQUIPMENT
+    listOrder: 7699
+    text: STR_KEVLAR_JUNGLE_UFOPEDIA
+  - id: STR_KEVLAR_URBAN_UC
+    type_id: 5
+    section: STR_WEAPONS_AND_EQUIPMENT
+    listOrder: 7699
+    text: STR_KEVLAR_URBAN_UFOPEDIA
+  - id: STR_TACTICAL_ARCTIC_UC
+    type_id: 5
+    section: STR_WEAPONS_AND_EQUIPMENT
+    listOrder: 6799
+    text: STR_TACTICAL_ARCTIC_UFOPEDIA
+  - id: STR_TACTICAL_JUNGLE_UC
+    type_id: 5
+    section: STR_WEAPONS_AND_EQUIPMENT
+    listOrder: 6799
+    text: STR_TACTICAL_JUNGLE_UFOPEDIA
+  - id: STR_TACTICAL_URBAN_UC
+    type_id: 5
+    section: STR_WEAPONS_AND_EQUIPMENT
+    listOrder: 6799
+    text: STR_TACTICAL_URBAN_UFOPEDIA
+# disable deleted weapons
+  - id: STR_PISTOL
+    section: STR_NOT_AVAILABLE
+  - id: STR_RIFLE
+    section: STR_NOT_AVAILABLE
+  - id: STR_HEAVY_CANNON
+    section: STR_NOT_AVAILABLE
+  - id: STR_AUTO_CANNON
+    section: STR_NOT_AVAILABLE
+  - id: STR_SHOTGUN
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_SHOTGUN_UFOPEDIA
+    listOrder: 2101
+  - id: STR_REINFORCED_SHOTGUN
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_REINFORCED_SHOTGUN_UFOPEDIA
+    listOrder: 2102
+    requires:
+      - STR_REINFORCED_SHOTGUN
+  - id: STR_SHOTGUN_SHELLS
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+  - id: STR_ALLOY_SHOTGUN_SHELLS
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_ALLOY_SHOTGUN_SHELLS
+  - id: STR_ELERIUM_SHOTGUN_SHELLS
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_ELERIUM_SHOTGUN_SHELLS
+  - id: STR_INCENDIARY_GRENADE
+    listOrder: 3911
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_INCENDIARY_GRENADE_UFOPEDIA
+facilities:
+  - type: STR_SMALL_RADAR_SYSTEM
+    radarChance: 30
+    radarRange: 1250
+  - type: STR_LARGE_RADAR_SYSTEM
+    radarRange: 2250
+    radarChance: 15
+research:
+  - name: STR_REINFORCED_SHOTGUN
+    cost: 800
+    points: 10
+    dependencies:
+      - STR_ALIEN_ALLOYS
+      - STR_PLASMA_RIFLE
+    listOrder: 901
+  - name: STR_ALLOY_SHOTGUN_SHELLS
+    cost: 400
+    points: 10
+    dependencies:
+      - STR_ALIEN_ALLOYS
+    listOrder: 902
+  - name: STR_ELERIUM_SHOTGUN_SHELLS
+    cost: 500
+    points: 10
+    dependencies:
+      - STR_ELERIUM_115
+      - STR_ALLOY_SHOTGUN_SHELLS
+      - STR_REINFORCED_SHOTGUN
+    listOrder: 903
+manufacture:
+  - name: STR_REINFORCED_SHOTGUN
+    category: STR_WEAPON
+    requires:
+      - STR_REINFORCED_SHOTGUN
+    space: 4
+    time: 820
+    cost: 18000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 1
+    listOrder: 1101
+  - name: STR_ALLOY_SHOTGUN_SHELLS
+    category: STR_AMMUNITION
+    requires:
+      - STR_ALLOY_SHOTGUN_SHELLS
+    space: 4
+    time: 80
+    cost: 2000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 1
+    listOrder: 1102
+  - name: STR_ELERIUM_SHOTGUN_SHELLS
+    category: STR_AMMUNITION
+    requires:
+      - STR_ELERIUM_SHOTGUN_SHELLS
+    space: 4
+    time: 90
+    cost: 4000
+    requiredItems:
+      STR_ELERIUM_115: 1
+    listOrder: 1103
+#unfortunately, startingBase needs be complete, no matter what you want to add/remove
+startingBase:
+  facilities:
+    - type: STR_ACCESS_LIFT
+      x: 2
+      y: 2
+    - type: STR_HANGAR
+      x: 2
+      y: 0
+    - type: STR_HANGAR
+      x: 0
+      y: 4
+    - type: STR_HANGAR
+      x: 4
+      y: 4
+    - type: STR_LIVING_QUARTERS
+      x: 3
+      y: 2
+    - type: STR_GENERAL_STORES
+      x: 2
+      y: 3
+    - type: STR_LABORATORY
+      x: 3
+      y: 3
+    - type: STR_WORKSHOP
+      x: 4
+      y: 3
+    - type: STR_SMALL_RADAR_SYSTEM
+      x: 1
+      y: 3
+  randomSoldiers: 8
+  crafts:
+    - type: STR_SKYRANGER
+      id: 1
+      fuel: 1500
+      damage: 0
+      items:
+        STR_GRENADE: 8
+        STR_INCENDIARY_GRENADE: 2
+        STR_SNIPER_RIFLE_AMMO: 4 # instead of STR_HC_AP_AMMO (x2)
+        # STR_HC_HE_AMMO: 2 removed
+        STR_SNIPER_RIFLE: 1 # instead of STR_HEAVY_CANNON
+        STR_MACHINE_PISTOL: 2 # instead of STR_PISTOL
+        STR_MACHINE_PISTOL_CLIP: 4 # instead of STR_PISTOL_CLIP
+        STR_MAGNUM: 1 #
+        STR_MAGNUM_AMMO: 2 #
+        STR_ASSAULT_RIFLE: 3 # instead of STR_RIFLE Removed 3
+        STR_ASSAULT_RIFLE_CLIP: 6 # instead of STR_RIFLE_CLIP Removed 6
+        STR_MARKSMANS_RIFLE: 1
+        STR_MARKSMANS_RIFLE_CLIP: 2
+        STR_SHOTGUN: 1 # added one replacing Rifles
+        STR_SHOTGUN_SHELLS: 3 # added three replacing rifle clips
+        STR_SMG: 2 # added two
+        STR_SMG_CLIP: 4 # added four
+        STR_SSRL: 2 # added two
+      status: STR_READY
+    - type: STR_INTERCEPTOR
+      id: 1
+      fuel: 1000
+      damage: 0
+      weapons:
+        - type: STR_STINGRAY
+          ammo: 6
+        - type: STR_CANNON_UC
+          ammo: 200
+      status: STR_READY
+    - type: STR_INTERCEPTOR
+      id: 2
+      fuel: 1000
+      damage: 0
+      weapons:
+        - type: STR_STINGRAY
+          ammo: 6
+        - type: STR_CANNON_UC
+          ammo: 200
+  items:
+    STR_SAW_AP_AMMO: 6 # instead of STR_AC_AP_AMMO
+    STR_SAW: 1 # instead of STR_AUTO_CANNON
+    STR_AVALANCHE_LAUNCHER: 1
+    STR_AVALANCHE_MISSILES: 10
+    STR_CANNON: 2
+    STR_CANNON_ROUNDS_X50: 1
+    STR_GRENADE: 5
+    STR_SMG: 2 # 
+    STR_SMG_CLIP: 8 # 
+    STR_SNIPER_RIFLE_AMMO: 6 # instead of STR_HC_AP_AMMO
+    STR_SNIPER_RIFLE: 1 # instead of STR_HEAVY_CANNON
+    STR_MACHINE_PISTOL: 2 # instead of STR_PISTOL
+    STR_MACHINE_PISTOL_CLIP: 4 # instead of STR_PISTOL
+    STR_MAGNUM: 1 #
+    STR_MAGNUM_AMMO: 2 #
+    STR_ASSAULT_RIFLE: 2 # instead of STR_RIFLE
+    STR_ASSAULT_RIFLE_CLIP: 8 # instead of STR_RIFLE_CLIP
+    STR_ROCKET_LAUNCHER: 1
+    STR_SMALL_ROCKET: 4
+    STR_SMOKE_GRENADE: 5
+    STR_INCENDIARY_GRENADE: 2
+    STR_STINGRAY_LAUNCHER: 1
+    STR_STINGRAY_MISSILES: 25
+  scientists: 10
+  engineers: 10
+extraStrings:
+  - type: en-US
+    strings:
+      STR_AVALANCHE_NONUKE_UFOPEDIA: Built on the AIM-120 platform armed a warhead with three kinetic penetrators, this missile is equiped with vectoured thrust engines, and is the longest range AAM with sufficient manuverablity to be viable against alien craft.
+      STR_SMALL_RADAR_ETSYSTEM_UFOPEDIA: A short range passive radar system with an effective range of 500 nautical miles and is linked to satellite systems for ground search. Each small radar system on base has a 10% chance of detecting an average sized object at that range every 10 minutes. 
+      STR_LARGE_RADAR_ETSYSTEM_UFOPEDIA: A long range passive radar system with an effective range of 1100 nautical miles and is linked to satellite systems for ground search. Each large radar system on base has a 5% chance of detecting an average sized object at that range every 10 minutes. 
+      STR_MACHINE_PISTOL: Machine Pistol
+      STR_MACHINE_PISTOL_UFOPEDIA: Designed jointly by CZ and the Russian firm IZHMASH, the standard X-Com sidearm is a machine pistol firing a 5.7mm tungsten core AP round, with select-fire capability and a 18 round magazine.
+      STR_MAGNUM: Magnum Revolver
+      STR_MAGNUM_UFOPEDIA: While not initially apportioned for the procurement program for X-Com, a number of customized heavy revolvers have found their way into the X-Com armory and additional weapons can be purchased through special channels. Shooting a tungsten core .454 Casull magnum AP round, the damage potential of this weapon is almost as massive as it's kick, or as big as the nearly blinding fireball from the barrel.
+      STR_MAGNUM_AMMO: Magnum Speedloader
+      STR_MACHINE_PISTOL_CLIP: Machine Pistol clip
+      STR_ASSAULT_RIFLE: Assault Rifle
+      STR_ASSAULT_RIFLE_UFOPEDIA: Developed by both Colt and FN for the X-Com project, this assault rifle utilizes the SOCOM tested 6.8mm spc round, with a steel tipped, tungsten core AP bullet. The weapon's magazine holds 30 rounds.
+      STR_ASSAULT_RIFLE_CLIP: Assault Rifle clip
+      STR_SNIPER_RIFLE: Sniper Rifle
+      STR_SNIPER_RIFLE_UFOPEDIA: This bolt action bullpup sniper rifle fires the fearsome .50 caliber BMG round and is typically classified as an anti-materiel weapon, suited for destroying structures and light armored vehicles. While cumbersome, this weapon is accurate out to two kilometers and has horrific wounding potential.
+      STR_SNIPER_RIFLE_AMMO: Sniper Rifle clip
+      STR_SAW: SAW
+      STR_SAW_UFOPEDIA: The Squad-Automatic-Weapon, or SAW combines the 5.56mm AP round with an extremely high rate of fire, allowing a soldier to carry the suppressive fire of a light machinegun and not hinder their mobility too greatly.
+      STR_SAW_AP_AMMO: SAW AP ammo
+      STR_SHOTGUN: Shotgun
+      STR_REINFORCED_SHOTGUN: Reinforced Shotgun
+      STR_SHOTGUN_SHELLS: Shotgun Shells
+      STR_ALLOY_SHOTGUN_SHELLS: Alloy Shotgun Shells
+      STR_ELERIUM_SHOTGUN_SHELLS: Elerium Shotgun Shells
+      STR_SHOTGUN_UFOPEDIA: The standard issue X-Com tactical shotgun is a custom design based on the classic Remington 870 combat shotgun. It uses 3 inch magnum 12 gauge rounds loaded with tungsten flechettes to deliver large amounts of damage to targets at close range. However, the low penetrative power and spread of the projectiles limits its effectiveness against armored targets or at long ranges.
+      STR_REINFORCED_SHOTGUN_UFOPEDIA: Utilizing the properties of Alien Alloys, this semi-automatic shotgun features a stronger, narrower barrel compared to the conventional counterpart. This allows it to fire higher velocity ammunition, providing greater stopping power.
+      STR_MARKSMANS_RIFLE: Marksman's Rifle
+      STR_MARKSMANS_RIFLE_UFOPEDIA: Designed for precision shooting for a more mobile squad, the Marksman's rifle exists between the heavier and immobile anti-materiel rifle, and the standard assault rifle. The weapon was designed and accuratized by engineers at Colt and H&K for semi-automatic firing and utilizes the 7.62mm NATO round with a tungsten core AP bullet.
+      STR_MARKSMANS_RIFLE_CLIP: Marksman's Rifle Clip
+      STR_SMG: Submachine Gun
+      STR_SMG_UFOPEDIA: This classic H&K weapon was redesigned for the specific needs the X-Com project to use a tungsten core, steel tipped +p+ 9mm round. Constructed with recoil compensation and paired assault strap, the weapon can be used one handed. This weapon is well suited for building entries as it is much more manuverable than the heavier assault rifles and more accurate than the machine pistol. It utilizes a 35 round clip.   
+      STR_SMG_CLIP: SMG Clip
+      STR_INCENDIARY_GRENADE: Incendiary Grenade
+      STR_INCENDIARY_GRENADE_UFOPEDIA: This grenade contains a dual incendiary charge of white phosphorus and thermite with a small RDX explosive charge for dispersal of the three molten metals.
+      STR_SSRL: SSRL
+      STR_SSRL_UFOPEDIA: A disposable single-shot rocket launcher (designated SSRL) manufactured by Bazalt & Dynamit Nobel Defence and uses a tight-pattern shaped-explosive warhead.  It has a small explosive pattern, making it ineffective as a suppressive anti-personnel weapon, but effective against alien heavy weapons platforms.
+      STR_APFSDS_ROCKET: APFSDS Rocket.
+      STR_ROCKET_LAUNCHER_UFOPEDIA: This breech loading rocket launcher produced by Raytheon with munitions from Dynamit Nobel Defence can fire four different semi-guided rocket types.
+      STR_KEVLAR_ARCTIC: Light Armor (Arctic)
+      STR_KEVLAR_ARCTIC_UC: Light Armor (Arctic)
+      STR_KEVLAR_ARCTIC_UFOPEDIA: Adapted from typical SWAT team use, this light armor vest produced by Dragon Skin is constructed to X-com's specifications. Using a 24 layer special aramid blend and an overlapping weave of lighter carbon fiber-reinforced silicon carbide disks, this armor provides adequate protection, while not impairing the mobility of the soldier.
+      STR_KEVLAR_JUNGLE: Light Armor (Jungle)
+      STR_KEVLAR_JUNGLE_UC: Light Armor (Jungle)
+      STR_KEVLAR_JUNGLE_UFOPEDIA: Adapted from typical SWAT team use, this light armor vest produced by Dragon Skin is constructed to X-com's specifications. Using a 24 layer special aramid blend and an overlapping weave of lighter carbon fiber-reinforced silicon carbide disks, this armor provides adequate protection, while not impairing the mobility of the soldier.
+      STR_KEVLAR_URBAN: Light Armor (Urban)
+      STR_KEVLAR_URBAN_UC: Light Armor (Urban)
+      STR_KEVLAR_URBAN_UFOPEDIA: Adapted from typical SWAT team use, this light armor vest produced by Dragon Skin is constructed to X-com's specifications. Using a 24 layer special aramid blend and an overlapping weave of lighter carbon fiber-reinforced silicon carbide disks, this armor provides adequate protection, while not impairing the mobility of the soldier.
+      STR_TACTICAL_URBAN: Tactical Armor (Urban)
+      STR_TACTICAL_URBAN_UC: Tactical Armor (Urban)
+      STR_TACTICAL_URBAN_UFOPEDIA: Composed of 36 layers of aramids blended for strength and heat resistance and backed by heavy duty overlapping carbon fiber-reinforced silicon carbide disks, this tactical vest specially produced for X-com by Dragon Skin is the best protection current human technology can provide. However, this level of protection does tend to hinder a soldier's movements.
+      STR_TACTICAL_JUNGLE: Tactical Armor (Jungle)
+      STR_TACTICAL_JUNGLE_UC: Tactical Armor (Jungle)
+      STR_TACTICAL_JUNGLE_UFOPEDIA: Composed of 36 layers of aramids blended for strength and heat resistance and backed by heavy duty overlapping carbon fiber-reinforced silicon carbide disks, this tactical vest specially produced for X-com by Dragon Skin is the best protection current human technology can provide. However, this level of protection does tend to hinder a soldier's movements.
+      STR_TACTICAL_ARCTIC: Tactical Armor (Arctic)
+      STR_TACTICAL_ARCTIC_UC: Tactical Armor (Arctic)
+      STR_TACTICAL_ARCTIC_UFOPEDIA: Composed of 36 layers of aramids blended for strength and heat resistance and backed by heavy duty overlapping carbon fiber-reinforced silicon carbide disks, this tactical vest specially produced for X-com by Dragon Skin is the best protection current human technology can provide. However, this level of protection does tend to hinder a soldier's movements.
+  - type: en-GB
+    strings:
+      STR_AVALANCHE_NONUKE_UFOPEDIA: Built on the AIM-120 platform armed a warhead with three kinetic penetrators, this missile is equiped with vectoured thrust engines, and is the longest range AAM with sufficient manuverablity to be viable against alien craft.
+      STR_SMALL_RADAR_ETSYSTEM_UFOPEDIA: A short range passive radar system with an effective range of 500 nautical miles and is linked to satellite systems for ground search. Each small radar system on base has a 10% chance of detecting an average sized object at that range every 10 minutes. 
+      STR_LARGE_RADAR_ETSYSTEM_UFOPEDIA: A long range passive radar system with an effective range of 1100 nautical miles and is linked to satellite systems for ground search. Each large radar system on base has a 5% chance of detecting an average sized object at that range every 10 minutes. 
+      STR_MACHINE_PISTOL: Machine Pistol
+      STR_MACHINE_PISTOL_UFOPEDIA: Designed jointly by CZ and the Russian firm IZHMASH, the standard X-Com sidearm is a machine pistol firing 5.7mm tungsten core AP round, with select-fire capability and a 18 round magazine.
+      STR_MACHINE_PISTOL_CLIP: Machine Pistol clip
+      STR_MAGNUM: Magnum Revolver
+      STR_MAGNUM_UFOPEDIA: While not initially apportioned for the procurement program for X-Com, a number of customized heavy revolvers have found their way into the X-Com armory and additional weapons can be purchased through special channels. Shooting a tungsten core .454 Casull magnum AP round, the damage potential of this weapon is almost as massive as it's kick, or as big as the nearly blinding fireball from the barrel.
+      STR_MAGNUM_AMMO: Magnum Speedloader
+      STR_ASSAULT_RIFLE: Assault Rifle
+      STR_ASSAULT_RIFLE_UFOPEDIA: Developed by both Colt and FN for the X-Com project, this assault rifle utilizes the SOCOM tested 6.8mm spc round, with a steel tipped, tungsten core AP bullet. The weapon's magazine holds 30 rounds.
+      STR_ASSAULT_RIFLE_CLIP: Assault Rifle clip
+      STR_SNIPER_RIFLE: Sniper Rifle
+      STR_SNIPER_RIFLE_UFOPEDIA: This bolt action bullpup sniper rifle fires the fearsome .50 caliber BMG round and is typically classified as an anti-materiel weapon, suited for destroying structures and light armored vehicles. While cumbersome, this weapon is accurate out to two kilometers and has horrific wounding potential.
+      STR_SNIPER_RIFLE_AMMO: Sniper Rifle clip
+      STR_SAW: SAW
+      STR_SAW_UFOPEDIA: The Squad-Automatic-Weapon, or SAW combines the 5.56mm AP round with an extremely high rate of fire, allowing a soldier to carry the suppressive fire of a light machinegun and not hinder their mobility too greatly.
+      STR_SAW_AP_AMMO: SAW AP ammo
+      STR_SHOTGUN: Shotgun
+      STR_REINFORCED_SHOTGUN: Reinforced Shotgun
+      STR_SHOTGUN_SHELLS: Shotgun Shells
+      STR_ALLOY_SHOTGUN_SHELLS: Alloy Shotgun Shells
+      STR_ELERIUM_SHOTGUN_SHELLS: Elerium Shotgun Shells
+      STR_SHOTGUN_UFOPEDIA: The standard issue X-Com tactical shotgun is a custom design based on the classic Remington 870 combat shotgun. It uses 3 inch magnum 12 gauge rounds loaded with tungsten flechettes to deliver large amounts of damage to targets at close range. However, the low penetrative power and spread of the projectiles limits its effectiveness against armored targets or at long ranges.
+      STR_REINFORCED_SHOTGUN_UFOPEDIA: Utilising the properties of Alien Alloys, this semi-automatic shotgun features a stronger, narrower barrel compared to the conventional counterpart. This allows it to fire higher velocity ammunition, providing greater stopping power.
+      STR_MARKSMANS_RIFLE: Marksman's Rifle
+      STR_MARKSMANS_RIFLE_UFOPEDIA: Designed for precision shooting for a more mobile squad, the Marksman's rifle exists between the heavier and immobile anti-materiel rifle, and the standard assault rifle. The weapon was designed and accuratized by engineers at Colt and H&K for semi-automatic firing and utilizes the 7.62mm NATO round with a tungsten core AP bullet.  
+      STR_MARKSMANS_RIFLE_CLIP: Marksman's Rifle Clip
+      STR_SMG: Submachine Gun
+      STR_SMG_UFOPEDIA: This classic H&K weapon was redesigned for the specific needs the X-Com project to use a tungsten core, steel tipped +p+ 9mm round. Constructed with recoil compensation and paired assault strap, the weapon can be used one handed. This weapon is well suited for building entries as it is much more manuverable than the heavier assault rifles and more accurate than the machine pistol. It utilises a 35 round clip.   
+      STR_SMG_CLIP: SMG Clip
+      STR_INCENDIARY_GRENADE: Incendiary Grenade
+      STR_INCENDIARY_GRENADE_UFOPEDIA: This grenade contains a dual incendiary charge of white phosphorus and thermite with a small RDX explosive charge for dispersal of the three molten metals.
+      STR_SSRL_UFOPEDIA: A disposable single-shot rocket launcher (designated SSRL) manufactured by Bazalt & Dynamit Nobel Defence and uses a tight-pattern shaped-explosive warhead.  It has a small explosive pattern, making it ineffective as a suppressive anti-personnel weapon, but effective against alien heavy weapons platforms.
+      STR_APFSDS_ROCKET: APFSDS Rocket.
+      STR_ROCKET_LAUNCHER_UFOPEDIA: This breech loading rocket launcher produced by Raytheon with munitions from Dynamit Nobel Defence can fire four different semi-guided rocket types.
+      STR_KEVLAR_ARCTIC: Kelvar Armor (Arctic)
+      STR_KEVLAR_ARCTIC_UC: Kelvar Armor (Arctic)
+      STR_KEVLAR_ARCTIC_UFOPEDIA: Adapted from typical SWAT team use, this light armor vest produced by Dragon Skin is constructed to X-com's specifications. Using a 24 layer special aramid blend and an overlapping weave of lighter carbon fiber-reinforced silicon carbide disks, this armor provides adequate protection, while not impairing the mobility of the soldier.
+      STR_KEVLAR_JUNGLE: Kelvar Armor (Jungle)
+      STR_KEVLAR_JUNGLE_UC: Kelvar Armor (Jungle)
+      STR_KEVLAR_JUNGLE_UFOPEDIA: Adapted from typical SWAT team use, this light armor vest produced by Dragon Skin is constructed to X-com's specifications. Using a 24 layer special aramid blend and an overlapping weave of lighter carbon fiber-reinforced silicon carbide disks, this armor provides adequate protection, while not impairing the mobility of the soldier.
+      STR_KEVLAR_URBAN: Kelvar Armor (Urban)
+      STR_KEVLAR_URBAN_UC: Kelvar Armor (Urban)
+      STR_KEVLAR_URBAN_UFOPEDIA: Adapted from typical SWAT team use, this light armor vest produced by Dragon Skin is constructed to X-com's specifications. Using a 24 layer special aramid blend and an overlapping weave of lighter carbon fiber-reinforced silicon carbide disks, this armor provides adequate protection, while not impairing the mobility of the soldier.
+      STR_TACTICAL_URBAN: Tactical Armor (Urban)
+      STR_TACTICAL_URBAN_UC: Tactical Armor (Urban)
+      STR_TACTICAL_URBAN_UFOPEDIA: Composed of 36 layers of aramids blended for strength and heat resistance and backed by heavy duty overlapping carbon fiber-reinforced silicon carbide disks, this tactical vest specially produced for X-com by Dragon Skin is the best protection current human technology can provide. However, this level of protection does tend to hinder a soldier's movements.
+      STR_TACTICAL_JUNGLE: Tactical Armor (Jungle)
+      STR_TACTICAL_JUNGLE_UC: Tactical Armor (Jungle)
+      STR_TACTICAL_JUNGLE_UFOPEDIA: Composed of 36 layers of aramids blended for strength and heat resistance and backed by heavy duty overlapping carbon fiber-reinforced silicon carbide disks, this tactical vest specially produced for X-com by Dragon Skin is the best protection current human technology can provide. However, this level of protection does tend to hinder a soldier's movements.
+      STR_TACTICAL_ARCTIC: Tactical Armor (Arctic)
+      STR_TACTICAL_ARCTIC_UC: Tactical Armor (Arctic)
+      STR_TACTICAL_ARCTIC_UFOPEDIA: Composed of 36 layers of aramids blended for strength and heat resistance and backed by heavy duty overlapping carbon fiber-reinforced silicon carbide disks, this tactical vest specially produced for X-com by Dragon Skin is the best protection current human technology can provide. However, this level of protection does tend to hinder a soldier's movements.
+  - type: fr
+    strings:
+      STR_AVALANCHE_NONUKE_UFOPEDIA: Construit sur une plate-forme AIM-120, armé d'une ogive avec trois pénétrateurs cinétiques, ce missile est équipé de moteurs à poussée vectorielle, a la plus longue portée "missile air-air" ainsi qu'une maniabilité suffisante permettant d'affronter un vaisseau extraterrestre.
+      STR_SMALL_RADAR_ETSYSTEM_UFOPEDIA: Un petit système de détection ayant une portée radar de 500 milles nautiques et relié à des systèmes satellites pour les recherches au sol.  Chaque système a 10% de chances de détecter un objet de taille moyenne toutes les 10 minutes.
+      STR_LARGE_RADAR_ETSYSTEM_UFOPEDIA: Un grand système de détection ayant une portée radar de 1100 milles nautiques et relié à des systèmes satellites pour les recherches au sol.  Chaque système a 5% de chances de détecter un objet de taille moyenne toutes les 10 minutes.
+      STR_MACHINE_PISTOL: Pistolet Mitrailleur
+      STR_MACHINE_PISTOL_UFOPEDIA: Conçu conjointement par la République tchèque et la société russe IZHMASH, l'arme de poing X-Com standard est un pistolet mitrailleur tirant un noyau 5.7mm de tungstène (PA), avec capacité de "tirs sélectifs" et un chargeur de 18 cartouches.
+      STR_MAGNUM: Revolver Magnum
+      STR_MAGNUM_UFOPEDIA: Bien qu'initialement "non approuvés" pour faire parti de l'arsenal X-Com, un certain nombre de revolvers lourds personnalisés y ont trouvé leur place et sont accessibles via des fournisseurs spéciaux.  Doté d'un noyau de tungstène .454 Casull (PA), le potentiel de dégâts de cette arme est redoutable.
+      STR_MAGNUM_AMMO: Chargeur Revolver Magnum
+      STR_MACHINE_PISTOL_CLIP: Chargeur Pistolet Mitrailleur
+      STR_ASSAULT_RIFLE: Fusil d'Assaut
+      STR_ASSAULT_RIFLE_UFOPEDIA: Développé par Colt et FN (Fabrique Nationale d'Hersta) pour le projet X-Com, ce fusil d'assaut utilise le SOCOM (United States Special Operations Command) 6.8 mm Remington SPC (Special Purpose Cartridge), avec une pointe en acier et un noyau de tungstène (PA).  Le chargeur contient 30 cartouches.
+      STR_ASSAULT_RIFLE_CLIP: Chargeur Fusil d'Assaut
+      STR_SNIPER_RIFLE: Fusil de Précision
+      STR_SNIPER_RIFLE_UFOPEDIA: Ce fusil de précision utilise le calibre .50 BMG (Browning Machine Gun) et est classé comme arme "anti-matériel" pouvant détruire les structures environnantes ainsi que les blindés légers.  Bien que lourde, cette arme est précise jusqu'à deux kilomètres et peut infliger de cruelles blessures ou une mort certaine.
+      STR_SNIPER_RIFLE_AMMO: Chargeur Fusil de Précision
+      STR_SAW: Arme Légère d'Appui
+      STR_SAW_UFOPEDIA: L'Arme Légère d'Appui utilise le calibre 5.56mm (PA) et fait feu à une cadence très élevée, permettant ainsi au soldat d'effectuer un tir de suppression (couvrir un allié) tout en conservant son importante mobilité sur le champ de bataille. 
+      STR_SAW_AP_AMMO: Chargeur Arme Légère d'Appui
+      STR_SHOTGUN: Fusil
+      STR_REINFORCED_SHOTGUN: Fusil Renforcé
+      STR_SHOTGUN_SHELLS: Chargeur Fusil
+      STR_ALLOY_SHOTGUN_SHELLS: Chargeur Fusil (Alliage E.T.)
+      STR_ELERIUM_SHOTGUN_SHELLS: Chargeur Fusil (Elerium)
+      STR_SHOTGUN_UFOPEDIA: Le fusil de chasse tactique X-Com est un design personnalisé basé sur le classique Remington 870.  Il utilise le calibre 12 (3 pouces) chargé de fléchettes en tungstène pour infliger un maximum de dommage à courte portée.  Cependant, son faible pouvoir de pénétration et la propagation des projectiles limite son efficacité contre les cibles blindées ou à longue distance.
+      STR_REINFORCED_SHOTGUN_UFOPEDIA: En utilisant les propriétés des alliages extraterrestres, ce fusil de chasse semi-automatique est doté d'un baril plus étroit et solide si on le compare à la version traditionnelle.  Cela lui permet de tirer des munitions à vitesse plus élevée et ainsi freiner l'avance ennemie. 
+      STR_MARKSMANS_RIFLE: Fusil de Tireur d'Élite
+      STR_MARKSMANS_RIFLE_UFOPEDIA: Conçu pour le tir de précision tout en maintenant l'équipe plus mobile, le fusil de tireur d'élite est un compromis entre une arme "anti-matériel" plus lourde et immobile et le fusil d'assaut standard.  Imaginé et optimisé par les ingénieurs de Colt & HK (Heckler & Koch), il est semi-automatique et utilise le calibre 7.62mm OTAN avec un noyau de tungstène (PA).   
+      STR_MARKSMANS_RIFLE_CLIP: Chargeur Fusil Tireur d'Élite
+      STR_SMG: Mitraillette
+      STR_SMG_UFOPEDIA: Arme classique HK redessinée pour les besoins spécifiques du projet X-Com, la cartouche est un noyau de tungstène en acier incliné 9mm.  Construite avec compensation de recul et jumelée avec une sangle d'assaut, l'arme peut être utilisée d'une seule main tout en étant bien adaptée pour investir les bâtiments car elle est plus maniable que le fusil d'assaut et plus précise que le pistolet mitrailleur.  Le chargeur contient 35 balles.
+      STR_SMG_CLIP: Chargeur Mitraillette
+      STR_INCENDIARY_GRENADE: Grenade Incendiaire
+      STR_INCENDIARY_GRENADE_UFOPEDIA: Cette grenade contient du phosphore blanc et de la thermite (mélange d'aluminium métallique et d'oxyde d'un autre métal, généralement l'oxyde de fer) ainsi qu'une petite charge RDX (composé chimique très stable considéré comme l'un des explosifs militaires les plus puissants) pour une dispersion optimum des composantes en fusion.
+      STR_SSRL: Lance-Roquettes Jetable
+      STR_SSRL_UFOPEDIA: Un lance-roquettes jetable tirant un seul coup (ogive explosive), fabriqué par Bazalt (Russie) & Dynamit Nobel (Allemagne).  En atteignant la cible, l'explosion produite est confinée dans un espace restreint, ce qui en fait une arme "anti-personnel" peu efficace mais redoutable contre les plates-formes d'armes lourdes extraterrestres.
+      STR_APFSDS_ROCKET: Roquette Antiblindage
+      STR_ROCKET_LAUNCHER_UFOPEDIA: Ce lance-roquettes à chargement par la culasse est produit par Raytheon (entreprise américaine {systèmes de défense, électronique & aérospatial}) avec des munitions de Dynamit Nobel (Allemagne).  Il peut tirer quatre types de fusées semi-guidées.
+      STR_KEVLAR_ARCTIC: Armure légère (Arctique)
+      STR_KEVLAR_ARCTIC_UC: Armure légère (Arctique)
+      STR_KEVLAR_ARCTIC_UFOPEDIA: Inspirée de l'unité spécialisée SWAT (Special Weapons and Tactics), cette armure légère produite par Pinnacle Armor (compagnie américaine bien connue pour sa veste ballistique "Dragon Skin") est adaptée selon les spécifications de X-Com.  24 couches d'un mélange unique d'aramide chevauchées par des disques légers de carbure de silicium renforcés de fibres de carbone offrent une protection adéquate tout en ne nuisant pas à la mobilité.
+      STR_KEVLAR_JUNGLE: Armure Légère (Jungle)
+      STR_KEVLAR_JUNGLE_UC: Armure Légère (Jungle)
+      STR_KEVLAR_JUNGLE_UFOPEDIA: Inspirée de l'unité spécialisée SWAT (Special Weapons and Tactics), cette armure légère produite par Pinnacle Armor (compagnie américaine bien connue pour sa veste ballistique "Dragon Skin") est adaptée selon les spécifications de X-Com.  24 couches d'un mélange unique d'aramide chevauchées par des disques légers de carbure de silicium renforcés de fibres de carbone offrent une protection adéquate tout en ne nuisant pas à la mobilité.
+      STR_KEVLAR_URBAN: Armure Légère (Milieu Urbain)
+      STR_KEVLAR_URBAN_UC: Armure Légère (Milieu Urbain)
+      STR_KEVLAR_URBAN_UFOPEDIA: Inspirée de l'unité spécialisée SWAT (Special Weapons and Tactics), cette armure légère produite par Pinnacle Armor (compagnie américaine bien connue pour sa veste ballistique "Dragon Skin") est adaptée selon les spécifications de X-Com.  24 couches d'un mélange unique d'aramide chevauchées par des disques légers de carbure de silicium renforcés de fibres de carbone offrent une protection adéquate tout en ne nuisant pas à la mobilité.
+      STR_TACTICAL_URBAN: Armure Tactique (Milieu Urbain)
+      STR_TACTICAL_URBAN_UC: Armure Tactique (Milieu Urbain)
+      STR_TACTICAL_URBAN_UFOPEDIA: Composé d'un mélange spécial de 36 couches d'aramide accentuant la solidité et la résistance à la chaleur; chevauché par de lourds disques de carbure de silicium renforcés de fibres de carbone, ce gilet tactique produit par Pinnacle Armor (compagnie américaine connue pour sa veste ballistique "Dragon Skin") selon les spécifications de X-Com offre la meilleure protection possible en tenant compte de la technologie disponible, mais réduit la mobilité.
+      STR_TACTICAL_JUNGLE: Armure Tactique (Jungle)
+      STR_TACTICAL_JUNGLE_UC: Armure Tactique (Jungle)
+      STR_TACTICAL_JUNGLE_UFOPEDIA: Composé d'un mélange spécial de 36 couches d'aramide accentuant la solidité et la résistance à la chaleur; chevauché par de lourds disques de carbure de silicium renforcés de fibres de carbone, ce gilet tactique produit par Pinnacle Armor (compagnie américaine connue pour sa veste ballistique "Dragon Skin") selon les spécifications de X-Com offre la meilleure protection possible en tenant compte de la technologie disponible, mais réduit la mobilité.
+      STR_TACTICAL_ARCTIC: Armure Tactique (Arctique)
+      STR_TACTICAL_ARCTIC_UC: Armure Tactique (Arctique)
+      STR_TACTICAL_ARCTIC_UFOPEDIA: Composé d'un mélange spécial de 36 couches d'aramide accentuant la solidité et la résistance à la chaleur; chevauché par de lourds disques de carbure de silicium renforcés de fibres de carbone, ce gilet tactique produit par Pinnacle Armor (compagnie américaine connue pour sa veste ballistique "Dragon Skin") selon les spécifications de X-Com offre la meilleure protection possible en tenant compte de la technologie disponible, mais réduit la mobilité.
+extraSprites:
+  - type: BIGOBS.PCK
+    files:
+      57: Resources/EqualTerms1/SniperRifle/SniperRifle.gif
+      58: Resources/EqualTerms1/SniperRifle/SniperRifleAmmo.gif
+      60: Resources/EqualTerms1/Shotgun/Shotgun.gif
+      61: Resources/EqualTerms1/Shotgun/ReinforcedShotgun.gif
+      62: Resources/EqualTerms1/Shotgun/ShotgunAmmo.gif
+      63: Resources/EqualTerms1/Shotgun/AlloyShotgunAmmo.gif
+      64: Resources/EqualTerms1/Shotgun/EleriumShotgunAmmo.gif
+      301: Resources/EqualTerms1/AssaultRifle/AssaultRifle.gif
+      303: Resources/EqualTerms1/AssaultRifle/AssaultRifleAmmo.gif
+      401: Resources/EqualTerms1/EMRifle/EMRifle2.gif
+      405: Resources/EqualTerms1/EMRifle/EMRifleAmmo.gif
+      501: Resources/EqualTerms1/SMG/SMG.gif
+      502: Resources/EqualTerms1/SMG/SMGAmmo.gif
+      601: Resources/EqualTerms1/IncendiaryGrenade/IncenGren.gif
+      666: Resources/EqualTerms1/SSRL/SSRL.gif
+      701: Resources/EqualTerms1/Magnum/Magnum.gif
+      702: Resources/EqualTerms1/Magnum/MagnumAmmo.gif
+      801: Resources/EqualTerms1/SAW/Saw.gif
+      802: Resources/EqualTerms1/SAW/SawAmmo.gif
+      901: Resources/EqualTerms1/MachinePistol/MachinePistol.gif
+      691: Resources/EqualTerms1/RocketLauncher/APFSDSRocket.gif
+      692: Resources/EqualTerms1/RocketLauncher/SmallRocket.gif
+  - type: FLOOROB.PCK
+    files:
+      74: Resources/EqualTerms1/Shotgun/ShotgunF.gif
+      75: Resources/EqualTerms1/Shotgun/ReinforcedShotgunF.gif
+      76: Resources/EqualTerms1/Shotgun/ShotgunAmmoF.gif
+      77: Resources/EqualTerms1/Shotgun/AlloyShotgunAmmoF.gif
+      78: Resources/EqualTerms1/Shotgun/EleriumShotgunAmmoF.gif
+      79: Resources/EqualTerms1/SniperRifle/SniperRiflef.gif
+      80: Resources/EqualTerms1/SniperRifle/SniperRifleAmmof.gif
+      302: Resources/EqualTerms1/AssaultRifle/AssaultRiflef.gif
+      304: Resources/EqualTerms1/AssaultRifle/AssaultRifleAmmof.gif
+      402: Resources/EqualTerms1/EMRifle/EMRifle2f.gif
+      406: Resources/EqualTerms1/EMRifle/EMRifleAmmof.gif
+      503: Resources/EqualTerms1/SMG/SMGf.gif
+      504: Resources/EqualTerms1/SMG/SMGAmmof.gif
+      602: Resources/EqualTerms1/IncendiaryGrenade/IncenGrenf.gif
+      667: Resources/EqualTerms1/SSRL/SSRLf.gif
+      703: Resources/EqualTerms1/Magnum/Magnumf.gif
+      704: Resources/EqualTerms1/Magnum/MagnumAmmof.gif
+      803: Resources/EqualTerms1/SAW/Sawf.gif
+      804: Resources/EqualTerms1/SAW/SawAmmof.gif
+      903: Resources/EqualTerms1/MachinePistol/MachinePistolf.gif
+  - type: HANDOB.PCK
+    files:
+      230: Resources/EqualTerms1/SSRL/HandOb/
+  - type: HANDOB.PCK
+    files:
+      128: Resources/EqualTerms1/Shotgun/ShotgunH.gif
+    width: 128
+    height: 80
+    subX: 32
+    subY: 40
+  - type: HANDOB.PCK
+    files:
+      129: Resources/EqualTerms1/SniperRifle/SniperRifleh.gif
+    width: 128
+    height: 80
+    subX: 32
+    subY: 40
+  - type: HANDOB.PCK
+    files:
+      136: Resources/EqualTerms1/Shotgun/ReinforcedShotgunH.gif
+    width: 128
+    height: 80
+    subX: 32
+    subY: 40
+  - type: HANDOB.PCK
+    files:
+      403: Resources/EqualTerms1/EMRifle/EMRifle2h.gif
+    width: 128
+    height: 80
+    subX: 32
+    subY: 40
+  - type: HANDOB.PCK
+    files:
+      506: Resources/EqualTerms1/SMG/SMGh.gif
+    width: 256
+    height: 40
+    subX: 32
+    subY: 40
+  - type: HANDOB.PCK
+    files:
+      305: Resources/EqualTerms1/AssaultRifle/AssaultRifleh.gif
+    width: 256
+    height: 40
+    subX: 32
+    subY: 40
+  - type: HANDOB.PCK
+    files:
+      706: Resources/EqualTerms1/Magnum/Magnumh.gif
+    width: 256
+    height: 40
+    subX: 32
+    subY: 40
+  - type: HANDOB.PCK
+    files:
+      806: Resources/EqualTerms1/SAW/Sawh.gif
+    width: 128
+    height: 80
+    subX: 32
+    subY: 40
+  - type: Projectiles
+    height: 3
+    width: 57
+    subX: 3
+    subY: 3
+    files:
+      385: Resources/EqualTerms1/SniperRifle/BulletSprite.png
+  - type: MAN_1aF0.SPK #Kevlar Arctic Start
+    singleImage: true
+    files:
+      0: Resources/EqualTerms1/Armor/Arctic/man_1f0.gif
+  - type: MAN_1aF1.SPK
+    singleImage: true
+    files:
+      0: Resources/EqualTerms1/Armor/Arctic/man_1f1.gif
+  - type: MAN_1aF2.SPK
+    singleImage: true
+    files:
+      0: Resources/EqualTerms1/Armor/Arctic/man_1f2.gif
+  - type: MAN_1aF3.SPK
+    singleImage: true
+    files:
+      0: Resources/EqualTerms1/Armor/Arctic/man_1f3.gif
+  - type: MAN_1aM0.SPK
+    singleImage: true
+    files:
+      0: Resources/EqualTerms1/Armor/Arctic/man_1m0.gif
+  - type: MAN_1aM1.SPK
+    singleImage: true
+    files:
+      0: Resources/EqualTerms1/Armor/Arctic/man_1m1.gif
+  - type: MAN_1aM2.SPK
+    singleImage: true
+    files:
+      0: Resources/EqualTerms1/Armor/Arctic/man_1m2.gif
+  - type: MAN_1aM3.SPK
+    singleImage: true
+    files:
+      0: Resources/EqualTerms1/Armor/Arctic/man_1m3.gif
+  - type: XCOM_1a.PCK
+    width: 32
+    height: 40
+    files:
+      0: Resources/EqualTerms1/Armor/Arctic/BScapeView/Kevlar/
+  - type: MAN_1jF0.SPK #Kevlar Jungle Start
+    singleImage: true
+    files:
+      0: Resources/EqualTerms1/Armor/Jungle/man_1f0.gif
+  - type: MAN_1jF1.SPK
+    singleImage: true
+    files:
+      0: Resources/EqualTerms1/Armor/Jungle/man_1f1.gif
+  - type: MAN_1jF2.SPK
+    singleImage: true
+    files:
+      0: Resources/EqualTerms1/Armor/Jungle/man_1f2.gif
+  - type: MAN_1jF3.SPK
+    singleImage: true
+    files:
+      0: Resources/EqualTerms1/Armor/Jungle/man_1f3.gif
+  - type: MAN_1jM0.SPK
+    singleImage: true
+    files:
+      0: Resources/EqualTerms1/Armor/Jungle/man_1m0.gif
+  - type: MAN_1jM1.SPK
+    singleImage: true
+    files:
+      0: Resources/EqualTerms1/Armor/Jungle/man_1m1.gif
+  - type: MAN_1jM2.SPK
+    singleImage: true
+    files:
+      0: Resources/EqualTerms1/Armor/Jungle/man_1m2.gif
+  - type: MAN_1jM3.SPK
+    singleImage: true
+    files:
+      0: Resources/EqualTerms1/Armor/Jungle/man_1m3.gif
+  - type: XCOM_1j.PCK
+    width: 32
+    height: 40
+    files:
+      0: Resources/EqualTerms1/Armor/Jungle/BScapeView/Kevlar/
+  - type: MAN_1uF0.SPK #Kevlar Urban Start
+    singleImage: true
+    files:
+      0: Resources/EqualTerms1/Armor/Urban/man_1f0.gif
+  - type: MAN_1uF1.SPK
+    singleImage: true
+    files:
+      0: Resources/EqualTerms1/Armor/Urban/man_1f1.gif
+  - type: MAN_1uF2.SPK
+    singleImage: true
+    files:
+      0: Resources/EqualTerms1/Armor/Urban/man_1f2.gif
+  - type: MAN_1uF3.SPK
+    singleImage: true
+    files:
+      0: Resources/EqualTerms1/Armor/Urban/man_1f3.gif
+  - type: MAN_1uM0.SPK
+    singleImage: true
+    files:
+      0: Resources/EqualTerms1/Armor/Urban/man_1m0.gif
+  - type: MAN_1uM1.SPK
+    singleImage: true
+    files:
+      0: Resources/EqualTerms1/Armor/Urban/man_1m1.gif
+  - type: MAN_1uM2.SPK
+    singleImage: true
+    files:
+      0: Resources/EqualTerms1/Armor/Urban/man_1m2.gif
+  - type: MAN_1uM3.SPK
+    singleImage: true
+    files:
+      0: Resources/EqualTerms1/Armor/Urban/man_1m3.gif
+  - type: XCOM_1u.PCK
+    width: 32
+    height: 40
+    files:
+      0: Resources/EqualTerms1/Armor/Urban/BScapeView/Kevlar/
+  - type: MAN_1DSaF0.SPK #start of Arctic tactical
+    singleImage: true
+    files:
+      0: Resources/EqualTerms1/Armor/Arctic/man_Df0.gif
+  - type: MAN_1DSaF1.SPK
+    singleImage: true
+    files:
+      0: Resources/EqualTerms1/Armor/Arctic/man_Df1.gif
+  - type: MAN_1DSaF2.SPK
+    singleImage: true
+    files:
+      0: Resources/EqualTerms1/Armor/Arctic/man_Df2.gif
+  - type: MAN_1DSaF3.SPK
+    singleImage: true
+    files:
+      0: Resources/EqualTerms1/Armor/Arctic/man_Df3.gif
+  - type: MAN_1DSaM0.SPK
+    singleImage: true
+    files:
+      0: Resources/EqualTerms1/Armor/Arctic/man_Dm0.gif
+  - type: MAN_1DSaM1.SPK
+    singleImage: true
+    files:
+      0: Resources/EqualTerms1/Armor/Arctic/man_Dm1.gif
+  - type: MAN_1DSaM2.SPK
+    singleImage: true
+    files:
+      0: Resources/EqualTerms1/Armor/Arctic/man_Dm2.gif
+  - type: MAN_1DSaM3.SPK
+    singleImage: true
+    files:
+      0: Resources/EqualTerms1/Armor/Arctic/man_Dm3.gif
+  - type: XCOM_1DSa.PCK
+    width: 32
+    height: 40
+    files:
+      0: Resources/EqualTerms1/Armor/Arctic/BScapeView/Tactical/
+  - type: MAN_1DSjF0.SPK #start of Jungle tactical
+    singleImage: true
+    files:
+      0: Resources/EqualTerms1/Armor/Jungle/man_Df0.gif
+  - type: MAN_1DSjF1.SPK
+    singleImage: true
+    files:
+      0: Resources/EqualTerms1/Armor/Jungle/man_Df1.gif
+  - type: MAN_1DSjF2.SPK
+    singleImage: true
+    files:
+      0: Resources/EqualTerms1/Armor/Jungle/man_Df2.gif
+  - type: MAN_1DSjF3.SPK
+    singleImage: true
+    files:
+      0: Resources/EqualTerms1/Armor/Jungle/man_Df3.gif
+  - type: MAN_1DSjM0.SPK
+    singleImage: true
+    files:
+      0: Resources/EqualTerms1/Armor/Jungle/man_Dm0.gif
+  - type: MAN_1DSjM1.SPK
+    singleImage: true
+    files:
+      0: Resources/EqualTerms1/Armor/Jungle/man_Dm1.gif
+  - type: MAN_1DSjM2.SPK
+    singleImage: true
+    files:
+      0: Resources/EqualTerms1/Armor/Jungle/man_Dm2.gif
+  - type: MAN_1DSjM3.SPK
+    singleImage: true
+    files:
+      0: Resources/EqualTerms1/Armor/Jungle/man_Dm3.gif
+  - type: XCOM_1DSj.PCK
+    width: 32
+    height: 40
+    files:
+      0: Resources/EqualTerms1/Armor/Jungle/BScapeView/Tactical/
+  - type: MAN_1DSuF0.SPK #start of UrbanCombat tactical
+    singleImage: true
+    files:
+      0: Resources/EqualTerms1/Armor/Urban/man_Df0.gif
+  - type: MAN_1DSuF1.SPK
+    singleImage: true
+    files:
+      0: Resources/EqualTerms1/Armor/Urban/man_Df1.gif
+  - type: MAN_1DSuF2.SPK
+    singleImage: true
+    files:
+      0: Resources/EqualTerms1/Armor/Urban/man_Df2.gif
+  - type: MAN_1DSuF3.SPK
+    singleImage: true
+    files:
+      0: Resources/EqualTerms1/Armor/Urban/man_Df3.gif
+  - type: MAN_1DSuM0.SPK
+    singleImage: true
+    files:
+      0: Resources/EqualTerms1/Armor/Urban/man_Dm0.gif
+  - type: MAN_1DSuM1.SPK
+    singleImage: true
+    files:
+      0: Resources/EqualTerms1/Armor/Urban/man_Dm1.gif
+  - type: MAN_1DSuM2.SPK
+    singleImage: true
+    files:
+      0: Resources/EqualTerms1/Armor/Urban/man_Dm2.gif
+  - type: MAN_1DSuM3.SPK
+    singleImage: true
+    files:
+      0: Resources/EqualTerms1/Armor/Urban/man_Dm3.gif
+  - type: XCOM_1DSu.PCK
+    width: 32
+    height: 40
+    files:
+      0: Resources/EqualTerms1/Armor/Urban/BScapeView/Tactical/
+  - type: BIGOBS.PCK
+    files:
+      64: Resources/EqualTerms1/Armor/BIGOBS.gif
+  - type: FLOOROB.PCK
+    files:
+      77: Resources/EqualTerms1/Armor/FLOOROB.gif
+extraSounds:
+  - type: BATTLE.CAT
+    files:
+      55: Resources/EqualTerms1/Shotgun/Fire.wav
+      56: Resources/EqualTerms1/Shotgun/Fire2.wav
+  - type: BATTLE.CAT
+    files:
+      81: Resources/EqualTerms1/SniperRifle/Sounds/fire.wav
+  - type: BATTLE.CAT
+    files:
+      82: Resources/EqualTerms1/AssaultRifle/Sounds/fire.wav
+  - type: BATTLE.CAT
+    files:
+      83: Resources/EqualTerms1/EMRifle/Sounds/fire.wav
+  - type: BATTLE.CAT
+    files:
+      84: Resources/EqualTerms1/SMG/Sounds/fire.wav
+  - type: BATTLE.CAT
+    files:
+      668: Resources/EqualTerms1/SSRL/Sounds/fire.wav
+  - type: BATTLE.CAT
+    files:
+      705: Resources/EqualTerms1/Magnum/Sounds/fire.wav
+  - type: BATTLE.CAT
+    files:
+      805: Resources/EqualTerms1/SAW/Sounds/fire.wav
+  - type: BATTLE.CAT
+    files:
+      905: Resources/EqualTerms1/MachinePistol/Sounds/fire.wav

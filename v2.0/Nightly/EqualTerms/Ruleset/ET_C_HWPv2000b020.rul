@@ -1,0 +1,559 @@
+﻿# Equal Terms Coherency Tanks 
+items:
+  - type: STR_TANK_LASER_CANNON
+    size: 6
+    costSell: 575000
+    transferTime: 96
+    weight: 1
+    bigSprite: 40332
+    floorSprite: 0
+    handSprite: 0
+    bulletSprite: 7
+    fireSound: 40337
+    hitSound: 19
+    hitAnimation: 36
+    power: 110
+    damageType: 4
+    clipSize: 80
+    accuracySnap: 60
+    tuSnap: 40
+    accuracyAimed: 110
+    tuAimed: 60
+    maxRange: 200
+    aimRange: 125
+    snapRange: 25
+    minRange: 10
+    dropoff: 1
+    battleType: 1
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    turretType: 2
+    bulletSpeed: 10
+  - type: STR_TANK_LASER_GMG
+    size: 6
+    costSell: 575000
+    transferTime: 96
+    weight: 1
+    bigSprite: 40329
+    floorSprite: 0
+    handSprite: 0
+    bulletSprite: 6
+    fireSound: 40333
+    hitSound: 19
+    hitAnimation: 36
+    power: 70
+    damageType: 4
+    clipSize: -1
+    accuracyAuto: 45
+    tuAuto: 43
+    accuracySnap: 60
+    tuSnap: 39
+    maxRange: 200
+    snapRange: 20
+    autoRange: 33
+    minRange: 6
+    dropoff: 1
+    autoShots: 4
+    bulletSpeed: 10
+    battleType: 1
+    fixedWeapon: true
+    turretType: 2
+    invWidth: 2
+    invHeight: 3
+  - type: STR_TANK_IHROCKET
+    size: 6
+    costSell: 500000
+    transferTime: 96
+    weight: 1
+    bigSprite: 40327
+    floorSprite: 0
+    handSprite: 0
+    bulletSprite: 0
+    fireSound: 52 # GOOD
+    compatibleAmmo:
+      - STR_HWP_IHROCKET
+    accuracySnap: 55
+    tuSnap: 40
+    accuracyAimed: 110
+    tuAimed: 75
+    maxRange: 200
+    aimRange: 125
+    snapRange: 25
+    minRange: 10
+    dropoff: 1
+    battleType: 1
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    turretType: 1
+    listOrder: 1435
+  - type: STR_TANK_ILROCKET
+    size: 6
+    costSell: 500000
+    transferTime: 96
+    weight: 1
+    bigSprite: 40328 
+    floorSprite: 0
+    handSprite: 0
+    bulletSprite: 0
+    fireSound: 52 # GOOD
+    compatibleAmmo:
+      - STR_HWP_ILROCKET
+    accuracySnap: 55
+    tuSnap: 39
+    accuracyAimed: 115
+    tuAimed: 75
+    maxRange: 200
+    aimRange: 100
+    snapRange: 25
+    minRange: 8
+    dropoff: 2
+    battleType: 1
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    turretType: 1
+    listOrder: 1445
+# AUX Weapons
+  - type: AUX_TANK_LASER_LMG
+    weight: 1
+    bigSprite: 40330
+    bulletSprite: 2
+    fireSound: 40336
+    hitSound: 19
+    hitAnimation: 36
+    power: 52
+    damageType: 4
+    clipSize: -1
+    accuracyAuto: 48
+    tuAuto: 42
+    accuracySnap: 60
+    tuSnap: 38
+    maxRange: 200
+    snapRange: 20
+    autoRange: 30
+    minRange: 4
+    dropoff: 1
+    battleType: 1
+    autoShots: 6
+    bulletSpeed: 10
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    listOrder: 1448
+  - type: AUX_TANK_LASER_SMG
+    weight: 1
+    bigSprite: 40331
+    bulletSprite: 5
+    fireSound: 40336
+    hitSound: 19
+    hitAnimation: 36
+    power: 35
+    damageType: 4
+    clipSize: -1
+    accuracyAuto: 55
+    tuAuto: 40
+    accuracySnap: 65
+    tuSnap: 36
+    maxRange: 125
+    snapRange: 15
+    autoRange: 20
+    minRange: 3
+    dropoff: 1
+    battleType: 1
+    autoShots: 5
+    bulletSpeed: 10
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+  - type: AUX_TANK_IGLAUNCHER
+    weight: 1
+    bigSprite: 40325 
+    bulletSprite: 9
+    fireSound: 40334
+    compatibleAmmo:
+      - AUX_HWP_IGLAUNCHER
+    accuracySnap: 60
+    tuSnap: 39
+    accuracyAimed: 110
+    tuAimed: 60
+    maxRange: 200
+    aimRange: 100
+    snapRange: 35
+    minRange: 7
+    battleType: 1
+    fixedWeapon: true
+    arcingShot: true
+    dropoff: 2
+    bulletSpeed: -1
+    invWidth: 2
+    invHeight: 3
+# Tank Weapons Ammo
+  - type: STR_HWP_IHROCKET
+    size: 0.2
+    costBuy: 900
+    costSell: 720
+    transferTime: 24
+    weight: 1
+    #bigSprite: 40327
+    floorSprite: 16
+    hitSound: 0
+    hitAnimation: 0
+    requires:
+      - STR_ALLOY_MANUFACTURING
+    power: 125
+    damageType: 3
+    clipSize: 8
+    battleType: 2
+    blastRadius: 7
+    invWidth: 2
+    invHeight: 3 
+    listOrder: 1436
+  - type: STR_HWP_ILROCKET
+    size: 0.15
+    costBuy: 500
+    costSell: 350
+    transferTime: 24
+    weight: 1
+    #bigSprite: 40328
+    floorSprite: 16
+    hitSound: 0
+    hitAnimation: 0
+    requires:
+      - STR_ALLOY_MANUFACTURING
+    power: 95
+    damageType: 3
+    clipSize: 16
+    battleType: 2
+    blastRadius: 3
+    invWidth: 2
+    invHeight: 3 
+    listOrder: 1446
+  - type: AUX_HWP_IGLAUNCHER
+    size: 0.10
+    costBuy: 500
+    costSell: 350
+    transferTime: 24
+    weight: 1
+    #bigSprite: 40325
+    floorSprite: 16
+    hitSound: 0
+    hitAnimation: 0
+    requires:
+      - STR_ALLOY_MANUFACTURING
+    power: 70
+    damageType: 3
+    clipSize: 32
+    battleType: 2
+    blastRadius: 4
+    invWidth: 2
+    invHeight: 3 
+    listOrder: 1442
+armors:
+  - type: TANK_ALLOY_ARMOR_ET
+    spriteSheet: TANKS.PCK
+    loftempsSet: [ 92, 89, 90, 91 ]
+    corpseBattle:
+      - TANK_CORPSE_1
+      - TANK_CORPSE_2
+      - TANK_CORPSE_3
+      - TANK_CORPSE_4
+    frontArmor: 45
+    sideArmor: 35
+    rearArmor: 28
+    underArmor: 25
+    damageModifier:
+      - 0.4
+      - 0.4
+      - 0.1
+      - 0.16
+      - 0.45
+      - 0.40
+      - 0.0
+      - 0.3
+      - 0.4
+      - 0.0
+    allowInv: false
+    drawingRoutine: 2
+    size: 2
+units:
+  - type: STR_TANK_LASER_CANNON
+    race: STR_TANK_LASER_CANNON
+    stats:
+      tu: 70
+      stamina: 100
+      health: 125
+      bravery: 110
+      reactions: 0
+      firing: 100
+      throwing: 0
+      strength: 90
+      psiStrength: 100
+      psiSkill: 0
+      melee: 70
+    armor: TANK_ALLOY_ARMOR_ET
+    standHeight: 16
+    kneelHeight: 16
+    value: 20
+    deathSound: 23
+    moveSound: 14
+    energyRecovery: 50
+    builtInWeapons:
+      - AUX_TANK_IGLAUNCHER
+      - AUX_HWP_IGLAUNCHER
+  - type: STR_TANK_LASER_GMG
+    race: STR_TANK_LASER_GMG
+    stats:
+      tu: 70
+      stamina: 100
+      health: 125
+      bravery: 110
+      reactions: 0
+      firing: 100
+      throwing: 0
+      strength: 90
+      psiStrength: 100
+      psiSkill: 0
+      melee: 70
+    armor: TANK_ALLOY_ARMOR_ET
+    standHeight: 16
+    kneelHeight: 16
+    value: 20
+    deathSound: 23
+    moveSound: 14
+    energyRecovery: 50
+    builtInWeapons:
+      - AUX_TANK_IGLAUNCHER
+      - AUX_HWP_IGLAUNCHER
+  - type: STR_TANK_IHROCKET
+    race: STR_TANK_IHROCKET
+    stats:
+      tu: 70
+      stamina: 100
+      health: 125
+      bravery: 110
+      reactions: 0
+      firing: 100
+      throwing: 0
+      strength: 90
+      psiStrength: 100
+      psiSkill: 0
+      melee: 70
+    armor: TANK_ALLOY_ARMOR_ET
+    standHeight: 16
+    kneelHeight: 16
+    value: 20
+    deathSound: 23
+    moveSound: 14
+    energyRecovery: 50
+    builtInWeapons:
+      - AUX_TANK_LASER_SMG
+  - type: STR_TANK_ILROCKET
+    race: STR_TANK_ILROCKET
+    stats:
+      tu: 70
+      stamina: 100
+      health: 125
+      bravery: 110
+      reactions: 0
+      firing: 100
+      throwing: 0
+      strength: 90
+      psiStrength: 100
+      psiSkill: 0
+      melee: 70
+    armor: TANK_ALLOY_ARMOR_ET
+    standHeight: 16
+    kneelHeight: 16
+    value: 20
+    deathSound: 23
+    moveSound: 14
+    energyRecovery: 50
+    builtInWeapons:
+      - AUX_TANK_LASER_LMG
+research:
+  - name: STR_IMP_TANK_CHASSIS
+    cost: 100
+    points: 10
+    dependencies:
+      - STR_ALLOY_MANUFACTURING
+  - name: STR_TANK_LASER_CANNON
+    cost: 50
+    points: 10
+    dependencies:
+      - STR_SNIPER_LASER
+      - STR_IMP_TANK_CHASSIS
+  - name: STR_TANK_LASER_GMG
+    cost: 50
+    points: 10
+    dependencies:
+      - STR_LASER_DMR
+      - STR_LASER_LMG
+      - STR_IMP_TANK_CHASSIS
+  - name: STR_TANK_IHROCKET
+    cost: 50
+    points: 10
+    dependencies:
+      - STR_LASER_SMG
+      - STR_IMP_TANK_CHASSIS
+  - name: STR_TANK_ILROCKET
+    cost: 50
+    points: 10
+    dependencies:
+      - STR_LASER_LMG
+      - STR_IMP_TANK_CHASSIS
+manufacture:
+  - name: STR_TANK_LASER_CANNON
+    category: STR_HEAVY_WEAPONS_PLATFORM
+    requires:
+      - STR_TANK_LASER_CANNON
+    space: 25
+    time: 1200
+    cost: 500000
+  - name: STR_TANK_LASER_GMG
+    category: STR_HEAVY_WEAPONS_PLATFORM
+    requires:
+      - STR_TANK_LASER_GMG
+    space: 25
+    time: 1200
+    cost: 500000
+  - name: STR_TANK_IHROCKET
+    category: STR_HEAVY_WEAPONS_PLATFORM
+    requires:
+      - STR_TANK_IHROCKET
+    space: 25
+    time: 1200
+    cost: 500000
+  - name: STR_TANK_ILROCKET
+    category: STR_HEAVY_WEAPONS_PLATFORM
+    requires:
+      - STR_TANK_ILROCKET
+    space: 25
+    time: 1200
+    cost: 500000
+ # HWP Ammo
+  - name: STR_HWP_ILROCKET
+    category: STR_HWP_CANNON_SHELLS
+    requires:
+      - STR_ALLOY_MANUFACTURING
+    space: 1
+    time: 24
+    cost: 4000
+  - name: STR_HWP_IHROCKET
+    category: STR_HWP_CANNON_SHELLS
+    requires:
+      - STR_ALLOY_MANUFACTURING
+    space: 2
+    time: 30
+    cost: 5000
+  - name: AUX_HWP_IGLAUNCHER
+    category: STR_HWP_CANNON_SHELLS
+    listOrder: 824
+    requires:
+      - STR_ALLOY_MANUFACTURING
+    space: 1
+    time: 30
+    cost: 3000
+ufopaedia:
+#  - id: STR_IMP_TANK_CHASSIS
+#    type_id: 3
+#    section: STR_HEAVY_WEAPONS_PLATFORMS
+#    requires:
+#      - STR_IMP_TANK_CHASSIS
+#    text: STR_IMP_TANK_CHASSIS_UFOPEDIA
+  - id: STR_TANK_LASER_CANNON
+    type_id: 3
+    section: STR_HEAVY_WEAPONS_PLATFORMS
+    requires:
+      - STR_TANK_LASER_CANNON
+    text: STR_TANK_LASER_CANNON_UFOPEDIA
+    weapon: STR_TANK_LASER_CANNON
+  - id: STR_TANK_LASER_GMG
+    type_id: 3
+    section: STR_HEAVY_WEAPONS_PLATFORMS
+    requires:
+      - STR_TANK_LASER_GMG
+    text: STR_TANK_LASER_GMG_UFOPEDIA
+    weapon: STR_TANK_LASER_GMG
+  - id: STR_TANK_IHROCKET
+    type_id: 3
+    section: STR_HEAVY_WEAPONS_PLATFORMS
+    requires:
+      - STR_TANK_IHROCKET
+    text: STR_TANK_IHROCKET_UFOPEDIA
+    weapon: STR_TANK_IHROCKET
+  - id: STR_TANK_ILROCKET
+    type_id: 3
+    section: STR_HEAVY_WEAPONS_PLATFORMS
+    requires:
+      - STR_TANK_ILROCKET
+    text: STR_TANK_ILROCKET_UFOPEDIA
+    weapon: STR_TANK_ILROCKET
+# ammo ufopedia
+  #- id: STR_HWP_IHROCKET
+    #type_id: 4
+    #section: STR_WEAPONS_AND_EQUIPMENT
+    #requires:
+    #  - STR_ALLOY_MANUFACTURING
+    #text: STR_HWP_IHROCKET_UFOPEDIA
+  #- id: STR_HWP_ILROCKET
+    #type_id: 4
+    #section: STR_WEAPONS_AND_EQUIPMENT
+    #requires:
+    #  - STR_ALLOY_MANUFACTURING
+    #text: STR_HWP_ILROCKET_UFOPEDIA
+  #- id: AUX_HWP_IGLAUNCHER
+    #type_id: 4
+    #section: STR_WEAPONS_AND_EQUIPMENT
+    #requires:
+    #  - STR_ALLOY_MANUFACTURING
+    #text: AUX_HWP_IGLAUNCHER_UFOPEDIA
+extraStrings:
+  - type: en-US
+    strings:
+      STR_IMP_TANK_CHASSIS: Alloy Tank Chassis
+      STR_IMP_TANK_CHASSIS_UFOPEDIA: Alloy Tank Chassis PlaceHolder
+      STR_TANK_LASER_CANNON: Tank/Laser Cannon
+      STR_TANK_LASER_CANNON_UFOPEDIA: This small unmanned combat vehicle was designed from the ground up by X-Com team. This remote controlled combat vehicle is clad in alien technology super-alloy armor, equiped with a anti-grav hover module and armed with a laser cannon and improved technology self-loading grenade launcher with 32 HE grenades.
+      # ---
+      STR_TANK_LASER_GMG: Tank/Laser GMG
+      STR_TANK_LASER_GMG_UFOPEDIA: This small unmanned combat vehicle was designed from the ground up by X-Com team. This remote controlled combat vehicle is clad in alien alien technology super-alloy armor, equiped with a anti-grav hover module and armed with a laser technology general machine gun and improved technology self-loading grenade launcher with 32 HE grenades.
+      # ---
+      STR_TANK_IHROCKET: Tank/Heavy Improved Rocket
+      STR_HWP_IHROCKET: HWP Heavy Improved Rocket x8
+      STR_TANK_IHROCKET_UFOPEDIA: This small unmanned combat vehicle was designed from the ground up by X-Com team. This remote controlled combat vehicle is clad in alien alien technology super-alloy armor, equiped with a anti-grav hover module and armed with an improved heavy rocket launcher with 8 rockets and laser submachine gun coaxial gun.
+      # ---
+      STR_TANK_ILROCKET: Tank/Light Improved Rocket
+      STR_HWP_ILROCKET: HWP Light Improved Rocket x16
+      STR_TANK_ILROCKET_UFOPEDIA: This small unmanned combat vehicle was designed from the ground up by X-Com team. This remote controlled combat vehicle is clad in alien alien technology super-alloy armor, equiped with a anti-grav hover module and armed with an improved light rocket launcher with 16 rockets and laser light machine gun coaxial gun.
+      # ---
+      AUX_TANK_IGLAUNCHER: HWP 40mm Improved Grenade
+      AUX_HWP_IGLAUNCHER: HWP 40mm Improved Grenade x32
+      # ---
+      AUX_TANK_LASER_LMG: HWP Laser LMG
+      # ---      
+      AUX_TANK_LASER_SMG: HWP Laser SMG
+      # ---
+      #STR_HWP_IHROCKET_UFOPEDIA: Using alloy manufacturing techniques to produced high-power nitrocubane explosives, this enhanced heavy HE explosive is the same used in the shoulder launched rocket launcher, just adapted for the auto-loading rocket launcher used by the heavy weapons platform.
+      #STR_HWP_ILROCKET_UFOPEDIA: Using the high-power nitrocubane explosives and a super alloy penetrator this enhanced light HE explosive is the same used for the shoulder launched rocket launcher's light rocket and the ISSRL, just adapted for the auto-loading rocket launcher used by the heavy weapons platform.
+      #AUX_HWP_IGLAUNCHER_UFOPEDIA: The 40mm HE shell used in the self-loading turret weapon in X-com's heavy weapons platform is improved in every way over the conventional technology both more potent wounding capability, and an increased explosive radius.
+      
+extraSprites:
+  - type: BIGOBS.PCK
+    files:
+      40325: Resources/Coherency/HWP/IGLauncher/IGLauncherHE.gif
+      40327: Resources/Coherency/HWP/IHRocket/IHRocket.gif
+      40328: Resources/Coherency/HWP/ILRocket/ILRocket.gif
+      40329: Resources/Coherency/HWP/LGMG/LGMG.gif
+      40330: Resources/Coherency/HWP/LLMG/LLMG.gif
+      40331: Resources/Coherency/HWP/LSMG/LSMG.gif
+      40332: Resources/Coherency/HWP/LCannon/LCannon.gif
+extraSounds:
+  - type: BATTLE.CAT
+    files:
+      40333: Resources/Coherency/HWP/LGMG/Sounds/fire.wav
+      40334: Resources/Coherency/HWP/IGLauncher/Sounds/fire.wav
+      40335: Resources/Coherency/HWP/LLMG/Sounds/fire.wav
+      40336: Resources/Coherency/HWP/LSMG/Sounds/fire.wav
+      40337: Resources/Coherency/HWP/LCannon/Sounds/fire.wav

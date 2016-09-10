@@ -1,0 +1,1367 @@
+startingBase:
+  soldiers:
+      - id: 1
+        name: Darrin Michelson
+        initialStats:
+          tu: 65
+          stamina: 45
+          health: 80
+          bravery: 80
+          reactions: 65
+          firing: 65
+          throwing: 50
+          strength: 40
+          psiStrength: 80
+          psiSkill: 70
+          melee: 31
+        currentStats:
+          tu: 65
+          stamina: 45
+          health: 80
+          bravery: 80
+          reactions: 65
+          firing: 65
+          throwing: 50
+          strength: 40
+          psiStrength: 80
+          psiSkill: 70
+          melee: 31
+        rank: 0
+        gender: 0
+        look: 2
+        missions: 0
+        kills: 0
+        armor: STR_TACTICAL_ARCTIC_UC
+        improvement: 0
+        psiStrImprovement: 0
+      - id: 2
+        name: Celine Bissonnette
+        initialStats:
+          tu: 70
+          stamina: 55
+          health: 55
+          bravery: 70
+          reactions: 65
+          firing: 85
+          throwing: 35
+          strength: 25
+          psiStrength: 80
+          psiSkill: 65
+          melee: 31
+        currentStats:
+          tu: 70
+          stamina: 55
+          health: 55
+          bravery: 70
+          reactions: 65
+          firing: 85
+          throwing: 35
+          strength: 25
+          psiStrength: 80
+          psiSkill: 65
+          melee: 31
+        rank: 0
+        gender: 1
+        look: 0
+        missions: 0
+        kills: 0
+        armor: STR_KEVLAR_URBAN_UC
+        improvement: 0
+        psiStrImprovement: 0
+      - id: 3
+        name: Frederick Bell
+        initialStats:
+          tu: 80
+          stamina: 55
+          health: 90
+          bravery: 50
+          reactions: 80
+          firing: 85
+          throwing: 40
+          strength: 45
+          psiStrength: 70
+          psiSkill: 60
+          melee: 31
+        currentStats:
+          tu: 80
+          stamina: 55
+          health: 90
+          bravery: 50
+          reactions: 80
+          firing: 85
+          throwing: 40
+          strength: 45
+          psiStrength: 70
+          psiSkill: 60
+          melee: 31
+        rank: 0
+        gender: 0
+        look: 1
+        missions: 0
+        kills: 0
+        armor: STR_TACTICAL_JUNGLE_UC
+        improvement: 0
+        psiStrImprovement: 0
+      - id: 4
+        name: Eric Meloche
+        initialStats:
+          tu: 80
+          stamina: 60
+          health: 80
+          bravery: 55
+          reactions: 70
+          firing: 55
+          throwing: 60
+          strength: 45
+          psiStrength: 60
+          psiSkill: 60
+          melee: 31
+        currentStats:
+          tu: 80
+          stamina: 60
+          health: 80
+          bravery: 55
+          reactions: 70
+          firing: 55
+          throwing: 60
+          strength: 45
+          psiStrength: 60
+          psiSkill: 60
+          melee: 31
+        rank: 0
+        gender: 0
+        look: 0
+        missions: 0
+        kills: 0
+        armor: STR_KEVLAR_JUNGLE_UC
+        improvement: 0
+        psiStrImprovement: 0
+      - id: 5
+        name: Charles Bean
+        initialStats:
+          tu: 85
+          stamina: 30
+          health: 60
+          bravery: 90
+          reactions: 70
+          firing: 80
+          throwing: 30
+          strength: 25
+          psiStrength: 60
+          psiSkill: 70
+          melee: 31
+        currentStats:
+          tu: 85
+          stamina: 30
+          health: 60
+          bravery: 90
+          reactions: 70
+          firing: 80
+          throwing: 30
+          strength: 25
+          psiStrength: 60
+          psiSkill: 70
+          melee: 31
+        rank: 0
+        gender: 0
+        look: 0
+        missions: 0
+        kills: 0
+        armor: STR_KEVLAR_URBAN_UC
+        improvement: 0
+        psiStrImprovement: 0
+      - id: 6
+        name: Johnny Manzitti
+        initialStats:
+          tu: 85
+          stamina: 60
+          health: 60
+          bravery: 70
+          reactions: 70
+          firing: 65
+          throwing: 60
+          strength: 35
+          psiStrength: 45
+          psiSkill: 45
+          melee: 31
+        currentStats:
+          tu: 85
+          stamina: 60
+          health: 60
+          bravery: 70
+          reactions: 70
+          firing: 65
+          throwing: 60
+          strength: 35
+          psiStrength: 45
+          psiSkill: 45
+          melee: 31
+        rank: 0
+        gender: 0
+        look: 2
+        missions: 0
+        kills: 0
+        armor: STR_KEVLAR_ARCTIC_UC
+        improvement: 0
+        psiStrImprovement: 0
+      - id: 7
+        name: Jamie Snetsinger
+        initialStats:
+          tu: 65
+          stamina: 40
+          health: 75
+          bravery: 40
+          reactions: 65
+          firing: 50
+          throwing: 35
+          strength: 40
+          psiStrength: 40
+          psiSkill: 60
+          melee: 31
+        currentStats:
+          tu: 65
+          stamina: 40
+          health: 75
+          bravery: 40
+          reactions: 65
+          firing: 50
+          throwing: 35
+          strength: 40
+          psiStrength: 40
+          psiSkill: 60
+          melee: 31
+        rank: 0
+        gender: 0
+        look: 0
+        missions: 0
+        kills: 0
+        armor: STR_TACTICAL_URBAN_UC
+        improvement: 0
+        psiStrImprovement: 0
+      - id: 8
+        name: Ina Toso
+        initialStats:
+          tu: 65
+          stamina: 50
+          health: 60
+          bravery: 50
+          reactions: 65
+          firing: 50
+          throwing: 35
+          strength: 40
+          psiStrength: 65
+          psiSkill: 55
+          melee: 31
+        currentStats:
+          tu: 65
+          stamina: 50
+          health: 60
+          bravery: 50
+          reactions: 65
+          firing: 50
+          throwing: 35
+          strength: 40
+          psiStrength: 65
+          psiSkill: 55
+          melee: 31
+        rank: 0
+        gender: 1
+        look: 0
+        missions: 0
+        kills: 0
+        armor: STR_KEVLAR_JUNGLE_UC
+        improvement: 0
+        psiStrImprovement: 0
+      - id: 9
+        name: Joe Cook
+        initialStats:
+          tu: 75
+          stamina: 70
+          health: 70
+          bravery: 80
+          reactions: 80
+          firing: 60
+          throwing: 40
+          strength: 45
+          psiStrength: 55
+          psiSkill: 65
+          melee: 31
+        currentStats:
+          tu: 75
+          stamina: 70
+          health: 70
+          bravery: 80
+          reactions: 80
+          firing: 60
+          throwing: 40
+          strength: 45
+          psiStrength: 55
+          psiSkill: 65
+          melee: 31
+        rank: 0
+        gender: 0
+        look: 0
+        missions: 0
+        kills: 0
+        armor: STR_KEVLAR_ARCTIC_UC
+        improvement: 0
+        psiStrImprovement: 0
+      - id: 10
+        name: Ryan Valley
+        initialStats:
+          tu: 65
+          stamina: 55
+          health: 90
+          bravery: 70
+          reactions: 70
+          firing: 60
+          throwing: 50
+          strength: 50
+          psiStrength: 40
+          psiSkill: 55
+          melee: 31
+        currentStats:
+          tu: 65
+          stamina: 55
+          health: 90
+          bravery: 70
+          reactions: 70
+          firing: 60
+          throwing: 50
+          strength: 50
+          psiStrength: 40
+          psiSkill: 55
+          melee: 31
+        rank: 0
+        gender: 0
+        look: 2
+        missions: 0
+        kills: 0
+        armor: STR_TACTICAL_URBAN_UC
+        improvement: 0
+        psiStrImprovement: 0
+      - id: 11
+        name: Henry Hauschulz
+        initialStats:
+          tu: 70
+          stamina: 50
+          health: 100
+          bravery: 50
+          reactions: 65
+          firing: 80
+          throwing: 60
+          strength: 55
+          psiStrength: 75
+          psiSkill: 65
+          melee: 31
+        currentStats:
+          tu: 70
+          stamina: 50
+          health: 100
+          bravery: 50
+          reactions: 65
+          firing: 80
+          throwing: 60
+          strength: 55
+          psiStrength: 75
+          psiSkill: 65
+          melee: 31
+        rank: 0
+        gender: 0
+        look: 2
+        missions: 0
+        kills: 0
+        armor: STR_TACTICAL_URBAN_UC
+        improvement: 0
+        psiStrImprovement: 0
+      - id: 12
+        name: Justin DeVooght
+        initialStats:
+          tu: 65
+          stamina: 45
+          health: 120
+          bravery: 50
+          reactions: 55
+          firing: 60
+          throwing: 80
+          strength: 65
+          psiStrength: 60
+          psiSkill: 40
+          melee: 31
+        currentStats:
+          tu: 65
+          stamina: 45
+          health: 120
+          bravery: 50
+          reactions: 55
+          firing: 60
+          throwing: 80
+          strength: 65
+          psiStrength: 60
+          psiSkill: 40
+          melee: 31
+        rank: 0
+        gender: 0
+        look: 2
+        missions: 0
+        kills: 0
+        armor: STR_TACTICAL_JUNGLE_UC
+        improvement: 0
+        psiStrImprovement: 0
+      - id: 13
+        name: Eric Bachman
+        initialStats:
+          tu: 60
+          stamina: 30
+          health: 60
+          bravery: 70
+          reactions: 50
+          firing: 65
+          throwing: 20
+          strength: 20
+          psiStrength: 90
+          psiSkill: 75
+          melee: 31
+        currentStats:
+          tu: 60
+          stamina: 30
+          health: 60
+          bravery: 70
+          reactions: 50
+          firing: 65
+          throwing: 20
+          strength: 20
+          psiStrength: 90
+          psiSkill: 75
+          melee: 31
+        rank: 0
+        gender: 0
+        look: 2
+        missions: 0
+        kills: 0
+        armor: STR_KEVLAR_JUNGLE_UC
+        improvement: 0
+        psiStrImprovement: 0
+      - id: 14
+        name: Brian Robert
+        initialStats:
+          tu: 75
+          stamina: 40
+          health: 75
+          bravery: 60
+          reactions: 65
+          firing: 80
+          throwing: 50
+          strength: 35
+          psiStrength: 80
+          psiSkill: 80
+          melee: 31
+        currentStats:
+          tu: 75
+          stamina: 40
+          health: 75
+          bravery: 60
+          reactions: 65
+          firing: 80
+          throwing: 50
+          strength: 35
+          psiStrength: 80
+          psiSkill: 80
+          melee: 31
+        rank: 0
+        gender: 0
+        look: 0
+        missions: 0
+        kills: 0
+        armor: STR_TACTICAL_ARCTIC_UC
+        improvement: 0
+        psiStrImprovement: 0
+      - id: 15
+        name: Jim Gaines
+        initialStats:
+          tu: 65
+          stamina: 55
+          health: 125
+          bravery: 70
+          reactions: 65
+          firing: 65
+          throwing: 55
+          strength: 70
+          psiStrength: 65
+          psiSkill: 65
+          melee: 31
+        currentStats:
+          tu: 65
+          stamina: 55
+          health: 125
+          bravery: 70
+          reactions: 65
+          firing: 65
+          throwing: 55
+          strength: 70
+          psiStrength: 65
+          psiSkill: 65
+          melee: 31
+        rank: 0
+        gender: 0
+        look: 3
+        missions: 0
+        kills: 0
+        armor: STR_TACTICAL_URBAN_UC
+        improvement: 0
+        psiStrImprovement: 0
+      - id: 16
+        name: Stephen Sobjack
+        initialStats:
+          tu: 70
+          stamina: 45
+          health: 90
+          bravery: 75
+          reactions: 70
+          firing: 60
+          throwing: 75
+          strength: 50
+          psiStrength: 70
+          psiSkill: 50
+          melee: 31
+        currentStats:
+          tu: 70
+          stamina: 45
+          health: 90
+          bravery: 75
+          reactions: 70
+          firing: 60
+          throwing: 75
+          strength: 50
+          psiStrength: 70
+          psiSkill: 50
+          melee: 31
+        rank: 0
+        gender: 0
+        look: 1
+        missions: 0
+        kills: 0
+        armor: STR_TACTICAL_URBAN_UC
+        improvement: 0
+        psiStrImprovement: 0
+      - id: 17
+        name: Stephen Ambrozy
+        initialStats:
+          tu: 75
+          stamina: 30
+          health: 75
+          bravery: 85
+          reactions: 65
+          firing: 50
+          throwing: 50
+          strength: 30
+          psiStrength: 150
+          psiSkill: 25
+          melee: 31
+        currentStats:
+          tu: 75
+          stamina: 30
+          health: 75
+          bravery: 85
+          reactions: 65
+          firing: 50
+          throwing: 50
+          strength: 30
+          psiStrength: 150
+          psiSkill: 25
+          melee: 31
+        rank: 0
+        gender: 0
+        look: 1
+        missions: 0
+        kills: 0
+        armor: STR_TACTICAL_JUNGLE_UC
+        improvement: 0
+        psiStrImprovement: 0
+      - id: 18
+        name: Brian Thieme
+        initialStats:
+          tu: 60
+          stamina: 40
+          health: 85
+          bravery: 75
+          reactions: 70
+          firing: 75
+          throwing: 45
+          strength: 50
+          psiStrength: 60
+          psiSkill: 90
+          melee: 31
+        currentStats:
+          tu: 60
+          stamina: 40
+          health: 85
+          bravery: 75
+          reactions: 70
+          firing: 75
+          throwing: 45
+          strength: 50
+          psiStrength: 60
+          psiSkill: 90
+          melee: 31
+        rank: 0
+        gender: 0
+        look: 1
+        missions: 0
+        kills: 0
+        armor: STR_TACTICAL_URBAN_UC
+        improvement: 0
+        psiStrImprovement: 0
+      - id: 19
+        name: Shawn Parks
+        initialStats:
+          tu: 65
+          stamina: 35
+          health: 90
+          bravery: 40
+          reactions: 70
+          firing: 75
+          throwing: 30
+          strength: 60
+          psiStrength: 75
+          psiSkill: 85
+          melee: 31
+        currentStats:
+          tu: 65
+          stamina: 35
+          health: 90
+          bravery: 40
+          reactions: 70
+          firing: 75
+          throwing: 30
+          strength: 60
+          psiStrength: 75
+          psiSkill: 85
+          melee: 31
+        rank: 0
+        gender: 0
+        look: 2
+        missions: 0
+        kills: 0
+        armor: STR_TACTICAL_URBAN_UC
+        improvement: 0
+        psiStrImprovement: 0
+      - id: 20
+        name: Ryan Parks
+        initialStats:
+          tu: 65
+          stamina: 55
+          health: 60
+          bravery: 60
+          reactions: 70
+          firing: 70
+          throwing: 60
+          strength: 40
+          psiStrength: 55
+          psiSkill: 50
+          melee: 31
+        currentStats:
+          tu: 65
+          stamina: 55
+          health: 60
+          bravery: 60
+          reactions: 70
+          firing: 70
+          throwing: 60
+          strength: 40
+          psiStrength: 55
+          psiSkill: 50
+          melee: 31
+        rank: 0
+        gender: 0
+        look: 2
+        missions: 0
+        kills: 0
+        armor: STR_KEVLAR_URBAN_UC
+        improvement: 0
+        psiStrImprovement: 0
+      - id: 21
+        name: Brad Lipke
+        initialStats:
+          tu: 70
+          stamina: 50
+          health: 80
+          bravery: 50
+          reactions: 70
+          firing: 60
+          throwing: 50
+          strength: 50
+          psiStrength: 65
+          psiSkill: 65
+          melee: 31
+        currentStats:
+          tu: 70
+          stamina: 50
+          health: 80
+          bravery: 50
+          reactions: 70
+          firing: 60
+          throwing: 50
+          strength: 50
+          psiStrength: 65
+          psiSkill: 65
+          melee: 31
+        rank: 0
+        gender: 0
+        look: 2
+        missions: 0
+        kills: 0
+        armor: STR_TACTICAL_ARCTIC_UC
+        improvement: 0
+        psiStrImprovement: 0
+      - id: 22
+        name: Michael Kouri
+        initialStats:
+          tu: 70
+          stamina: 55
+          health: 105
+          bravery: 40
+          reactions: 55
+          firing: 60
+          throwing: 60
+          strength: 60
+          psiStrength: 35
+          psiSkill: 25
+          melee: 31
+        currentStats:
+          tu: 70
+          stamina: 55
+          health: 105
+          bravery: 40
+          reactions: 55
+          firing: 60
+          throwing: 60
+          strength: 60
+          psiStrength: 35
+          psiSkill: 25
+          melee: 31
+        rank: 0
+        gender: 0
+        look: 0
+        missions: 0
+        kills: 0
+        armor: STR_TACTICAL_JUNGLE_UC
+        improvement: 0
+        psiStrImprovement: 0
+      - id: 23
+        name: Irwin Oberle
+        initialStats:
+          tu: 75
+          stamina: 65
+          health: 90
+          bravery: 50
+          reactions: 80
+          firing: 60
+          throwing: 65
+          strength: 55
+          psiStrength: 40
+          psiSkill: 30
+          melee: 31
+        currentStats:
+          tu: 75
+          stamina: 65
+          health: 90
+          bravery: 50
+          reactions: 80
+          firing: 60
+          throwing: 65
+          strength: 55
+          psiStrength: 40
+          psiSkill: 30
+          melee: 31
+        rank: 0
+        gender: 0
+        look: 1
+        missions: 0
+        kills: 0
+        armor: STR_TACTICAL_URBAN_UC
+        improvement: 0
+        psiStrImprovement: 0
+      - id: 24
+        name: Curt Hass
+        initialStats:
+          tu: 85
+          stamina: 60
+          health: 85
+          bravery: 60
+          reactions: 65
+          firing: 75
+          throwing: 60
+          strength: 40
+          psiStrength: 40
+          psiSkill: 40
+          melee: 31
+        currentStats:
+          tu: 85
+          stamina: 60
+          health: 85
+          bravery: 60
+          reactions: 65
+          firing: 75
+          throwing: 60
+          strength: 40
+          psiStrength: 40
+          psiSkill: 40
+          melee: 31
+        rank: 0
+        gender: 0
+        look: 0
+        missions: 0
+        kills: 0
+        armor: STR_KEVLAR_JUNGLE_UC
+        improvement: 0
+        psiStrImprovement: 0
+      - id: 25
+        name: Stephen Bersche
+        initialStats:
+          tu: 55
+          stamina: 45
+          health: 100
+          bravery: 50
+          reactions: 60
+          firing: 55
+          throwing: 40
+          strength: 50
+          psiStrength: 40
+          psiSkill: 30
+          melee: 31
+        currentStats:
+          tu: 55
+          stamina: 45
+          health: 100
+          bravery: 50
+          reactions: 60
+          firing: 55
+          throwing: 40
+          strength: 50
+          psiStrength: 40
+          psiSkill: 30
+          melee: 31
+        rank: 0
+        gender: 0
+        look: 2
+        missions: 0
+        kills: 0
+        armor: STR_TACTICAL_ARCTIC_UC
+        improvement: 0
+        psiStrImprovement: 0
+      - id: 26
+        name: David Kessler
+        initialStats:
+          tu: 70
+          stamina: 60
+          health: 80
+          bravery: 60
+          reactions: 75
+          firing: 60
+          throwing: 65
+          strength: 50
+          psiStrength: 65
+          psiSkill: 70
+          melee: 31
+        currentStats:
+          tu: 70
+          stamina: 60
+          health: 80
+          bravery: 60
+          reactions: 75
+          firing: 60
+          throwing: 65
+          strength: 50
+          psiStrength: 65
+          psiSkill: 70
+          melee: 31
+        rank: 0
+        gender: 0
+        look: 1
+        missions: 0
+        kills: 0
+        armor: STR_TACTICAL_JUNGLE_UC
+        improvement: 0
+        psiStrImprovement: 0
+      - id: 27
+        name: Michael Hauschulz
+        initialStats:
+          tu: 75
+          stamina: 50
+          health: 95
+          bravery: 40
+          reactions: 65
+          firing: 65
+          throwing: 55
+          strength: 45
+          psiStrength: 55
+          psiSkill: 50
+          melee: 31
+        currentStats:
+          tu: 75
+          stamina: 50
+          health: 95
+          bravery: 40
+          reactions: 65
+          firing: 65
+          throwing: 55
+          strength: 45
+          psiStrength: 55
+          psiSkill: 50
+          melee: 31
+        rank: 0
+        gender: 0
+        look: 2
+        missions: 0
+        kills: 0
+        armor: STR_TACTICAL_URBAN_UC
+        improvement: 0
+        psiStrImprovement: 0
+      - id: 28
+        name: Eric Marz
+        initialStats:
+          tu: 50
+          stamina: 40
+          health: 120
+          bravery: 60
+          reactions: 50
+          firing: 45
+          throwing: 60
+          strength: 55
+          psiStrength: 30
+          psiSkill: 25
+          melee: 31
+        currentStats:
+          tu: 50
+          stamina: 40
+          health: 120
+          bravery: 60
+          reactions: 50
+          firing: 45
+          throwing: 60
+          strength: 55
+          psiStrength: 30
+          psiSkill: 25
+          melee: 31
+        rank: 0
+        gender: 0
+        look: 0
+        missions: 0
+        kills: 0
+        armor: STR_TACTICAL_ARCTIC_UC
+        improvement: 0
+        psiStrImprovement: 0
+      - id: 29
+        name: Ryan Smith
+        initialStats:
+          tu: 65
+          stamina: 45
+          health: 80
+          bravery: 60
+          reactions: 60
+          firing: 70
+          throwing: 40
+          strength: 35
+          psiStrength: 50
+          psiSkill: 50
+          melee: 31
+        currentStats:
+          tu: 65
+          stamina: 45
+          health: 80
+          bravery: 60
+          reactions: 60
+          firing: 70
+          throwing: 40
+          strength: 35
+          psiStrength: 50
+          psiSkill: 50
+          melee: 31
+        rank: 0
+        gender: 0
+        look: 2
+        missions: 0
+        kills: 0
+        armor: STR_TACTICAL_URBAN_UC
+        improvement: 0
+        psiStrImprovement: 0
+      - id: 30
+        name: Bill Connon
+        initialStats:
+          tu: 60
+          stamina: 55
+          health: 95
+          bravery: 60
+          reactions: 60
+          firing: 65
+          throwing: 70
+          strength: 50
+          psiStrength: 50
+          psiSkill: 65
+          melee: 31
+        currentStats:
+          tu: 60
+          stamina: 55
+          health: 95
+          bravery: 60
+          reactions: 60
+          firing: 65
+          throwing: 70
+          strength: 50
+          psiStrength: 50
+          psiSkill: 65
+          melee: 31
+        rank: 0
+        gender: 0
+        look: 0
+        missions: 0
+        kills: 0
+        armor: STR_TACTICAL_ARCTIC_UC
+        improvement: 0
+        psiStrImprovement: 0
+      - id: 31
+        name: Brandon Otto
+        initialStats:
+          tu: 65
+          stamina: 45
+          health: 75
+          bravery: 85
+          reactions: 60
+          firing: 65
+          throwing: 45
+          strength: 55
+          psiStrength: 60
+          psiSkill: 40
+          melee: 31
+        currentStats:
+          tu: 65
+          stamina: 45
+          health: 75
+          bravery: 85
+          reactions: 60
+          firing: 65
+          throwing: 45
+          strength: 55
+          psiStrength: 60
+          psiSkill: 40
+          melee: 31
+        rank: 0
+        gender: 0
+        look: 2
+        missions: 0
+        kills: 0
+        armor: STR_TACTICAL_URBAN_UC
+        improvement: 0
+        psiStrImprovement: 0
+      - id: 32
+        name: Roberto Fazzalari
+        initialStats:
+          tu: 70
+          stamina: 45
+          health: 80
+          bravery: 70
+          reactions: 70
+          firing: 65
+          throwing: 65
+          strength: 40
+          psiStrength: 50
+          psiSkill: 50
+          melee: 31
+        currentStats:
+          tu: 70
+          stamina: 45
+          health: 80
+          bravery: 70
+          reactions: 70
+          firing: 65
+          throwing: 65
+          strength: 40
+          psiStrength: 50
+          psiSkill: 50
+          melee: 31
+        rank: 0
+        gender: 0
+        look: 2
+        missions: 0
+        kills: 0
+        armor: STR_TACTICAL_JUNGLE_UC
+        improvement: 0
+        psiStrImprovement: 0
+      - id: 33
+        name: Aaron Miller
+        initialStats:
+          tu: 75
+          stamina: 65
+          health: 60
+          bravery: 50
+          reactions: 60
+          firing: 55
+          throwing: 55
+          strength: 40
+          psiStrength: 60
+          psiSkill: 65
+          melee: 31
+        currentStats:
+          tu: 75
+          stamina: 65
+          health: 60
+          bravery: 50
+          reactions: 60
+          firing: 55
+          throwing: 55
+          strength: 40
+          psiStrength: 60
+          psiSkill: 65
+          melee: 31
+        rank: 0
+        gender: 0
+        look: 2
+        missions: 0
+        kills: 0
+        armor: STR_KEVLAR_JUNGLE_UC
+        improvement: 0
+        psiStrImprovement: 0
+      - id: 34
+        name: Jon Stump
+        initialStats:
+          tu: 60
+          stamina: 50
+          health: 95
+          bravery: 60
+          reactions: 60
+          firing: 60
+          throwing: 50
+          strength: 45
+          psiStrength: 65
+          psiSkill: 65
+          melee: 31
+        currentStats:
+          tu: 60
+          stamina: 50
+          health: 95
+          bravery: 60
+          reactions: 60
+          firing: 60
+          throwing: 50
+          strength: 45
+          psiStrength: 65
+          psiSkill: 65
+          melee: 31
+        rank: 0
+        gender: 0
+        look: 2
+        missions: 0
+        kills: 0
+        armor: STR_TACTICAL_URBAN_UC
+        improvement: 0
+        psiStrImprovement: 0
+      - id: 35
+        name: Shane Unsworth
+        initialStats:
+          tu: 65
+          stamina: 55
+          health: 80
+          bravery: 60
+          reactions: 65
+          firing: 65
+          throwing: 55
+          strength: 50
+          psiStrength: 65
+          psiSkill: 65
+          melee: 31
+        currentStats:
+          tu: 65
+          stamina: 55
+          health: 80
+          bravery: 60
+          reactions: 65
+          firing: 65
+          throwing: 55
+          strength: 50
+          psiStrength: 65
+          psiSkill: 65
+          melee: 31
+        rank: 0
+        gender: 0
+        look: 1
+        missions: 0
+        kills: 0
+        armor: STR_TACTICAL_ARCTIC_UC
+        improvement: 0
+        psiStrImprovement: 0
+      - id: 36
+        name: Liam Burke
+        initialStats:
+          tu: 70
+          stamina: 45
+          health: 60
+          bravery: 90
+          reactions: 75
+          firing: 65
+          throwing: 45
+          strength: 30
+          psiStrength: 60
+          psiSkill: 45
+          melee: 31
+        currentStats:
+          tu: 70
+          stamina: 45
+          health: 60
+          bravery: 90
+          reactions: 75
+          firing: 65
+          throwing: 45
+          strength: 30
+          psiStrength: 60
+          psiSkill: 45
+          melee: 31
+        rank: 0
+        gender: 0
+        look: 0
+        missions: 0
+        kills: 0
+        armor: STR_KEVLAR_URBAN_UC
+        improvement: 0
+        psiStrImprovement: 0
+      - id: 37
+        name: Tony Pulice
+        initialStats:
+          tu: 70
+          stamina: 50
+          health: 60
+          bravery: 60
+          reactions: 75
+          firing: 65
+          throwing: 50
+          strength: 40
+          psiStrength: 80
+          psiSkill: 50
+          melee: 31
+        currentStats:
+          tu: 70
+          stamina: 50
+          health: 60
+          bravery: 60
+          reactions: 75
+          firing: 65
+          throwing: 50
+          strength: 40
+          psiStrength: 80
+          psiSkill: 50
+          melee: 31
+        rank: 0
+        gender: 0
+        look: 2
+        missions: 0
+        kills: 0
+        armor: STR_KEVLAR_ARCTIC_UC
+        improvement: 0
+        psiStrImprovement: 0
+      - id: 38
+        name: Chad Parker
+        initialStats:
+          tu: 70
+          stamina: 50
+          health: 75
+          bravery: 70
+          reactions: 65
+          firing: 70
+          throwing: 55
+          strength: 40
+          psiStrength: 55
+          psiSkill: 65
+          melee: 31
+        currentStats:
+          tu: 70
+          stamina: 50
+          health: 75
+          bravery: 70
+          reactions: 65
+          firing: 70
+          throwing: 55
+          strength: 40
+          psiStrength: 55
+          psiSkill: 65
+          melee: 31
+        rank: 0
+        gender: 0
+        look: 0
+        missions: 0
+        kills: 0
+        armor: STR_KEVLAR_URBAN_UC
+        improvement: 0
+        psiStrImprovement: 0
+      - id: 39
+        name: Ryan Wright
+        initialStats:
+          tu: 55
+          stamina: 45
+          health: 90
+          bravery: 80
+          reactions: 70
+          firing: 70
+          throwing: 65
+          strength: 65
+          psiStrength: 65
+          psiSkill: 65
+          melee: 31
+        currentStats:
+          tu: 55
+          stamina: 45
+          health: 90
+          bravery: 80
+          reactions: 70
+          firing: 70
+          throwing: 65
+          strength: 65
+          psiStrength: 65
+          psiSkill: 65
+          melee: 31
+        rank: 0
+        gender: 0
+        look: 1
+        missions: 0
+        kills: 0
+        armor: STR_TACTICAL_JUNGLE_UC
+        improvement: 0
+        psiStrImprovement: 0
+      - id: 40
+        name: Bill Weidemann
+        initialStats:
+          tu: 55
+          stamina: 45
+          health: 90
+          bravery: 60
+          reactions: 55
+          firing: 80
+          throwing: 85
+          strength: 50
+          psiStrength: 60
+          psiSkill: 75
+          melee: 31
+        currentStats:
+          tu: 55
+          stamina: 45
+          health: 90
+          bravery: 60
+          reactions: 55
+          firing: 80
+          throwing: 85
+          strength: 50
+          psiStrength: 60
+          psiSkill: 75
+          melee: 31
+        rank: 0
+        gender: 0
+        look: 2
+        missions: 0
+        kills: 0
+        armor: STR_TACTICAL_ARCTIC_UC
+        improvement: 0
+        psiStrImprovement: 0
+extraStrings:
+  - type: en-US
+    strings:
+      STR_HAS_BEEN_KILLED_MALE: "{0}{NEWLINE}is incapacitated."
+      STR_HAS_BEEN_KILLED_FEMALE: "{0}{NEWLINE}is incapacitated."

@@ -1,0 +1,256 @@
+--= 313 Equal Terms 2.0 Modification for Open-X-Com =--
+By KingMob4313 and Ickschuss. Created for X-Com: Ufo Defense May 2000.
+Last updated Aug 2016.
+
+BETA BETA BETA BETA BETA BETA BETA BETA  BETA BETA BETA BETA BETA BETA BETA 
+BETA BETA BETA BETA BETA BETA Version 2.0b022 BETA BETA BETA BETA BETA BETA 
+BETA BETA BETA BETA BETA BETA BETA BETA  BETA BETA BETA BETA BETA BETA BETA 
+
+--= Mod Details: 
+
+There are now four rulesets included in each package: 
+1-3) Three for the main mods, containing modded info for all three tiers 
+  4) A miscellaneous ruleset 
+    a) this contains small changes to related to the mod 
+    b) adjusts the accuracy of aliens to make up for the changed accuracies of plasma weapons
+	c) adds an item to the alien base map
+	
+Equal Terms 2.0 Release Version	
+Version 2.0b022
+--== Current ==--
+Release for Nightlies and Prime (1.0) Version.
+Added new 'ET_Install.pdf' with install instructions.
+
+Version 2.0b020
+Shortened up Wasp/hornet fire noise.
+Fixed Alloy Ammo Price
+Allow Laser ARifle research after Magnum Research.
+Fixed existing armor to read correctly
+Price Changes:
+ - Mind Probe up to 500k
+ - Sectoid Corpses to 15k (reduced)
+ - Floater Corpses to 35k
+ - Cyberdisc Corpse to 50k
+ - Sectopod Corpse to 65k 
+NOTE: HWPs are only partially tested.   
+
+Version 2.0b010
+New release for OpenXcom Nightly
+Combined armor sprite sheets for 0 & 0.5 armors.
+Fixed case sensitivity for *nix systems (I hope)
+Switched craft light rocket sound
+
+Version 2.0b001
+ - Reconfigured mod to work with new nightly build
+ - corrected a number of issues with handobs and floorobs again
+
+Fourth State: 
+Future plans
+  + create human elerium high explosives and rockets
+  + clean up handobs
+  
+Version 1.976 (held as 1.975)
+ - added new firing sounds for all plasma weapons
+ - added new hit sounds for all plasma weapons
+ - fixed handobs oddity with Plasma LMG and SMG
+ - added French translation by Infini!
+ 
+Version 1.975
+ - Corrected massive issues with handobs
+ - fixed other small bugs
+ - fixed typos
+ 
+Version 1.9
+ - adjusted/added armors
+    - Power Armor (Original Stats P: 100) P: 64 AP: 45% HE: 50% PL: 65% now requires 7 alloys
+    - Scout Power Armor P: 55 AP: 45% HE: 50% PL: 65%  now requires 6 alloys
+    - Flying Armor P: 60 AP: 45% HE: 50% PL: 65% requires 7 alloys
+	- Flying Scout Armor: p: 50 AP 50% now requires 6 alloys
+	
+Version 1.8 (Internal)
+ - added another step into alloys research tree: Alloy Manufacturing (Dependency: Alloys)
+ - new research: Plasma weapon manufacturing requires a captured alien engineer and alien power supply (ENGINEER (any) + Plasma Weapon (any))
+ - added new versions of plasma weapons
+   - added plasma magnum
+   - added plasma smg
+   - added plasma dmr
+   - added plasma sniper
+   - added plasma lmg
+     - add clips for all of them
+     - Will require the proper technology sniper rifle and rifle both to be researched
+  - change so that Heavy Plasma and Plasma pistols cannot be manufactured by humans.
+     - clips for those weapons, along with the DMR, SMG and SAW/LMG versions will be able to be manufactured, along with a new Plasma Magnum to differentiate with alien plasma pistol.
+	 - Heavy, rifle and pistols for plasma need to be modded by the manufacturing team to work for humans (consumes the original and produces 'human plasma weapon')
+ - create option ruleset for other adjusted weapons
+   - this means adjusted damage and such, but no new weapons
+ - create option ruleset for other small changes
+   - this includes the changed research tree
+
+Coherency: 
+Version 1.96
+ - laser weapons research cost now increased from 50 to 300.
+ - added French translation by Infini!
+ 
+Version 1.95
+ - shifted ruleset research changes so that lasers start with tank heavy cannons and branches back, laser smg last.
+ - adjusted/added game armors
+    - Personal Armour (Original Stats P: 50) P: 34 PL: 80% HE: 60% AP: 55% (Requires Alloy Armor)
+    - Heavy Personal Armor: P: 46 AP:50% PL:75% Requires 6 alloys (Requires Alloy Armor)
+ - Alloy Manufacturing allows for creation of alloy crafted interceptor (Requires: Alloy manufacturing)
+ - create option ruleset for other adjusted weapons
+   - this means adjusted damage and such, but no new weapons
+ - create option ruleset for other small changes
+ - corrected small issue with handobs
+ 
+Version 1.8 (Internal) - Oct 2014
+ - added another step into alloys research tree: Alloy Manufacturing (Dependency: Alloys)
+ - added alloy manufacturing is required for laser research
+ - added new laser weapons
+   - shifted laser pistol lose autofire and gain damage
+   - removed and replace heavy laser with sniper laser
+   - added laser magnum
+   - added laser smg
+   - added laser dmr
+   - added laser lmg   
+ - added laser array (short range, lower damage, high hit rate)
+   - modded laser cannon (medium range, higher damage, low rate of fire, lower hit rate)
+   
+Wolfram Lance: 
+Version 1.997
+ - added new multiple grenade launcher
+   - added HE, I and AP buckshot type ammo
+ - added new light guided missile craft weapon (adapted from XOps mod)
+ - added new research requirement: Alloy Aerospace
+   - added three new alloy craft missiles, requires Alloy Aerospace
+   - improved interceptor now Alloy Aerospace
+ - added a new conventional tank chassis with increased toughness
+   - added four tank turrets:
+     - GMG with Grenade Launcher
+	 - Heavy Rocket Launcher with SMG
+	 - Light Rocket Launcher with LMG
+	 - Automatic Grenade Launcher with SMG
+       + Secondary weapons do not work right now
+ - split out armor cosmetic sets to separate addons
+ - added new requirement for hyperwave decoder: hyperwave encoder (good luck)
+ - numerous corrections to bigobs, handobs and floorob issues
+ 
+Version 1.996 (listed as 1.995 still for savegame compat)
+ - fixed listorder issues with marksman rifle and large and incendiary rockets
+ - reduced 'size' of armor and a few other items that were too large
+ - fixed assault rifle, saw and smg handobs
+ - fixed assault rifle ammo bigobs
+ - added French translation by Infini!
+
+Version 1.995
+ - fixed listorder issues
+ - corrected massive screwup in handobs
+ - corrected issue with machine pistol causing crashes
+ - fixed typos
+ 
+Version 1.950
+ - adjusted toughness of base interceptor
+ - adjusted range of avalanche craft weapon
+ - sorted listorder issues
+ 
+Version 1.875 - August 2014
+ - fixed numerous research issues
+ - fixed requirements for armor
+ - adjusted so that laser weapons require alloy manufacturing and takes longer
+ - adjusted so that personal armor requires alloy manufacturing and takes longer
+ - merged changes from Equal Terms version 1.011
+   - fixed grenade weights
+   - fixed issue with missing corpse object
+ 
+Version 1.8  - July 2014
+ - added 'frag satchel' an anti-personnel explosive block
+   - changed High Explosive radius to 2
+ - added another step into alloys research tree: Alloy Manufacturing (Dependency: Alloys)
+ - added alloy ammo types for powder weapons, adjusting normal ammo's damage down towards standard, and current values will be for the alloy rounds (Requires: Alloy manufacturing)
+   - Explosive weapons changed as well
+ - Alloy research allows for Alloy Reinforced Armor
+ - added another step for research: Alloy Armor (Requires: Alloy manufacturing)
+ - added new body armors
+   - Improved Light Armor: P: 24 AP: 65% HE: 75% PL: 95% (Dependency: Alien Alloys - Consumes 1 light armor and 2 alloys )
+   - Improved Tactical Armor P: 28 AP: 55% HE: 60% PL: 90% (Dependency: Alien Alloys - Consumes 1 tactical armor and 3 alloys)
+ - created option ruleset for other adjusted weapons
+   - this means adjusted damage and such, but no new weapons for laser or plasma
+ - created option ruleset for other small changes
+   - this adjusts plasma research and laser research to make them take longer to make the gunpowder weapons more viable
+ - adjusted weight for grenades & explosives
+ 
+ Version 1.03 (Post Branch Fix)
+ - Fixed *nix compatibility issue with file pathing case sensitivity
+ 
+ Version 1.02
+ - Changed directory structure to move all resources into a mod-name folder
+ - Added French translation from Infini
+ - Added omitted weight information for personal armor
+   - Power Suits carry themselves, so have no weight
+   
+Version 1.012 - August 2014 (Hotfix²!) 
+ - Fixed crash from missing corpse
+ - Adjusted weight of grenades: 2 for grenades 3 for canisters
+ - High Explosive blast radius reduced to 2
+ 
+Version 1.01 - August 2014 (Hotfix!) 
+ - Added omitted assault rifle handob
+ - fixed description of Machine Pistol (18 rounds)
+ - fixed description of small radar (detection rate)
+ - fixed description of large radar (detection rate)
+
+Version 1.0 - August 2014
+ - fixed issue with list order for incendiary grenade
+ - adjusted range based accuracy for LMG autofire
+ - changed Avalanche missile description to remove nuclear from description
+ - adjusted detection rate for small radar & large radar to 30 and 15 respectively.
+     - shortened range of small radar
+ - adjusted size of mag for machine pistol down to 18
+ - added new graphic and sound for machine pistol
+ - fixed issues with cropping in inventory graphics for a few items
+ - added full hand view for SMG
+ - added full hand view for DMR
+ - added full hand view for SAW
+ - added new graphics for assault rifle
+ - added one shot rocket launcher (AT-4 analog)
+ - created modified graphic for small rocket & APFSDS rocket
+ - added conventional body armor with 3 different camo types (Jungle, Arctic, Urban)
+     - Light Armor P: 16 AP:90%, I:90% HE: 97%
+     - Tactical Armor P: 22 AP:80% I:75% HE:90% PL:98%
+	 
+ == Equal Terms 1.0 Release ==
+  
+Version 0.871 - July 2014
+ - added full hand view for magnum
+ - changed sound for magnum
+ - added sound for SAW
+ - small change to fix text for magnum
+ - fix of inventory size of Marksmans Rifle ammo
+ - fix to autofire range for SMG
+ - small modification for SMG and Magnum inventory graphic
+ - fixed oddity with hand graphics for a few weapons
+
+Version 0.87 - July 2014
+ - added a magnum pistol
+ - fixed sniper rifle mag size 2x1 to 1x1
+ - added pixel art for SAW/LMG
+ - fixed minimum ranges for all relevant weapons
+
+Version 0.86 - July 2014
+ - ruleset cleaned up by 'yrizoud'.  Base weapons are removed from buy list and initial base stores and new weapons are added, instead of the ruleset overwriting the base weapons.
+ - added Designated Marksman's Rifle, a using a modification of a graphic added by 'Chiko'
+ - added an incendiary grenade
+ - added a Submachine gun
+ - adjusted TU and fire rate on laser rifle and plasma weapons slightly
+ - adjusted Range based accuracy numbers based on battlescape scale research
+ - removed rifle launched grenades
+ - changed ufopedia for machine pistol
+ - ufopedia cleanup
+
+Version 0.85 - June 2014 (internal)
+ - added a shotgun and improved technology shotgun mod based on Warboy1982's mod
+ - added new graphic to sniper rifle and magazine based on Toshiaki2115, Warboy1982's work
+ - added new sound to sniper rifle
+ - added new sound to assault rifle
+
+Version 0.80 - June 2014
+ - first version for OpenXcom - Would later become Equal Terms 1.0

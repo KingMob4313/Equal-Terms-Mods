@@ -1,0 +1,861 @@
+﻿# Equal Terms: Coherency - Based on the original Equal Terms mod created for X-com in 2000 by Ickschuss & Shortstop4313
+# version 1.8 for OpenXcom
+# This contains all the weapons and changes required to have all the new laser weapons
+items:
+  - type: STR_LASER_PDW
+    listOrder: 2900
+    size: 0.1
+    costSell: 20000
+    weight: 3
+    bigSprite: 30933
+    floorSprite: 30934 
+    handSprite: 30935 
+    bulletSprite: 5
+    fireSound: 30960
+    hitSound: 19
+    hitAnimation: 36
+    power: 45
+    damageType: 4
+    accuracySnap: 50
+    accuracyAimed: 70
+    tuSnap: 16
+    tuAimed: 45
+    clipSize: -1
+    battleType: 1
+    maxRange: 100
+    aimRange: 25
+    snapRange: 13
+    dropoff: 1
+    invWidth: 1
+    invHeight: 2
+  - type: STR_LASER_MAGNUM
+    listOrder: 3000
+    size: 0.2
+    costSell: 30000
+    weight: 6
+    bigSprite: 30733
+    floorSprite: 30734
+    handSprite: 30735
+    bulletSprite: 6
+    fireSound: 30961
+    hitSound: 19
+    hitAnimation: 36
+    power: 55
+    damageType: 4
+    accuracySnap: 45
+    accuracyAimed: 80
+    tuSnap: 26
+    tuAimed: 50
+    clipSize: -1
+    battleType: 1
+    maxRange: 100
+    aimRange: 40
+    snapRange: 13
+    minRange: 1
+    dropoff: 1
+    invWidth: 1
+    invHeight: 2
+  - type: STR_LASER_SMG
+    listOrder: 3100
+    size: 0.2
+    costSell: 32000
+    weight: 4
+    bigSprite: 30533
+    floorSprite: 30534
+    handSprite: 30535
+    bulletSprite: 5
+    fireSound: 30962
+    hitSound: 19
+    hitAnimation: 36
+    power: 35
+    damageType: 4
+    accuracyAuto: 65 
+    accuracySnap: 60
+    accuracyAimed: 80
+    tuAuto: 25
+    tuSnap: 22
+    tuAimed: 45
+    clipSize: -1
+    battleType: 1
+    maxRange: 125
+    aimRange: 45
+    snapRange: 15
+    autoRange: 20
+    autoShots: 4
+    dropoff: 1
+    invWidth: 1
+    invHeight: 2
+  - type: STR_LASER_ASSAULT_RIFLE
+    listOrder: 3200
+    size: 0.3
+    costSell: 40000
+    weight: 6
+    bigSprite: 30333
+    floorSprite: 30334
+    handSprite: 30335
+    bulletSprite: 6
+    fireSound: 30963
+    hitSound: 19
+    hitAnimation: 36
+    power: 60
+    damageType: 4
+    accuracyAuto: 55 
+    accuracySnap: 55
+    accuracyAimed: 100
+    tuAuto: 30
+    tuSnap: 25
+    tuAimed: 55
+    clipSize: -1
+    battleType: 1
+    maxRange: 200
+    aimRange: 90
+    snapRange: 27
+    autoRange: 18
+    minRange: 3
+    autoShots: 3
+    dropoff: 1
+    invWidth: 1
+    invHeight: 3
+  - type: STR_LASER_DMR
+    listOrder: 3300
+    size: 0.3
+    costSell: 55000
+    weight: 10
+    bigSprite: 30433
+    floorSprite: 30434
+    handSprite: 30435
+    bulletSprite: 7
+    fireSound: 30964
+    hitSound: 19
+    hitAnimation: 36
+    power: 75
+    damageType: 4
+    accuracySnap: 65
+    accuracyAimed: 105
+    tuSnap: 33
+    tuAimed: 62
+    clipSize: -1
+    battleType: 1
+    maxRange: 200
+    aimRange: 100
+    snapRange: 30
+    minRange: 4
+    dropoff: 1
+    invWidth: 1
+    invHeight: 3
+  - type: STR_SNIPER_LASER
+    listOrder: 3400
+    size: 1
+    costSell: 75000
+    weight: 14
+    bigSprite: 30633
+    floorSprite: 30634
+    handSprite: 30635
+    bulletSprite: 7
+    fireSound: 30965
+    hitSound: 19
+    hitAnimation: 36
+    power: 120
+    damageType: 4
+    accuracySnap: 50
+    accuracyAimed: 120
+    tuSnap: 40
+    tuAimed: 75
+    clipSize: -1
+    battleType: 1
+    maxRange: 200
+    aimRange: 140
+    snapRange: 13
+    minRange: 8
+    dropoff: 1
+    invWidth: 2
+    invHeight: 3
+  - type: STR_LASER_LMG
+    listOrder: 3500
+    size: 0.3
+    costSell: 90000
+    weight: 12
+    bigSprite: 30833
+    floorSprite: 30834
+    handSprite: 30835
+    bulletSprite: 6
+    fireSound: 30966
+    hitSound: 19
+    hitAnimation: 36
+    power: 52
+    damageType: 4
+    accuracyAuto: 45
+    accuracySnap: 45
+    accuracyAimed: 75
+    tuAuto: 38
+    tuSnap: 35
+    tuAimed: 60
+    clipSize: -1
+    battleType: 1
+    maxRange: 200
+    aimRange: 65
+    snapRange: 20
+    autoRange: 30
+    minRange: 3
+    autoShots: 6
+    dropoff: 1
+    invWidth: 2
+    invHeight: 3
+# Disabled Basic Weapons
+  - type: STR_LASER_PISTOL
+    requires:
+      - STR_ALIENS_ONLY
+    costBuy: 0
+  - type: STR_LASER_RIFLE
+    requires:
+      - STR_ALIENS_ONLY
+    costBuy: 0
+  - type: STR_HEAVY_LASER
+    requires:
+      - STR_ALIENS_ONLY
+    costBuy: 0
+# Craft Weapons
+  - type: STR_LASER_CANNON
+    listOrder: 900
+    size: 2.0
+    costSell: 211000
+    transferTime: 48
+  - type: STR_LASER_ARRAY
+    listOrder: 910
+    size: 2.0
+    costSell: 233500
+    transferTime: 48
+# Armor
+  - type: STR_PERSONAL_ARMOR
+    size: 0.8
+    costSell: 54000
+  - type: STR_HEAVY_PERSONAL_ARMOR
+    size: 1.0
+    costSell: 68000
+  - type: STR_CORPSE_HEAVY_PERSONAL_ARMOR
+    name: STR_CORPSE
+    weight: 20
+    bigSprite: 30905
+    floorSprite: 30906
+    invWidth: 2
+    invHeight: 3
+    armor: 40
+    recover: false
+crafts:
+  - type: STR_RETALIATOR
+    requires:
+      - STR_IMPROVED_INTERCEPTOR
+    listOrder: 204
+    sprite: 23
+    fuelMax: 1000
+    damageMax: 175
+    speedMax: 2800
+    accel: 5
+    weapons: 2
+    costRent: 120000
+    costSell: 255000
+    refuelRate: 50
+armors:
+# Standard Armors
+  - type: STR_PERSONAL_ARMOR_UC
+    spriteSheet: XCOM_1.PCK
+    spriteInv: MAN_1
+    weight: 3
+    corpseBattle:
+      - STR_CORPSE_ARMOR
+    storeItem: STR_PERSONAL_ARMOR
+    stats:
+      tu: -2
+      stamina: -3
+      reactions: -1
+      firing: -1
+      throwing: -2
+      strength: 0
+    frontArmor: 34
+    sideArmor: 27
+    rearArmor: 28
+    underArmor: 20
+    loftempsSet: [ 3 ]
+    damageModifier:
+      - 0.9
+      - 0.6
+      - 0.5
+      - 0.7
+      - 0.7
+      - 0.8
+      - 0.75
+      - 0.80
+      - 0.95
+      - 1.0
+  - type: STR_HEAVY_PERSONAL_ARMOR_UC
+    spriteSheet: HEAVY_PERSONAL_ARMOR.PCK
+    spriteInv: HEAVY_PERSONAL_ARMOR_INV
+    corpseBattle:
+      - STR_CORPSE
+    corpseItem: STR_CORPSE_HEAVY_PERSONAL_ARMOR
+    storeItem: STR_HEAVY_PERSONAL_ARMOR
+    weight: 6
+    loftempsSet: [ 3 ]
+    stats:
+      tu: -5
+      stamina: -6
+      reactions: -5
+      firing: -2
+      throwing: -5
+      strength: 0
+    frontArmor: 46
+    sideArmor: 36
+    rearArmor: 34
+    underArmor: 27
+    movementType: 0
+    damageModifier:
+      - 0.85
+      - 0.5
+      - 0.4
+      - 0.6
+      - 0.65
+      - 0.7
+      - 0.7
+      - 0.75
+      - 0.92
+      - 1.0
+craftWeapons:
+  - type: STR_LASER_CANNON_UC
+    sprite: 4
+    sound: 8
+    damage: 70
+    range: 45
+    accuracy: 60
+    reloadCautious: 16
+    reloadStandard: 16
+    reloadAggressive: 16
+    ammoMax: 100
+    rearmRate: 50
+    launcher: STR_LASER_CANNON
+    projectileType: 4
+  - type: STR_LASER_ARRAY_UC
+    sprite: 4
+    sound: 8
+    damage: 30
+    range: 16
+    accuracy: 35
+    reloadCautious: 3
+    reloadStandard: 3
+    reloadAggressive: 3
+    ammoMax: 300
+    rearmRate: 50
+    launcher: STR_LASER_ARRAY
+    projectileType: 4
+research:
+  - name: STR_ALIEN_ALLOYS
+    cost: 200
+    points: 20
+    needItem: true
+  - name: STR_ALLOY_MANUFACTURING
+    cost: 200
+    points: 20
+    dependencies:
+      - STR_ALIEN_ALLOYS
+ # Armor
+  - name: STR_PERSONAL_ARMOR
+    cost: 180
+    points: 20
+    dependencies:
+      - STR_ALLOY_MANUFACTURING
+    unlocks:
+      - STR_HEAVY_PERSONAL_ARMOR
+  - name: STR_HEAVY_PERSONAL_ARMOR
+    cost: 60
+    points: 5
+    dependencies:
+      - STR_PERSONAL_ARMOR
+# Pure Research
+  - name: STR_LASER_WEAPONS
+    cost: 50
+    points: 10
+    dependencies:
+      - STR_ALLOY_MANUFACTURING
+  - name: STR_ALLOY_AEROSPACE
+    listOrder: 902
+    cost: 100
+    points: 10
+    dependencies:
+      - STR_ALLOY_MANUFACTURING
+  - name: STR_IMPROVED_INTERCEPTOR
+    cost: 300
+    points: 20
+    dependencies:
+      - STR_ALLOY_AEROSPACE
+  - name: STR_LASER_CANNON
+    cost: 300
+    points: 10
+    dependencies:
+      - STR_LASER_WEAPONS
+  - name: STR_LASER_ARRAY
+    listOrder: 510
+    cost: 300
+    points: 10
+    dependencies:
+      - STR_LASER_CANNON
+  - name: STR_SNIPER_LASER
+    listOrder: 400
+    cost: 300
+    points: 10
+    dependencies:
+      - STR_LASER_CANNON
+  - name: STR_LASER_PDW
+    listOrder: 200
+    cost: 150
+    points: 10
+    dependencies:
+      - STR_SNIPER_LASER
+  - name: STR_LASER_ASSAULT_RIFLE
+    listOrder: 300
+    cost: 250
+    points: 10
+    dependencies:
+      - STR_LASER_ARRAY
+      - STR_SNIPER_LASER
+  - name: STR_LASER_MAGNUM
+    listOrder: 233
+    cost: 200
+    points: 10
+    dependencies:
+      - STR_LASER_PDW
+    unlocks:
+      - STR_LASER_ASSAULT_RIFLE
+  - name: STR_LASER_DMR
+    listOrder: 350
+    cost: 200
+    points: 10
+    dependencies:
+      - STR_SNIPER_LASER
+      - STR_LASER_ASSAULT_RIFLE
+  - name: STR_LASER_SMG
+    listOrder: 266
+    cost: 150
+    points: 10
+    dependencies:
+      - STR_LASER_PDW
+      - STR_LASER_ASSAULT_RIFLE
+  - name: STR_LASER_LMG
+    listOrder: 450
+    cost: 250
+    points: 10
+    dependencies:
+      - STR_LASER_DMR
+      - STR_LASER_SMG
+  - name: STR_LASER_DEFENSE
+    cost: 510
+    points: 15
+    dependencies:
+      - STR_LASER_CANNON
+      - STR_LASER_ARRAY
+# Disabled Basic Weapons
+  - name: STR_LASER_PISTOL
+    cost: 999
+    points: 0
+    dependencies:
+      - STR_ALIENS_ONLY
+  - name: STR_LASER_RIFLE
+    cost: 999
+    points: 0
+    dependencies:
+      - STR_ALIENS_ONLY
+  - name: STR_HEAVY_LASER
+    cost: 999
+    points: 0
+    dependencies:
+      - STR_ALIENS_ONLY
+manufacture:
+# Armor
+  - name: STR_PERSONAL_ARMOR
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_PERSONAL_ARMOR
+    space: 12
+    time: 800
+    cost: 22000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 4
+  - name: STR_HEAVY_PERSONAL_ARMOR
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_HEAVY_PERSONAL_ARMOR
+    space: 12
+    time: 1000
+    cost: 30000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 6
+    listOrder: 2713
+# aircraft weapons
+  - name: STR_LASER_ARRAY
+    category: STR_CRAFT_WEAPON
+    listOrder: 210
+    requires:
+      - STR_LASER_ARRAY
+    space: 6
+    time: 500
+    cost: 182000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 1
+  - name: STR_LASER_CANNON
+    category: STR_CRAFT_WEAPON
+    requires:
+      - STR_LASER_CANNON
+    space: 6
+    time: 600
+    cost: 182000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 1
+# Crafts
+  - name: STR_RETALIATOR
+    category: STR_CRAFT
+    requires:
+      - STR_IMPROVED_INTERCEPTOR
+    listOrder: 3249
+    space: 32
+    time: 5000
+    cost: 200000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 25
+# personal weapons
+  - name: STR_SNIPER_LASER
+    category: STR_WEAPON
+    requires:
+      - STR_SNIPER_LASER
+    space: 5
+    time: 400 #600
+    cost: 40000
+    listOrder: 1101
+  - name: STR_LASER_PDW
+    category: STR_WEAPON
+    requires:
+      - STR_LASER_PDW
+    space: 2
+    time: 200 #300
+    cost: 8000
+    listOrder: 1101
+  - name: STR_LASER_ASSAULT_RIFLE
+    category: STR_WEAPON
+    requires:
+      - STR_LASER_ASSAULT_RIFLE
+    space: 4
+    time: 275 #400
+    cost: 20000
+    listOrder: 1101
+  - name: STR_LASER_SMG
+    category: STR_WEAPON
+    requires:
+      - STR_LASER_SMG
+    space: 3
+    time: 250 
+    cost: 17500
+    listOrder: 1101
+  - name: STR_LASER_DMR
+    category: STR_WEAPON
+    requires:
+      - STR_LASER_DMR
+    space: 4
+    time: 400 
+    cost: 25000
+    listOrder: 1101
+  - name: STR_LASER_MAGNUM
+    category: STR_WEAPON
+    requires:
+      - STR_LASER_MAGNUM
+    space: 3
+    time: 300 
+    cost: 12000
+    listOrder: 1101
+  - name: STR_LASER_LMG
+    category: STR_WEAPON
+    requires:
+      - STR_LASER_LMG
+    space: 6
+    time: 900 
+    cost: 35000
+    listOrder: 1101
+ufopaedia:
+# Armor
+  - id: STR_PERSONAL_ARMOR_UC
+    type_id: 5
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_PERSONAL_ARMOR
+    text: STR_PERSONAL_ARMOR_UFOPEDIA
+  - id: STR_HEAVY_PERSONAL_ARMOR_UC
+    type_id: 5
+    section: STR_WEAPONS_AND_EQUIPMENT
+    listOrder: 1853
+    requires:
+      - STR_HEAVY_PERSONAL_ARMOR
+    text: STR_HEAVY_PERSONAL_ARMOR_UFOPEDIA
+# Craft Weapon
+  - id: STR_LASER_ARRAY_UC
+    type_id: 2
+    section: STR_XCOM_CRAFT_ARMAMENT
+    requires:
+      - STR_LASER_ARRAY
+    image_id: SPR_LASER_ARRAY
+    text: STR_LASER_ARRAY_UFOPEDIA
+# Pure Research
+  - id: STR_LASER_WEAPONS
+    type_id: 8
+    section: STR_ALIEN_RESEARCH_UC
+    requires:
+      - STR_LASER_WEAPONS
+    text: STR_LASER_WEAPONS_UFOPEDIA
+  - id: STR_ALLOY_MANUFACTURING
+    type_id: 8
+    section: STR_ALIEN_RESEARCH_UC
+    requires:
+      - STR_ALLOY_MANUFACTURING
+    text: STR_ALLOY_MANUFACTURING_UFOPEDIA
+# New Pure Research
+  - id: STR_ALLOY_AEROSPACE
+    type_id: 8
+    section: STR_ALIEN_RESEARCH_UC
+    requires:
+      - STR_ALLOY_AEROSPACE
+    text: STR_ALLOY_AEROSPACE_UFOPEDIA
+# Weapons
+  - id: STR_LASER_PDW
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_LASER_PDW
+    text: STR_LASER_PDW_UFOPEDIA
+  - id: STR_LASER_MAGNUM
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_LASER_MAGNUM
+    text: STR_LASER_MAGNUM_UFOPEDIA
+  - id: STR_LASER_SMG
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_LASER_SMG
+    text: STR_LASER_SMG_UFOPEDIA
+  - id: STR_LASER_ASSAULT_RIFLE
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_LASER_ASSAULT_RIFLE
+    text: STR_LASER_ASSAULT_RIFLE_UFOPEDIA
+  - id: STR_LASER_DMR
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_LASER_DMR
+    text: STR_LASER_DMR_UFOPEDIA
+  - id: STR_SNIPER_LASER
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_SNIPER_LASER
+    text: STR_SNIPER_LASER_UFOPEDIA
+  - id: STR_LASER_LMG
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_LASER_LMG
+    text: STR_LASER_LMG_UFOPEDIA
+# Disabled Basic Weapons
+  - id: STR_LASER_PISTOL
+    section: STR_NOT_AVAILABLE
+  - id: STR_LASER_RIFLE
+    section: STR_NOT_AVAILABLE
+  - id: STR_HEAVY_LASER
+    section: STR_NOT_AVAILABLE
+# Crafts
+  - id: STR_RETALIATOR
+    type_id: 1
+    section: STR_XCOM_CRAFT_ARMAMENT
+    requires:
+      - STR_IMPROVED_INTERCEPTOR
+    listOrder: 404
+    image_id: UP002B.SPK
+    rect_stats:
+      x: 5
+      y: 110
+      width: 140
+      height: 60
+    rect_text:
+      x: 5
+      y: 40
+      width: 210
+      height: 60
+    text: STR_RETALIATOR_UFOPEDIA
+extraStrings:
+  - type: en-US
+    strings:
+      STR_LASER_WEAPONS: Laser Weapons
+      STR_LASER_WEAPONS_UFOPEDIA: Applying the nano-scale alloy manufacturing process towards power cell technology has placed the research team on the cusp of producing viable directed-energy weapons. With energy constraints removed, the research team expanded on a novel laser weapon technology previously in development in multiple countries during the early 1960s. Initial application will be in interceptor weaponry, with miniaturization of the technology for use in small arms possible later with refinement of the design and construction process
+      STR_LASER_ARRAY: Pulse Laser # Renamed!
+      STR_LASER_ARRAY_UC: PULSE LASER # Renamed!
+      STR_LASER_ARRAY_UFOPEDIA: BY REDESIGNING THE EMITTERS ON A STANDARD AIRCRAFT LASER CANNON TO CYCLE QUICKER AT THE EXPENSE OF BEAM POWER, THE PULSE LASER CANNON PROVIDES ATTACK CRAFT WITH A RAPID FIRE WEAPON, WITH INCREASED ACCURACY AT THE EXPENSE OF THE WEAPON'S RANGE.
+      STR_LASER_CANNON: Laser Cannon
+      STR_LASER_CANNON_UFOPEDIA: A LONG RANGE APPLICATION OF THE LASER TECHNOLOGY, THIS CHEMICAL LASER DIRECTED ENERGY WEAPON IS POWERFUL, IF SOMEWHAT INACCURATE DUE TO ATMOSPHERIC BLOOMING AND REFRACTION AT THE RANGES IN WHICH IT IS USED.
+      STR_LASER_PDW: Laser Pistol
+      STR_LASER_PDW_UFOPEDIA: While lacking the auto-fire capabilities of the X-com standard pistol, this laser pistol carries the wounding potential of a 7.62x51mm battle rifle while weighing less than X-com's standard machine pistol. It also requires no ammunition with the self-contained power cell.
+      STR_LASER_MAGNUM: Laser Magnum
+      STR_LASER_MAGNUM_UFOPEDIA: Nicknamed 'The Brute', this heavy pistol was a failed prototype of an early laser pistol design. Enthusiasm from the X-com squad for a magnum type sidearm using the laser technology set the research team back to reexamine and refine earlier failed projects. Compared to the standard laser pistol, the weapon's higher energy output is offset by a slower refresh rate. Like all laser weapons, it does not require reloading.
+      STR_LASER_SMG: Laser SMG
+      STR_LASER_SMG_UFOPEDIA: By scaling down the rapid fire polariton-pumped emitters of the laser assault rifle, the engineers and researchers have designed a laser submachine gun for one handed use.  While rate of fire has been emphasized over power, each laser pulse still is comparable to the energy of the 6.8spc fired from the standard X-com assault rifle. Like all laser weapons, it requires no reloading.
+      STR_LASER_ASSAULT_RIFLE: Laser Assault Rifle
+      STR_LASER_ASSAULT_RIFLE_UFOPEDIA: As the laser technology replacement of the X-com standard assault rifle, this is the first laser small-arm capable of pulsed auto-fire through using banks of polariton-pumped emitters as medium exciters. This capability should be able to be extended to other weapons platforms as well. Even with this rapid fire technology, the weapon requires no reloads.
+      STR_LASER_DMR: Laser Marksmans Rifle
+      STR_LASER_DMR_UFOPEDIA: Leveraging techniques used in the laser technology assault rifles and sniper rifle, the design team has developed a laser designated marksman's rifle. Trading off the cycling emitter banks for heavier power cells and more powerful lasing medium, each pulse from this weapon contains more destructive power than even the horrifying .50 BMG round used by the X-com standard anti-materiel rifle. Like all laser weapons, it requires no reloading.
+      STR_SNIPER_LASER: Laser Sniper Rifle
+      STR_SNIPER_LASER_UFOPEDIA: This weapon is first successful personal weapon application of laser weapon technology. With wounding potential comparable to 25x163mm round, this anti-materiel rifle's significant weight, bulk and sluggish refresh rate leave it best suited for a stationary sniper role. Despite the weapon's potency, nano-level constructed power cells preclude the need for reloads in the field.
+      STR_LASER_LMG: Laser LMG
+      STR_LASER_LMG_UFOPEDIA: Expanding on design components used in the laser SMG and designated marksman's rifle, X-com scientists have designed a laser based support weapon comparable to the existing X-com Squad Automatic Weapon, with each pulse producing damage equivalent a magnum rifle round.
+      STR_HEAVY_PERSONAL_ARMOR_UC: HEAVY ARMOR
+      STR_HEAVY_PERSONAL_ARMOR: Heavy Armor
+      STR_HEAVY_PERSONAL_ARMOR_UFOPEDIA: This is a heavier suit of personal armor, combining the best protective technologies of both human and alien origin, heat resistant aramid blended with alien alloy fibers with carbon fiber reinforced silicon carbide plates laminated with alien alloys. This suit sacrifices some carry weight and mobility to provide superior protection.
+      STR_IMPROVED_INTERCEPTOR: Improved Interceptor
+      STR_RETALIATOR: RETALIATOR
+      STR_RETALIATOR_UFOPEDIA: THIS IS A REDESIGN OF THE X-COM INTERCEPTOR, WITH THE AIRFRAME AND ENGINES ENHANCED BY THE USE OF ALIEN ALLOYS, PROVIDING A MUCH HIGHER TOP SPEED, ACCELERATION AND SURVIVABILITY AGAINST ALIEN CRAFT IN A DOGFIGHT.
+      STR_ALLOY_MANUFACTURING: Alloy Manufacturing
+      STR_ALLOY_MANUFACTURING_UFOPEDIA: Research into the alloys used in alien craft and weaponry opened up new avenues of super-material construction. While this research permits the creation of the precise rare-earth doped alloys used by the alien forces, this construction technology is more effective and efficient at creating 'super alloys' than terrestrial electrical sintering, or chemical vapor deposition. Creating new alloys with this methodology will facilitate the manufacture of new armor, improved small arms and allow for further research into directed-energy weapon technology. Additionally, this technology can be used to synthesize new chemical compounds for a variety of applications from explosives, power cells to medical technology.
+      STR_ALLOY_AEROSPACE_UFOPEDIA: With the understanding gleaned from the alien alloy manufacturing process, the techniques for creating super alloys and chemical compounds suited for explosive warheads, penetrators and propellant can be applied to aircraft weaponry.  This should improve our air to air weaponry greatly.
+  - type: fr
+    strings:
+      STR_LASER_WEAPONS: Armes Laser
+      STR_LASER_WEAPONS_UFOPEDIA: Plusieurs pays tentaient depuis les années 1960 de développer une nouvelle technologie permettant la fabrication d'armes laser. Notre meilleure compréhension des alliages extraterrestres nous permet finalement de concevoir un prototype du genre pour nos intercepteurs. Nous tenterons par la suite de "miniaturiser le concept" pour que nos soldats en bénéficient.
+      STR_LASER_ARRAY: Canon Réseau Laser
+      STR_LASER_ARRAY_UC: CANON RÉSEAU LASER
+      STR_LASER_ARRAY_UFOPEDIA: EN CONCEVANT DES ÉMETTEURS À FRÉQUENCE PLUS ÉLEVÉE AU DÉTRIMENT DE LA PUISSANCE DU RAYON, LE "CANON LASER EN RÉSEAU" PROCURE À NOS INTERCEPTEURS UNE CADENCE DE TIR MAXIMALE TOUT EN SURMONTANT LE PEU DE PRÉCISION À DISTANCE DU CANON LASER USUEL.
+      STR_LASER_CANNON: Canon Laser
+      STR_LASER_CANNON_UFOPEDIA: RÉSULTAT D'UNE COMPRÉHENSION PLUTÔT INCOMPLÈTE DE LA TECHNOLOGIE REQUISE, CETTE ARME LASER CHIMIQUE EST PUISSANTE, MAIS MANQUE DE PRÉCISION À LONGUE DISTANCE DUE À DIVERS REFLETS JUMELÉS À LA RÉFRACTION DANS L'ATMOSPHÈRE.
+      STR_LASER_PDW: Pistolet Laser
+      STR_LASER_PDW_UFOPEDIA: Bien que n'ayant pas la capacité de "tir automatique" du pistolet  X-Com standard, cette arme laser a le potentiel d'un fusil de combat avec munition 7,62 x 51 mm OTAN tout en étant plus légère.{NEWLINE}La cellule d'alimentation intégrée ne nécessite aucun chargeur.
+      STR_LASER_MAGNUM: Magnum Laser
+      STR_LASER_MAGNUM_UFOPEDIA: Surnommé "La Brute", ce lourd pistolet laser fut d'abord un échec lors des premiers essais. Mais l'enthousiasme de l'équipe X-com pour une arme de poing de type magnum utilisant cette technologie incita les chercheurs à réexaminer les plans originaux. Sa puissance est supérieure au pistolet laser, mais a un débit de tir plus lent. Aucun chargeur requis!
+      STR_LASER_SMG: Mitraillette Laser
+      STR_LASER_SMG_UFOPEDIA: En révisant à la baisse la fréquence des émetteurs de polaritons (quasiparticules) du fusil d'assaut laser, les chercheurs ont conçu cette mitraillette pouvant être utlisée d'une seule main. La cadence de tir fut privilégiée. Malgré tout, chaque décharge équivaut à la cartouche 6.8 mm du fusil d'assaut standard. Chargeur non requis.
+      STR_LASER_ASSAULT_RIFLE: Fusil d'Assaut Laser
+      STR_LASER_ASSAULT_RIFLE_UFOPEDIA: Version laser du fusil d'assaut traditionnel, c'est la première arme de ce type pouvant effectuer un "tir automatique" grâce à ses multiples émetteurs de polaritons à fréquence moyenne.{NEWLINE}{NEWLINE}Malgré son débit rapide, il n'est pas nécessaire de recharger la cellule l'alimentant en énergie.
+      STR_LASER_DMR: Fusil Marksman Laser
+      STR_LASER_DMR_UFOPEDIA: Se basant sur les travaux précédents, l'équipe de chercheurs a mis au point une arme pour tireur d'élite. Au lieu d'utiliser des émetteurs de polaritons, les scientifiques ont préféré incorporer des cellules d'énergie très performantes. La puissance acquise est dorénavant supérieure à la redoutable cartouche .50 BMG utlisée précédemment. Chargeur non requis.
+      STR_SNIPER_LASER: Fusil de Sniper Laser
+      STR_SNIPER_LASER_UFOPEDIA: Ce fusil est le fruit d'une percée remarquable de la technologie laser. Avec un pouvoir destructeur comparable à la cartouche 25x163 mm, cette arme "anti-matériel" un peu lourde et se rechargeant lentement est idéale pour un sniper stationnaire. Malgré sa puissance, il s'auto-suffit en énergie.
+      STR_LASER_LMG: Arme d'Appui Laser
+      STR_LASER_LMG_UFOPEDIA: Se basant sur la connaissance acquise en concevant la mitraillette et le fusil Marksman laser, nos savants ont mis au point une arme d'appui légère utlilisant cette technologie. Chaque impulsion lumineuse émanant du canon cause un dommage équivalent à celui du revolver Magnum standard. Chargeur non requis.
+      STR_HEAVY_PERSONAL_ARMOR_UC: ARMURE LOURDE
+      STR_HEAVY_PERSONAL_ARMOR: Armure Lourde
+      STR_HEAVY_PERSONAL_ARMOR_UFOPEDIA: Plus lourde que l'armure personnelle usuelle, combinant le meilleur de la technologie humaine et extraterrestre. Un mélange d'aramides et de fibres de carbone, renforcé de plaques de carbure de silicium fusionnées à de l'alliage extraterrestre, le tout résistant à la chaleur. Une protection accrue au détriment d'un peu de mobilité.
+      STR_IMPROVED_INTERCEPTOR: Intercepteur Perfectionné
+      STR_RETALIATOR: RETALIATOR
+      STR_RETALIATOR_UFOPEDIA: UNE REFONTE MAJEURE DE L'INTERCEPTEUR XCOM. LES MOTEURS AINSI QUE LA CARLINGUE ONT ÉTÉ RENFORCÉS EN UTILISANT DES ALLIAGES EXTRATERRESTRES, OFFRANT UNE ACCÉLÉRATION ET UNE VITESSE PLUS ÉLEVÉES, CE QUI AUGMENTERA NOS CHANCES D'AFFRONTER VICTORIEUSEMENT UN OVNI HOSTILE.
+      STR_ALLOY_MANUFACTURING: Fabrication d'Alliage
+      STR_ALLOY_MANUFACTURING_UFOPEDIA: L'analyse du matériel utilisé pour la construction de vaisseaux ou d'armes extraterrestres nous a profondément éclairé. Un frittage (chauffer une poudre sans la mener jusqu’à la fusion) magnétique et une pression inductive nous permettraient de reproduire ces alliages étrangers et ainsi confectionner de nouvelles armes et armures.
+extraSprites:
+  - type: SPR_LASER_ARRAY
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Coherency/CraftWeapon/LaserArrayUfopedia.gif
+  - type: BIGOBS.PCK
+    files:
+      30333: Resources/Coherency/LaserRifle/LaserRifle.gif
+      30433: Resources/Coherency/LaserDMR/LaserDMR.gif
+      30533: Resources/Coherency/LaserSMG/LaserSMG.gif
+      30633: Resources/Coherency/SniperLaser/SniperLaser.gif
+      30733: Resources/Coherency/LaserMagnum/LaserMagnum.gif
+      30833: Resources/Coherency/LaserLMG/LaserLMG.gif
+      30933: Resources/Coherency/LaserPistol/LaserPistol.gif
+  - type: FLOOROB.PCK
+    files:
+      30334: Resources/Coherency/LaserRifle/LaserRiflef.gif
+      30434: Resources/Coherency/LaserDMR/LaserDMRf.gif
+      30534: Resources/Coherency/LaserSMG/LaserSMGf.gif
+      30634: Resources/Coherency/SniperLaser/SniperLaserf.gif
+      30734: Resources/Coherency/LaserMagnum/LaserMagnumf.gif
+      30834: Resources/Coherency/LaserLMG/LaserLMGf.gif
+      30934: Resources/Coherency/LaserPistol/LaserPistolf.gif
+  - type: UP002B.SPK
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Coherency/Retaliator/retaliator_ufopedia.gif
+  - type: BASEBITS.PCK
+    files:
+      56: Resources/Coherency/Retaliator/retaliator_base.gif
+  - type: INTICON.PCK
+    files:
+      23: Resources/Coherency/Retaliator/retaliator_minimised.gif
+      34: Resources/Coherency/Retaliator/retaliator_dogfight.gif
+  - type: HANDOB.PCK
+    width: 256
+    height: 40
+    subX: 32
+    subY: 40
+    files:
+      30335: Resources/Coherency/LaserRifle/LaserRifleh.gif
+      30435: Resources/Coherency/LaserDMR/LaserDMRh.gif
+      30535: Resources/Coherency/LaserSMG/LaserSMGh.gif
+      30635: Resources/Coherency/SniperLaser/SniperLaserh.gif
+      30735: Resources/Coherency/LaserMagnum/LaserMagnumh.gif
+      30835: Resources/Coherency/LaserLMG/LaserLMGh.gif
+      30935: Resources/Coherency/LaserPistol/LaserPistolh.gif
+# Armor
+  - type: BIGOBS.PCK
+    files:
+      30905: Resources/Coherency/PersonalArmorVariants/HPA/HPA_Corpse.png
+  - type: FLOOROB.PCK
+    files:
+      30906: Resources/Coherency/PersonalArmorVariants/HPA/Floor_HPA.png
+  - type: HEAVY_PERSONAL_ARMOR.PCK
+    subX: 32
+    subY: 40
+    width: 1024
+    height: 360
+    files:
+      0: Resources/Coherency/PersonalArmorVariants/HPA/HPA.gif
+  - type: HEAVY_PERSONAL_ARMOR_INVM0.SPK
+    singleImage: true
+    files:
+      0: Resources/Coherency/PersonalArmorVariants/HPA/HPA_INV_M0.gif
+  - type: HEAVY_PERSONAL_ARMOR_INVM1.SPK
+    singleImage: true
+    files:
+      0: Resources/Coherency/PersonalArmorVariants/HPA/HPA_INV_M1.gif
+  - type: HEAVY_PERSONAL_ARMOR_INVM2.SPK
+    singleImage: true
+    files:
+      0: Resources/Coherency/PersonalArmorVariants/HPA/HPA_INV_M2.gif
+  - type: HEAVY_PERSONAL_ARMOR_INVM3.SPK
+    singleImage: true
+    files:
+      0: Resources/Coherency/PersonalArmorVariants/HPA/HPA_INV_M3.gif
+  - type: HEAVY_PERSONAL_ARMOR_INVF0.SPK
+    singleImage: true
+    files:
+      0: Resources/Coherency/PersonalArmorVariants/HPA/HPA_INV_F0.gif
+  - type: HEAVY_PERSONAL_ARMOR_INVF1.SPK
+    singleImage: true
+    files:
+      0: Resources/Coherency/PersonalArmorVariants/HPA/HPA_INV_F1.gif
+  - type: HEAVY_PERSONAL_ARMOR_INVF2.SPK
+    singleImage: true
+    files:
+      0: Resources/Coherency/PersonalArmorVariants/HPA/HPA_INV_F2.gif
+  - type: HEAVY_PERSONAL_ARMOR_INVF3.SPK
+    singleImage: true
+    files:
+      0: Resources/Coherency/PersonalArmorVariants/HPA/HPA_INV_F3.gif
+extraSounds:
+  - type: BATTLE.CAT
+    files:
+      30960: Resources/Coherency/LaserPistol/Sounds/fire.wav
+      30961: Resources/Coherency/LaserMagnum/Sounds/fire.wav
+      30962: Resources/Coherency/LaserSMG/Sounds/fire.wav
+      30963: Resources/Coherency/LaserRifle/Sounds/fire.wav
+      30964: Resources/Coherency/LaserDMR/Sounds/fire.wav
+      30965: Resources/Coherency/SniperLaser/Sounds/fire.wav
+      30966: Resources/Coherency/LaserLMG/Sounds/fire.wav

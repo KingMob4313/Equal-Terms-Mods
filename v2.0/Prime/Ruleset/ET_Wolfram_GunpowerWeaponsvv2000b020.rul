@@ -1,0 +1,2948 @@
+﻿# Equal Terms: Wolfram Lance - Based on the original Equal Terms mod created for X-com in 2000 by Ickschuss & Shortstop4313
+# version 2.000b003 for OpenXcom
+# This contains all the weapons and changes required to have all the new weapons from the Wolfram Solution
+items:
+  - type: STR_MEDI_KIT
+    size: 0.1
+    handSprite: 120
+    listOrder: 4300
+  - type: STR_FIVE_SEVEN_PDW
+    size: 0.1
+    costBuy: 800
+    costSell: 600
+    weight: 2
+    bigSprite: 10901
+    floorSprite: 10902
+    handSprite: 96
+    bulletSprite: 1
+    fireSound: 10905
+    compatibleAmmo:
+      - STR_FIVE_SEVEN_PDW_CLIP
+      - STR_IMP_FIVE_SEVEN_PDW_CLIP
+    accuracyAuto: 35
+    accuracySnap: 50
+    accuracyAimed: 80
+    tuAuto: 30
+    tuSnap: 13
+    tuAimed: 40
+    battleType: 1
+    maxRange: 100
+    aimRange: 30
+    snapRange: 10
+    autoRange: 7
+    dropoff: 5
+    autoShots: 6
+    armor: 12
+    invWidth: 1
+    invHeight: 2
+    listOrder: 2000
+  - type: STR_FIVE_SEVEN_PDW_CLIP
+    size: 0.025
+    costBuy: 70
+    costSell: 52
+    weight: 1
+    bigSprite: 10903
+    floorSprite: 4
+    handSprite: 120
+    hitSound: 22
+    hitAnimation: 26
+    power: 24
+    damageType: 1
+    clipSize: 22
+    battleType: 2
+    armor: 12
+    listOrder: 2001
+  - type: STR_IMP_FIVE_SEVEN_PDW_CLIP
+    size: 0.025
+    costSell: 125
+    weight: 1
+    requires:
+      - STR_ALLOY_MANUFACTURING
+    bigSprite: 10904
+    floorSprite: 4
+    handSprite: 120
+    hitSound: 22
+    hitAnimation: 26
+    power: 30
+    damageType: 1
+    clipSize: 18
+    battleType: 2
+    armor: 12
+    listOrder: 2002
+  - type: STR_MAGNUM
+    size: 0.2
+    costBuy: 2200
+    costSell: 1600
+    weight: 5
+    bigSprite: 10701
+    floorSprite: 10703
+    handSprite: 10710
+    bulletSprite: 2
+    fireSound: 10705
+    compatibleAmmo:
+      - STR_MAGNUM_AMMO
+      - STR_IMP_MAGNUM_AMMO
+    accuracySnap: 45
+    accuracyAimed: 90
+    tuSnap: 23
+    tuAimed: 45
+    battleType: 1
+    invWidth: 1
+    invHeight: 2
+    maxRange: 100
+    aimRange: 45
+    snapRange: 15
+    minRange: 1
+    dropoff: 4
+    armor: 18
+    listOrder: 2025
+  - type: STR_MAGNUM_AMMO
+    size: 0.02
+    costBuy: 150
+    costSell: 80
+    weight: 1
+    bigSprite: 10702
+    floorSprite: 10704
+    handSprite: 120
+    hitSound: 22
+    hitAnimation: 26
+    power: 33
+    damageType: 1
+    clipSize: 5
+    battleType: 2
+    armor: 12
+    listOrder: 2026
+  - type: STR_IMP_MAGNUM_AMMO
+    size: 0.02
+    costSell: 250
+    weight: 1
+    requires:
+      - STR_ALLOY_MANUFACTURING
+    bigSprite: 10707
+    floorSprite: 10704
+    handSprite: 120
+    hitSound: 22
+    hitAnimation: 26
+    power: 42
+    damageType: 1
+    clipSize: 5
+    battleType: 2
+    armor: 12
+    listOrder: 2026
+  - type: STR_SMG
+    size: 0.2
+    costBuy: 2000
+    costSell: 1600
+    weight: 3
+    bigSprite: 10501 #
+    floorSprite: 10503 #
+    handSprite: 10510 #
+    bulletSprite: 1 # Same as Pistol
+    fireSound: 10084  
+    compatibleAmmo:
+      - STR_SMG_CLIP
+      - STR_IMP_SMG_CLIP
+    accuracyAuto: 55
+    accuracySnap: 65
+    accuracyAimed: 90
+    tuAuto: 26
+    tuSnap: 22
+    tuAimed: 40
+    battleType: 1
+    twoHanded: false
+    invWidth: 1
+    invHeight: 2
+    maxRange: 125
+    autoRange: 25
+    aimRange: 50
+    snapRange: 17
+    dropoff: 3
+    autoShots: 5
+    armor: 18
+    listOrder: 2100
+  - type: STR_SMG_CLIP
+    size: 0.1
+    costBuy: 100
+    costSell: 70
+    weight: 2
+    bigSprite: 10502 
+    floorSprite: 10504 #
+    handSprite: 120
+    hitSound: 22
+    hitAnimation: 26
+    power: 20
+    damageType: 1
+    clipSize: 35
+    battleType: 2
+    invWidth: 1
+    invHeight: 1
+    armor: 12
+    listOrder: 2101
+  - type: STR_IMP_SMG_CLIP
+    size: 0.1
+    costSell: 150
+    weight: 2
+    requires:
+      - STR_ALLOY_MANUFACTURING
+    bigSprite: 10505
+    floorSprite: 10504 #
+    handSprite: 120
+    hitSound: 22
+    hitAnimation: 26
+    power: 25
+    damageType: 1
+    clipSize: 35
+    battleType: 2
+    invWidth: 1
+    invHeight: 1
+    armor: 12
+    listOrder: 2102
+  - type: STR_SHOTGUN
+    size: 0.2
+    costBuy: 3000
+    costSell: 2000
+    weight: 7
+    bigSprite: 10060
+    floorSprite: 10074
+    handSprite: 10275
+    bulletSprite: 2
+    fireSound: 10055
+    compatibleAmmo:
+      - STR_SHOTGUN_SHELLS
+      - STR_ALLOY_SHOTGUN_SHELLS
+    accuracySnap: 130 # 66
+    accuracyAimed: 190 # 80
+    tuSnap: 30
+    tuAimed: 45
+    battleType: 1
+    twoHanded: true
+    aimRange: 5
+    snapRange: 4
+    dropoff: 4
+    invWidth: 1
+    invHeight: 3
+    listOrder: 2150
+  - type: STR_REINFORCED_SHOTGUN
+    size: 0.2
+    costSell: 4000
+    weight: 5
+    bigSprite: 10061
+    floorSprite: 10075
+    handSprite: 10285
+    bulletSprite: 2
+    fireSound: 10056
+    compatibleAmmo:
+      - STR_SHOTGUN_SHELLS
+      - STR_ALLOY_SHOTGUN_SHELLS
+    accuracyAuto: 100 # 35
+    accuracySnap: 130 # 70
+    accuracyAimed: 190 # 85
+    tuAuto: 40
+    tuSnap: 30
+    tuAimed: 45
+    battleType: 1
+    twoHanded: true
+    invWidth: 1
+    invHeight: 3
+    aimRange: 7
+    snapRange: 6
+    dropoff: 4
+    requires:
+      - STR_REINFORCED_SHOTGUN
+    listOrder: 2151
+  - type: STR_SHOTGUN_SHELLS
+    size: 0.1
+    costBuy: 200
+    costSell: 150
+    weight: 3
+    bigSprite: 10062
+    floorSprite: 10076
+    handSprite: 120
+    hitSound: 22
+    hitAnimation: 26
+    power: 15
+    damageType: 1
+    clipSize: 8
+    battleType: 2
+    shotgunPellets: 8
+    listOrder: 2152
+  - type: STR_ALLOY_SHOTGUN_SHELLS
+    size: 0.1
+    costSell: 400
+    weight: 3
+    requires:
+      - STR_ALLOY_MANUFACTURING
+    bigSprite: 10063
+    floorSprite: 10091
+    handSprite: 120
+    hitSound: 22
+    hitAnimation: 26
+    power: 25
+    damageType: 1
+    clipSize: 8
+    battleType: 2
+    shotgunPellets: 6
+    listOrder: 2153
+  - type: STR_ASSAULT_RIFLE
+    size: 0.2
+    costBuy: 3000
+    costSell: 2250
+    weight: 5
+    bigSprite: 10301
+    floorSprite: 10302
+    handSprite: 10310
+    bulletSprite: 2
+    fireSound: 10082
+    compatibleAmmo:
+      - STR_ASSAULT_RIFLE_CLIP
+      - STR_IMP_ASSAULT_RIFLE_CLIP
+    accuracyAuto: 45
+    accuracySnap: 60
+    accuracyAimed: 110
+    tuAuto: 35
+    tuSnap: 25
+    tuAimed: 50
+    battleType: 1
+    twoHanded: true
+    invWidth: 1
+    invHeight: 3
+    maxRange: 200
+    aimRange: 100
+    snapRange: 25
+    autoRange: 22
+    minRange: 3
+    dropoff: 3
+    autoShots: 5
+    armor: 24
+    listOrder: 2200
+  - type: STR_ASSAULT_RIFLE_CLIP
+    size: 0.1
+    costBuy: 200
+    costSell: 150
+    weight: 2
+    bigSprite: 10303
+    floorSprite: 10304
+    handSprite: 120
+    hitSound: 22
+    hitAnimation: 26
+    power: 36
+    damageType: 1
+    clipSize: 30
+    battleType: 2
+    armor: 12
+    listOrder: 2201
+  - type: STR_IMP_ASSAULT_RIFLE_CLIP
+    size: 0.1
+    costSell: 300
+    weight: 2
+    requires:
+      - STR_ALLOY_MANUFACTURING
+    bigSprite: 10307
+    floorSprite: 10304
+    handSprite: 120
+    hitSound: 22
+    hitAnimation: 26
+    power: 45
+    damageType: 1
+    clipSize: 30
+    battleType: 2
+    invWidth: 1
+    invHeight: 1
+    listOrder: 2202
+  - type: STR_MARKSMANS_RIFLE
+    size: 0.3
+    costBuy: 4000
+    costSell: 3000
+    weight: 8
+    bigSprite: 10401 #
+    floorSprite: 10402 #
+    handSprite: 10410 #
+    bulletSprite: 3 
+    fireSound: 10083 
+    compatibleAmmo:
+      - STR_MARKSMANS_RIFLE_CLIP
+      - STR_IMP_MARKSMANS_RIFLE_CLIP
+    accuracySnap: 70
+    accuracyAimed: 120
+    tuSnap: 30
+    tuAimed: 55
+    battleType: 1
+    twoHanded: true
+    invWidth: 1
+    invHeight: 3
+    maxRange: 200
+    aimRange: 125
+    snapRange: 35
+    minRange: 4
+    dropoff: 2
+    listOrder: 2300
+  - type: STR_MARKSMANS_RIFLE_CLIP
+    size: 0.1
+    costBuy: 250
+    costSell: 200
+    weight: 2
+    bigSprite: 10405 #
+    floorSprite: 10406 #
+    handSprite: 120
+    hitSound: 22
+    hitAnimation: 26
+    power: 44
+    damageType: 1
+    clipSize: 20
+    battleType: 2
+    invWidth: 1
+    invHeight: 1
+    listOrder: 2301
+  - type: STR_IMP_MARKSMANS_RIFLE_CLIP
+    size: 0.1
+    costSell: 400
+    weight: 2
+    bigSprite: 10407
+    floorSprite: 10406 #
+    handSprite: 120
+    hitSound: 22
+    hitAnimation: 26
+    power: 55
+    damageType: 1
+    clipSize: 20
+    battleType: 2
+    invWidth: 1
+    invHeight: 1
+    requires:
+      - STR_ALLOY_MANUFACTURING
+    listOrder: 2302
+  - type: STR_SNIPER_RIFLE
+    size: 0.3
+    costBuy: 6400
+    costSell: 4800
+    weight: 12
+    bigSprite: 10057
+    floorSprite: 10079
+    handSprite: 10445
+    bulletSprite: 4
+    fireSound: 10081
+    compatibleAmmo:
+      - STR_SNIPER_RIFLE_AMMO
+      - STR_IMP_SNIPER_RIFLE_AMMO
+    accuracySnap: 50
+    accuracyAimed: 135
+    tuSnap: 40
+    tuAimed: 70
+    battleType: 1
+    twoHanded: true
+    invWidth: 1
+    invHeight: 3
+    maxRange: 200
+    aimRange: 135
+    snapRange: 15
+    minRange: 8
+    dropoff: 2
+    listOrder: 2400
+  - type: STR_SNIPER_RIFLE_AMMO
+    size: 0.1
+    costBuy: 350
+    costSell: 225
+    weight: 4
+    bigSprite: 10058
+    floorSprite: 10080
+    handSprite: 120
+    hitSound: 13
+    hitAnimation: 26
+    power: 64
+    damageType: 1
+    clipSize: 6
+    battleType: 2
+    invWidth: 1
+    invHeight: 1
+    listOrder: 2401
+  - type: STR_IMP_SNIPER_RIFLE_AMMO
+    size: 0.1
+    costSell: 500
+    weight: 4
+    bigSprite: 10059
+    floorSprite: 10080
+    handSprite: 120
+    hitSound: 13
+    hitAnimation: 26
+    power: 80
+    damageType: 1
+    clipSize: 6
+    battleType: 2
+    invWidth: 1
+    invHeight: 1
+    requires:
+      - STR_ALLOY_MANUFACTURING
+    listOrder: 2402
+  - type: STR_SAW
+    size: 0.3
+    costBuy: 13500
+    costSell: 10125
+    weight: 10
+    bigSprite: 10801
+    floorSprite: 10803
+    handSprite: 10815
+    bulletSprite: 2
+    fireSound: 10805
+    compatibleAmmo:
+      - STR_SAW_AP_AMMO
+      - STR_IMP_SAW_AP_AMMO
+    accuracyAuto: 35
+    accuracySnap: 50
+    accuracyAimed: 85
+    tuAuto: 35
+    tuSnap: 35
+    tuAimed: 60
+    battleType: 1
+    twoHanded: true
+    maxRange: 200
+    aimRange: 75
+    snapRange: 22
+    autoRange: 35
+    minRange: 3
+    dropoff: 2
+    autoShots: 7
+    invWidth: 2
+    invHeight: 3
+    listOrder: 2500
+  - type: STR_SAW_AP_AMMO
+    size: 0.2
+    costBuy: 500
+    costSell: 400
+    weight: 4
+    bigSprite: 10802
+    floorSprite: 10804
+    handSprite: 120
+    hitSound: 13
+    hitAnimation: 26
+    power: 32
+    damageType: 1
+    clipSize: 50
+    battleType: 2
+    invWidth: 2
+    invHeight: 1
+    listOrder: 2501
+  - type: STR_IMP_SAW_AP_AMMO
+    size: 0.2
+    costSell: 800
+    weight: 4
+    bigSprite: 10809
+    floorSprite: 10804
+    handSprite: 120
+    hitSound: 13
+    hitAnimation: 26
+    power: 40
+    damageType: 1
+    clipSize: 50
+    battleType: 2
+    invWidth: 2
+    invHeight: 1
+    requires:
+      - STR_ALLOY_MANUFACTURING
+    listOrder: 2502
+  - type: STR_MGL
+    size: 0.4
+    costBuy: 3000
+    costSell: 2400
+    weight: 8
+    bigSprite: 10428 
+    floorSprite: 10429 
+    handSprite: 10430 
+    bulletSprite: 0 
+    fireSound: 10438 
+    compatibleAmmo:
+      - STR_MGL_HE_AMMO
+      - STR_MGL_I_AMMO
+      - STR_MGL_AP_AMMO
+      - STR_MGL_IMP_HE_AMMO
+      - STR_MGL_IMP_I_AMMO
+      - STR_MGL_IMP_AP_AMMO
+    accuracySnap: 60 
+    tuSnap: 33 
+    accuracyAimed: 105 
+    tuAimed: 55 
+    battleType: 1
+    twoHanded: true
+    invWidth: 2
+    invHeight: 3
+    maxRange: 200 
+    aimRange: 125 
+    snapRange: 20 
+    arcingShot: true
+    minRange: 5 
+    dropoff: 2
+    listOrder: 2550
+  - type: STR_MGL_FAUX
+    bigSprite: 10428 
+    compatibleAmmo:
+      - STR_MGL_IMP_HE_AMMO
+      - STR_MGL_IMP_I_AMMO
+      - STR_MGL_IMP_AP_AMMO
+    accuracySnap: 60 
+    tuSnap: 33 
+    accuracyAimed: 105 
+    tuAimed: 55 
+    battleType: 1
+    twoHanded: true
+    invWidth: 2
+    invHeight: 3
+    requires:
+      - STR_ALLOY_MANUFACTURING
+    recover: false
+  - type: STR_MGL_HE_AMMO
+    size: 0.2
+    costBuy: 450
+    costSell: 380
+    weight: 5
+    bigSprite: 10439
+    floorSprite: 10440
+    handSprite: 120 
+    hitSound: 0 # FIX THIS
+    hitAnimation: 0 #
+    power: 55
+    damageType: 3
+    clipSize: 6
+    battleType: 2
+    blastRadius: 2 # 3
+    invWidth: 2
+    invHeight: 1
+    listOrder: 2551
+  - type: STR_MGL_I_AMMO
+    size: 0.2
+    costBuy: 450
+    costSell: 380
+    weight: 5
+    bigSprite: 10441 
+    floorSprite: 10442 
+    handSprite: 120 
+    hitSound: 0 
+    hitAnimation: 0
+    power: 65
+    damageType: 2 
+    clipSize: 6
+    battleType: 2
+    blastRadius: 3
+    invWidth: 2
+    invHeight: 1
+    listOrder: 2552
+  - type: STR_MGL_AP_AMMO
+    size: 0.2
+    costBuy: 450
+    costSell: 380
+    weight: 5
+    bigSprite: 10443 
+    floorSprite: 10444 
+    handSprite: 120 
+    hitSound: 22 # FIX THIS
+    hitAnimation: 26
+    power: 13
+    shotgunPellets: 12
+    damageType: 1
+    clipSize: 6
+    battleType: 2
+    invWidth: 2
+    invHeight: 1
+    listOrder: 2553
+  - type: STR_MGL_IMP_HE_AMMO
+    size: 0.2
+    requires:
+      - STR_ALLOY_MANUFACTURING
+    costSell: 580
+    weight: 5
+    bigSprite: 10455
+    floorSprite: 10460
+    handSprite: 120 
+    hitSound: 0 # FIX THIS
+    hitAnimation: 0 #
+    power: 70
+    damageType: 3
+    clipSize: 6
+    battleType: 2
+    blastRadius: 3
+    invWidth: 2
+    invHeight: 1
+    listOrder: 2556
+  - type: STR_MGL_IMP_I_AMMO
+    size: 0.2
+    requires:
+      - STR_ALLOY_MANUFACTURING
+    costSell: 580
+    weight: 5
+    bigSprite: 10457
+    floorSprite: 10462
+    handSprite: 120 
+    hitSound: 0 # FIX THIS
+    hitAnimation: 0 #
+    power: 80
+    damageType: 2 
+    clipSize: 6
+    battleType: 2
+    blastRadius: 4
+    invWidth: 2
+    invHeight: 1
+    listOrder: 2557
+  - type: STR_MGL_IMP_AP_AMMO
+    size: 0.2
+    requires:
+      - STR_ALLOY_MANUFACTURING
+    costSell: 580
+    weight: 5
+    bigSprite: 10459
+    floorSprite: 10464 
+    handSprite: 120 
+    hitSound: 22 # FIX THIS
+    hitAnimation: 26
+    power: 17
+    shotgunPellets: 12
+    damageType: 1
+    clipSize: 6
+    battleType: 2
+    invWidth: 2
+    invHeight: 1
+    listOrder: 2558
+  - type: STR_ROCKET_LAUNCHER
+    size: 0.4
+    costBuy: 4000
+    costSell: 3000
+    weight: 10
+    bigSprite: 15 # No Need to change
+    floorSprite: 15 # No Need to change
+    handSprite: 72 # No Need to change
+    bulletSprite: 0
+    fireSound: 52 # No Need to change
+    compatibleAmmo:
+      - STR_SMALL_ROCKET
+      - STR_LARGE_ROCKET
+      - STR_INCENDIARY_ROCKET
+      - STR_APFSDS_ROCKET
+      - STR_IMP_SMALL_ROCKET
+      - STR_IMP_LARGE_ROCKET
+      - STR_IMP_INCENDIARY_ROCKET
+      - STR_IMP_APFSDS_ROCKET
+    accuracySnap: 40
+    accuracyAimed: 125
+    tuSnap: 40
+    tuAimed: 75
+    battleType: 1
+    twoHanded: true
+    invWidth: 2
+    invHeight: 3
+    maxRange: 200
+    aimRange: 100
+    snapRange: 15
+    minRange: 10
+    dropoff: 1
+    listOrder: 2600
+  - type: STR_ROCKET_LAUNCHER_FAUXONE
+    bigSprite: 15 
+    compatibleAmmo:
+      - STR_SMALL_ROCKET
+      - STR_LARGE_ROCKET
+    accuracySnap: 60 
+    tuSnap: 33 
+    accuracyAimed: 105 
+    tuAimed: 55 
+    battleType: 1
+    twoHanded: true
+    invWidth: 2
+    invHeight: 3
+    recover: false
+  - type: STR_ROCKET_LAUNCHER_FAUXTWO
+    bigSprite: 15 
+    compatibleAmmo:
+      - STR_INCENDIARY_ROCKET
+      - STR_APFSDS_ROCKET
+    accuracySnap: 60 
+    tuSnap: 33 
+    accuracyAimed: 105 
+    tuAimed: 55 
+    battleType: 1
+    twoHanded: true
+    invWidth: 2
+    invHeight: 3
+    recover: false
+  - type: STR_ROCKET_LAUNCHER_FAUXTHREE
+    bigSprite: 15 
+    compatibleAmmo:
+      - STR_IMP_SMALL_ROCKET
+      - STR_IMP_LARGE_ROCKET
+    accuracySnap: 60 
+    tuSnap: 33 
+    accuracyAimed: 105 
+    tuAimed: 55 
+    battleType: 1
+    twoHanded: true
+    invWidth: 2
+    invHeight: 3
+    requires:
+      - STR_ALLOY_MANUFACTURING
+    recover: false
+  - type: STR_ROCKET_LAUNCHER_FAUXFOUR
+    bigSprite: 15 
+    compatibleAmmo:
+      - STR_IMP_INCENDIARY_ROCKET
+      - STR_IMP_APFSDS_ROCKET
+    accuracySnap: 60 
+    tuSnap: 33 
+    accuracyAimed: 105 
+    tuAimed: 55 
+    battleType: 1
+    twoHanded: true
+    invWidth: 2
+    invHeight: 3
+    requires:
+      - STR_ALLOY_MANUFACTURING
+    recover: false
+  - type: STR_SMALL_ROCKET
+    size: 0.1
+    costBuy: 500
+    costSell: 350
+    weight: 4
+    bigSprite: 10692 #
+    floorSprite: 10696 #
+    handSprite: 120
+    hitSound: 0 #
+    hitAnimation: 0 #
+    power: 75 # Same as SSRL
+    damageType: 3
+    clipSize: 1
+    battleType: 2
+    invWidth: 1
+    invHeight: 2
+    blastRadius: 1
+    listOrder: 2601
+  - type: STR_LARGE_ROCKET
+    size: 0.2
+    power: 100
+    blastRadius: 4 # 0
+    listOrder: 2602
+  - type: STR_APFSDS_ROCKET
+    size: 0.2
+    costBuy: 900
+    costSell: 650
+    weight: 6
+    bigSprite: 10691
+    floorSprite: 10695
+    handSprite: 120
+    hitSound: 22 # FIX THIS
+    hitAnimation: 26
+    power: 125
+    damageType: 1 #
+    clipSize: 1
+    battleType: 2
+    invWidth: 1
+    invHeight: 3
+    listOrder: 2611
+  - type: STR_INCENDIARY_ROCKET
+    size: 0.2
+    power: 90
+    blastRadius: 5 # 0
+    listOrder: 2612
+  - type: STR_IMP_SMALL_ROCKET
+    size: 0.1
+    costSell: 750
+    weight: 4
+    requires:
+      - STR_ALLOY_MANUFACTURING
+    bigSprite: 10694 #
+    floorSprite: 10696 #
+    handSprite: 120
+    hitSound: 0 #
+    hitAnimation: 0 #
+    power: 100 # 75 also Same as SSRL
+    damageType: 3
+    clipSize: 1
+    battleType: 2
+    invWidth: 1
+    invHeight: 2
+    blastRadius: 2 # 1
+    listOrder: 2621
+  - type: STR_IMP_LARGE_ROCKET
+    weight: 6
+    size: 0.2
+    requires:
+      - STR_ALLOY_MANUFACTURING
+    bigSprite: 10697 #
+    floorSprite: 10690
+    handSprite: 120
+    hitSound: 0 #
+    hitAnimation: 0 #
+    power: 150 # 100
+    blastRadius: 6 # 5
+    damageType: 3
+    clipSize: 1
+    battleType: 2
+    invWidth: 1
+    invHeight: 3
+    listOrder: 2622
+  - type: STR_IMP_APFSDS_ROCKET
+    size: 0.2
+    costSell: 1300
+    weight: 6
+    requires:
+      - STR_ALLOY_MANUFACTURING
+    bigSprite: 10693 #
+    floorSprite: 10695
+    handSprite: 120
+    hitSound: 22 #
+    hitAnimation: 26
+    power: 175
+    damageType: 1
+    clipSize: 1
+    battleType: 2
+    invWidth: 1
+    invHeight: 3
+    listOrder: 2631
+  - type: STR_IMP_INCENDIARY_ROCKET
+    costSell: 1300
+    size: 0.2
+    weight: 6
+    hitSound: 0 #
+    hitAnimation: 0 #
+    bigSprite: 10698
+    floorSprite: 10699
+    handSprite: 120
+    power: 120 # 90
+    blastRadius: 6 # 5
+    requires:
+      - STR_ALLOY_MANUFACTURING
+    damageType: 2
+    clipSize: 1
+    battleType: 2
+    invWidth: 1
+    invHeight: 3
+    listOrder: 2632
+  - type: STR_SSRL
+    size: 0.4
+    costBuy: 1750
+    costSell: 850
+    weight: 7
+    bigSprite: 10681
+    floorSprite: 10682
+    handSprite: 10340
+    bulletSprite: 0
+    fireSound: 10668
+    power: 75
+    accuracySnap: 55
+    accuracyAimed: 85
+    tuSnap: 40
+    tuAimed: 66
+    maxRange: 200 # 0
+    aimRange: 80 # 0
+    snapRange: 15 # 0
+    minRange: 8
+    dropoff: 2
+    clipSize: 1
+    battleType: 1
+    twoHanded: true
+    invWidth: 1
+    invHeight: 3
+    armor: 20
+    damageType: 3
+    blastRadius: 1
+    hitSound: 64
+    listOrder: 2650
+  - type: STR_IMP_SSRL
+    size: 0.4
+    costSell: 850
+    weight: 6
+    requires:
+      - STR_ALLOY_MANUFACTURING
+    bigSprite: 10683
+    floorSprite: 10682
+    handSprite: 10340 # Same as SSRL
+    bulletSprite: 0
+    fireSound: 10668
+    power: 100
+    accuracySnap: 55
+    accuracyAimed: 85
+    tuSnap: 40
+    tuAimed: 66
+    maxRange: 200 # 0
+    aimRange: 80 # 0
+    snapRange: 15 # 0
+    minRange: 8
+    dropoff: 2
+    clipSize: 1
+    battleType: 1
+    twoHanded: true
+    invWidth: 1
+    invHeight: 3
+    armor: 20
+    damageType: 3
+    blastRadius: 2 # 1
+    hitSound: 64
+    listOrder: 2660
+  - type: STR_GRENADE
+    size: 0.1
+    weight: 2 # 3
+    bigSprite: 10221
+    handSprite: 10260
+    power: 50 # 50
+    blastRadius: 3
+    invWidth: 1
+    invHeight: 1
+    listOrder: 2700
+  - type: STR_PROXIMITY_GRENADE
+    size: 0.1
+    costBuy: 400
+    costSell: 275
+    weight: 3
+    bigSprite: 10231
+    floorSprite: 21
+    handSprite: 120
+    power: 40
+    damageType: 3
+    battleType: 5
+    blastRadius: 4
+    invWidth: 1
+    invHeight: 1
+    listOrder: 2702
+  - type: STR_INCENDIARY_GRENADE
+    size: 0.1
+    costBuy: 200
+    costSell: 150
+    weight: 3
+    bigSprite: 10601 #
+    floorSprite: 10602 #
+    handSprite: 120
+    power: 60
+    damageType: 2
+    battleType: 4
+    blastRadius: 4
+    invWidth: 1
+    invHeight: 1
+    listOrder: 2704
+  - type: STR_SMOKE_GRENADE
+    size: 0.1
+    listOrder: 2705
+  - type: STR_HIGH_EXPLOSIVE
+    size: 0.3
+    weight: 7 # 6
+    power: 110
+    bigSprite: 10201 
+    floorSprite: 10202
+    handSprite: 10240
+    blastRadius: 1 # 0
+    invWidth: 2
+    invHeight: 1
+    listOrder: 2706
+  - type: STR_FRAG_SATCHEL
+    size: 0.3
+    costBuy: 600
+    costSell: 450
+    weight: 7 # 6
+    bigSprite: 10211 # 211
+    floorSprite: 10212 # 212
+    handSprite: 10250
+    power: 80
+    damageType: 3
+    battleType: 4
+    blastRadius: 5
+    invWidth: 2
+    invHeight: 1
+    listOrder: 2708
+  - type: STR_IMP_GRENADE
+    size: 0.1
+    costSell: 450
+    weight: 2 # 3
+    requires:
+      - STR_ALLOY_MANUFACTURING
+    bigSprite: 10222 #
+    handSprite: 120
+    floorSprite: 10225
+    power: 75 # 50
+    blastRadius: 4
+    damageType: 3
+    battleType: 4
+    invWidth: 1
+    invHeight: 1 
+    listOrder: 2710
+  - type: STR_IMP_PROXIMITY_GRENADE
+    size: 0.1
+    costSell: 400
+    weight: 3
+    bigSprite: 10232
+    floorSprite: 10234
+    handSprite: 120
+    power: 60
+    damageType: 3
+    battleType: 5
+    blastRadius: 5
+    requires:
+      - STR_ALLOY_MANUFACTURING
+    listOrder: 2712
+  - type: STR_IMP_INCENDIARY_GRENADE
+    size: 0.1
+    costSell: 200
+    weight: 3
+    bigSprite: 10603
+    floorSprite: 10602
+    handSprite: 120
+    power: 90 # 60
+    damageType: 2
+    battleType: 4 
+    blastRadius: 6 # 4
+    requires:
+      - STR_ALLOY_MANUFACTURING
+    listOrder: 2714
+  - type: STR_IMP_HIGH_EXPLOSIVE
+    size: 0.3
+    costSell: 375
+    weight: 7 # 6
+    power: 150
+    damageType: 3
+    battleType: 4
+    bigSprite: 10203
+    floorSprite: 10202
+    handSprite: 10240
+    requires:
+      - STR_ALLOY_MANUFACTURING
+    blastRadius: 3 # 0
+    invWidth: 2
+    invHeight: 1 
+    listOrder: 2716
+  - type: STR_IMP_FRAG_SATCHEL
+    size: 0.3
+    costSell: 375
+    weight: 7 # 6
+    bigSprite: 10213
+    floorSprite: 10212
+    handSprite: 10250
+    power: 110 # 80
+    requires:
+      - STR_ALLOY_MANUFACTURING
+    damageType: 3
+    battleType: 4
+    blastRadius: 7 # 6
+    invWidth: 2
+    invHeight: 1
+    listOrder: 2718
+  - type: STR_ELERIUM_SHOTGUN_SHELLS # DISABLED
+    size: 0.1
+    costSell: 800
+    weight: 3
+    bigSprite: 10164 # Fixed
+    floorSprite: 10178 # Fixed
+    handSprite: 120
+    hitSound: 22
+    hitAnimation: 36
+    power: 35
+    damageType: 1
+    clipSize: 8
+    battleType: 2
+    shotgunPellets: 5
+    requires:
+      - STR_ELERIUM_SHOTGUN_SHELLS
+      - STR_ALIENS_ONLY # Makes it disabled
+# Armor
+  - type: STR_KEVLAR_URBAN
+    size: 0.4
+    costBuy: 4000
+    costSell: 3100
+  - type: STR_CORPSE_KEVLAR_URBAN
+    name: STR_CORPSE
+    weight: 24
+    bigSprite: 64
+    floorSprite: 77
+    invWidth: 2
+    invHeight: 3
+    armor: 30
+    recover: false
+    listOrder: 10510
+  - type: STR_TACTICAL_URBAN
+    size: 0.5
+    costBuy: 6000
+    costSell: 4500
+  - type: STR_CORPSE_TACTICAL_URBAN
+    name: STR_CORPSE
+    weight: 28
+    bigSprite: 64
+    floorSprite: 77
+    invWidth: 2
+    invHeight: 3
+    armor: 30
+    recover: false
+    listOrder: 10512
+# Enhanced Armor
+  - type: STR_IMP_KEVLAR_URBAN
+    size: 0.4
+    costSell: 6600
+  - type: STR_IMP_TACTICAL_URBAN
+    size: 0.5
+    costSell: 9500
+# disable replaced human tier 0 weapons
+  - type: STR_PISTOL
+    requires:
+      - STR_ALIENS_ONLY
+    costBuy: 0
+  - type: STR_PISTOL_CLIP
+    requires:
+      - STR_ALIENS_ONLY
+    costBuy: 0
+  - type: STR_RIFLE
+    requires:
+      - STR_ALIENS_ONLY
+    costBuy: 0
+  - type: STR_RIFLE_CLIP
+    requires:
+      - STR_ALIENS_ONLY
+    costBuy: 0
+  - type: STR_HEAVY_CANNON
+    requires:
+      - STR_ALIENS_ONLY
+    costBuy: 0
+  - type: STR_HC_AP_AMMO
+    requires:
+      - STR_ALIENS_ONLY
+    costBuy: 0
+  - type: STR_HC_HE_AMMO
+    requires:
+      - STR_ALIENS_ONLY
+    costBuy: 0
+  - type: STR_HC_I_AMMO
+    requires:
+      - STR_ALIENS_ONLY
+    costBuy: 0
+  - type: STR_AUTO_CANNON
+    requires:
+      - STR_ALIENS_ONLY
+    costBuy: 0
+  - type: STR_AC_AP_AMMO
+    requires:
+      - STR_ALIENS_ONLY
+    costBuy: 0
+  - type: STR_AC_HE_AMMO
+    requires:
+      - STR_ALIENS_ONLY
+    costBuy: 0
+  - type: STR_AC_I_AMMO
+    requires:
+      - STR_ALIENS_ONLY
+    costBuy: 0
+# Craft Weapons   
+  - type: STR_WASP_MISSILE_LAUNCHER
+    size: 1.0
+    costBuy: 15000
+    costSell: 12500
+    transferTime: 48
+    listOrder: 225
+  - type: STR_WASP_MISSILES
+    size: 0.2
+    costBuy: 1500
+    costSell: 1350
+    transferTime: 48
+    clipSize: 1
+    listOrder: 230
+# New Alloy Tech Missiles
+  - type: STR_BARRACUDA_MISSILE_LAUNCHER
+    size: 1.0
+    costSell: 22500
+    transferTime: 48
+    listOrder: 410
+  - type: STR_BARRACUDA_MISSILES
+    size: 0.2
+    costSell: 4000
+    transferTime: 48
+    clipSize: 1
+    listOrder: 415
+  - type: STR_HORNET_MISSILE_LAUNCHER
+    size: 1.0
+    costSell: 18500
+    transferTime: 48
+    listOrder: 420
+  - type: STR_HORNET_MISSILES
+    size: 0.2
+    costSell: 1750
+    transferTime: 48
+    clipSize: 1
+    listOrder: 425
+  - type: STR_TSUNAMI_MISSILE_LAUNCHER
+    size: 1.0
+    costSell: 22500
+    transferTime: 48
+    listOrder: 430
+  - type: STR_TSUNAMI_MISSILES
+    size: 0.2
+    costSell: 13500
+    transferTime: 48
+    clipSize: 1
+    listOrder: 435
+craftWeapons:
+  - type: STR_STINGRAY
+    sound: 10391
+    range: 30
+    accuracy: 80
+    damage: 60
+    reloadCautious: 32
+    reloadStandard: 24
+    reloadAggressive: 16
+    ammoMax: 6
+  - type: STR_AVALANCHE
+    sound: 10390
+    range: 50
+    accuracy: 70
+    damage: 90
+    reloadCautious: 48
+    reloadStandard: 36
+    reloadAggressive: 24
+# new craft weapons
+  - type: STR_WASP_MISSILE_UC
+    sprite: 35
+    sound: 10392
+    damage: 35
+    range: 40
+    accuracy: 50
+    reloadCautious: 16
+    reloadStandard: 12
+    reloadAggressive: 8
+    ammoMax: 12
+    launcher: STR_WASP_MISSILE_LAUNCHER
+    clip: STR_WASP_MISSILES
+    projectileType: 1
+    projectileSpeed: 8
+# new alloy craft weapons
+  - type: STR_HORNET_MISSILE_UC
+    sprite: 35
+    sound: 10392
+    damage: 50
+    range: 50
+    accuracy: 50
+    reloadCautious: 16
+    reloadStandard: 12
+    reloadAggressive: 8
+    ammoMax: 12
+    launcher: STR_HORNET_MISSILE_LAUNCHER
+    clip: STR_HORNET_MISSILES
+    projectileType: 1
+    projectileSpeed: 10
+  - type: STR_BARRACUDA_MISSILE_UC
+    sprite: 0
+    sound: 10391
+    damage: 80
+    range: 40
+    accuracy: 85
+    reloadCautious: 32
+    reloadStandard: 24
+    reloadAggressive: 16
+    ammoMax: 6
+    launcher: STR_BARRACUDA_MISSILE_LAUNCHER
+    clip: STR_BARRACUDA_MISSILES
+    projectileType: 0
+    projectileSpeed: 9
+  - type: STR_TSUNAMI_MISSILE_UC
+    sprite: 0
+    sound: 10392
+    damage: 115
+    range: 70
+    accuracy: 75
+    reloadCautious: 48
+    reloadStandard: 36
+    reloadAggressive: 24
+    ammoMax: 3
+    launcher: STR_TSUNAMI_MISSILE_LAUNCHER
+    clip: STR_TSUNAMI_MISSILES
+    projectileType: 0
+    projectileSpeed: 8
+armors:
+# Basic Standard Armor
+# Overrides basic
+  - type: STR_NONE_UC
+    spriteSheet: XCOM_0.PCK
+    spriteInv: MAN_0
+    spriteFaceGroup: 6
+    spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163] #M0 F0 M1 F1 M2 F2 M3 F3
+    spriteHairGroup: 9
+    spriteHairColor: [144, 144, 164, 164, 245, 245, 166, 166] #M0 F0 M1 F1 M2 F2 M3 F3
+    storeItem: STR_NONE
+    corpseBattle:
+      - STR_CORPSE
+    frontArmor: 0 # It's a jumpsuit
+    sideArmor: 0
+    rearArmor: 0
+    underArmor: 0
+    stats:
+      tu: 5
+      stamina: 5
+      reactions: 5
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 1.0
+# Standard Armors
+  - type: STR_KEVLAR_URBAN_UC
+    spriteSheet: XCOM_1u.PCK
+    spriteInv: MAN_1u
+    corpseItem: STR_CORPSE_KEVLAR_URBAN
+    storeItem: STR_KEVLAR_URBAN
+    loftemps: 3
+    weight: 5
+    frontArmor: 16
+    sideArmor: 9
+    rearArmor: 14
+    underArmor: 5
+    spriteFaceGroup: 6
+    spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163] #M0 F0 M1 F1 M2 F2 M3 F3
+    spriteHairGroup: 9
+    spriteHairColor: [144, 144, 164, 164, 245, 245, 166, 166] #M0 F0 M1 F1 M2 F2 M3 F3
+    stats:
+      tu: -2
+      stamina: -3
+      reactions: -1
+      throwing: -2
+      strength: 0
+    damageModifier:
+      - 1.0
+      - 0.9
+      - 0.9
+      - 0.97
+      - 0.98
+      - 1.0
+      - 1.0
+      - 0.95
+      - 1.0
+      - 1.0
+  - type: STR_TACTICAL_URBAN_UC
+    spriteSheet: XCOM_1DSu.PCK
+    spriteInv: MAN_1DSu
+    corpseItem: STR_CORPSE_TACTICAL_URBAN
+    storeItem: STR_TACTICAL_URBAN
+    loftemps: 3
+    weight: 7
+    frontArmor: 22
+    sideArmor: 16
+    rearArmor: 18
+    underArmor: 10
+    spriteFaceGroup: 6
+    spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163] #M0 F0 M1 F1 M2 F2 M3 F3
+    spriteHairGroup: 9
+    spriteHairColor: [144, 144, 164, 164, 245, 245, 166, 166] #M0 F0 M1 F1 M2 F2 M3 F3
+    stats:
+      tu: -4
+      stamina: -5
+      reactions: -3
+      firing: -1
+      throwing: -3
+    damageModifier:
+      - 1.0
+      - 0.8
+      - 0.75
+      - 0.90
+      - 0.95
+      - 0.98
+      - 0.97
+      - 0.92
+      - 1.0
+      - 1.0
+# Improved Human Armor
+  - type: STR_IMP_KEVLAR_URBAN_UC
+    spriteSheet: XCOM_1u.PCK
+    spriteInv: MAN_1u
+    corpseItem: STR_CORPSE_KEVLAR_URBAN
+    storeItem: STR_IMP_KEVLAR_URBAN
+    loftemps: 3
+    weight: 4
+    frontArmor: 24
+    sideArmor: 18
+    rearArmor: 21
+    underArmor: 8
+    spriteFaceGroup: 6
+    spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163] #M0 F0 M1 F1 M2 F2 M3 F3
+    spriteHairGroup: 9
+    spriteHairColor: [144, 144, 164, 164, 245, 245, 166, 166] #M0 F0 M1 F1 M2 F2 M3 F3
+    stats:
+      tu: -2
+      stamina: -2
+      reactions: -1
+      throwing: -2
+      strength: 0
+    damageModifier:
+      - 1.0
+      - 0.7
+      - 0.85
+      - 0.95
+      - 0.88
+      - 0.93
+      - 0.92
+      - 0.90
+      - 1.0
+      - 1.0
+  - type: STR_IMP_TACTICAL_URBAN_UC
+    spriteSheet: XCOM_1DSu.PCK
+    spriteInv: MAN_1DSu
+    corpseItem: STR_CORPSE_TACTICAL_URBAN
+    storeItem: STR_IMP_TACTICAL_URBAN
+    loftemps: 3
+    weight: 5
+    frontArmor: 32
+    sideArmor: 24
+    rearArmor: 28
+    underArmor: 15
+    spriteFaceGroup: 6
+    spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163] #M0 F0 M1 F1 M2 F2 M3 F3
+    spriteHairGroup: 9
+    spriteHairColor: [144, 144, 164, 164, 245, 245, 166, 166] #M0 F0 M1 F1 M2 F2 M3 F3
+    stats:
+      tu: -4
+      stamina: -4
+      reactions: -3
+      firing: -1
+      throwing: -3
+    damageModifier:
+      - 1.0
+      - 0.65
+      - 0.70
+      - 0.80
+      - 0.82
+      - 0.86
+      - 0.94
+      - 0.88
+      - 1.0
+      - 1.0 
+crafts:
+  - type: STR_INTERCEPTOR
+    sprite: 3
+    fuelMax: 1000
+    damageMax: 60 #100
+    speedMax: 2100
+    accel: 3
+    weapons: 2
+    costBuy: 600000
+    costRent: 600000
+    refuelRate: 50
+    transferTime: 96
+    score: 250
+# allow more HWPs for mod players
+  - type: STR_SKYRANGER
+    vehicles: 6 # 3
+research:
+  - name: STR_REINFORCED_SHOTGUN
+    cost: 100
+    points: 2
+    dependencies:
+      - STR_ALLOY_MANUFACTURING
+    listOrder: 110
+  - name: STR_ELERIUM_SHOTGUN_SHELLS
+    cost: 500
+    points: 10
+    dependencies:
+      - STR_ELERIUM_115
+      - STR_REINFORCED_SHOTGUN
+      - STR_ALIENS_ONLY
+  - name: STR_ALIEN_ALLOYS
+    cost: 200
+    points: 20
+    needItem: true
+    listOrder: 900
+  - name: STR_ALLOY_MANUFACTURING
+    cost: 300
+    points: 20
+    dependencies:
+      - STR_ALIEN_ALLOYS
+    listOrder: 910
+  - name: STR_ALLOY_AEROSPACE
+    cost: 100
+    points: 10
+    dependencies:
+      - STR_ALLOY_MANUFACTURING
+    listOrder: 920
+ufopaedia:
+  - id: STR_FIVE_SEVEN_PDW
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_FIVE_SEVEN_PDW_UFOPEDIA
+    listOrder: 2000
+  - id: STR_MAGNUM
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_MAGNUM_UFOPEDIA
+    listOrder: 2025
+  - id: STR_SMG
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_SMG_UFOPEDIA
+    listOrder: 2100
+  - id: STR_ASSAULT_RIFLE
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_ASSAULT_RIFLE_UFOPEDIA
+    listOrder: 2200
+  - id: STR_MARKSMANS_RIFLE
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_MARKSMANS_RIFLE_UFOPEDIA
+    listOrder: 2300
+  - id: STR_SNIPER_RIFLE
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_SNIPER_RIFLE_UFOPEDIA
+    listOrder: 2400
+  - id: STR_SAW
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_SAW_UFOPEDIA
+    listOrder: 2500
+  - id: STR_MGL
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_MGL_UFOPEDIA
+    listOrder: 2550
+  - id: STR_MGL_FAUX
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_MGL_FAUX_UFOPEDIA
+    requires:
+      - STR_ALLOY_MANUFACTURING
+    listOrder: 2555
+  - id: STR_ROCKET_LAUNCHER # Commenting out the normal RL entry
+    type_id: 4
+    section: STR_NOT_AVAILABLE # Removed
+    text: STR_ROCKET_LAUNCHER_UFOPEDIA
+    listOrder: 2600
+  - id: STR_ROCKET_LAUNCHER_FAUXONE
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_ROCKET_LAUNCHER_FAUXONE_UFOPEDIA
+    listOrder: 2610
+  - id: STR_ROCKET_LAUNCHER_FAUXTWO
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_ROCKET_LAUNCHER_FAUXTWO_UFOPEDIA
+    listOrder: 2620
+  - id: STR_ROCKET_LAUNCHER_FAUXTHREE
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_ROCKET_LAUNCHER_FAUXTHREE_UFOPEDIA
+    requires:
+      - STR_ALLOY_MANUFACTURING
+    listOrder: 2630
+  - id: STR_ROCKET_LAUNCHER_FAUXFOUR
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_ROCKET_LAUNCHER_FAUXFOUR_UFOPEDIA
+    requires:
+      - STR_ALLOY_MANUFACTURING
+    listOrder: 2640
+  - id: STR_SSRL
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_SSRL_UFOPEDIA
+    listOrder: 2650
+  - id: STR_IMP_SSRL
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_IMP_SSRL_UFOPEDIA
+    requires:
+      - STR_ALLOY_MANUFACTURING
+    listOrder: 2660
+  - id: STR_GRENADE
+    listOrder: 2700
+  - id: STR_PROXIMITY_GRENADE
+    listOrder: 2702
+  - id: STR_INCENDIARY_GRENADE
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_INCENDIARY_GRENADE_UFOPEDIA
+    listOrder: 2704
+  - id: STR_SMOKE_GRENADE
+    listOrder: 2705
+  - id: STR_FRAG_SATCHEL
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_FRAG_SATCHEL_UFOPEDIA
+    listOrder: 2706
+  - id: STR_HIGH_EXPLOSIVE
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_HIGH_EXPLOSIVE_UFOPEDIA
+    listOrder: 2708
+  - id: STR_IMP_GRENADE
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_IMP_GRENADE_UFOPEDIA
+    requires:
+      - STR_ALLOY_MANUFACTURING
+    listOrder: 2710
+  - id: STR_IMP_PROXIMITY_GRENADE
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_IMP_PROXIMITY_GRENADE_UFOPEDIA
+    requires:
+      - STR_ALLOY_MANUFACTURING
+    listOrder: 2712
+  - id: STR_IMP_INCENDIARY_GRENADE
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_IMP_INCENDIARY_GRENADE_UFOPEDIA
+    requires:
+      - STR_ALLOY_MANUFACTURING
+    listOrder: 2714
+  - id: STR_IMP_HIGH_EXPLOSIVE
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_IMP_HIGH_EXPLOSIVE_UFOPEDIA
+    requires:
+      - STR_ALLOY_MANUFACTURING
+    listOrder: 2716
+  - id: STR_IMP_FRAG_SATCHEL
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_IMP_FRAG_SATCHEL_UFOPEDIA
+    requires:
+      - STR_ALLOY_MANUFACTURING
+    listOrder: 2718
+# Ammo
+  - id: STR_FIVE_SEVEN_PDW_CLIP
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_FIVE_SEVEN_PDW_CLIP_UFOPEDIA
+    listOrder: 2001
+  - id: STR_IMP_FIVE_SEVEN_PDW_CLIP
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_ALLOY_MANUFACTURING
+    text: STR_IMP_FIVE_SEVEN_PDW_CLIP_UFOPEDIA
+    listOrder: 2002
+  - id: STR_MAGNUM_AMMO
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_MAGNUM_AMMO_UFOPEDIA
+    listOrder: 2026
+  - id: STR_IMP_MAGNUM_AMMO
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_ALLOY_MANUFACTURING
+    text: STR_IMP_MAGNUM_AMMO_UFOPEDIA
+    listOrder: 2027
+  - id: STR_SMG_CLIP
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_SMG_CLIP_UFOPEDIA
+    listOrder: 2101
+  - id: STR_IMP_SMG_CLIP
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_ALLOY_MANUFACTURING
+    text: STR_IMP_SMG_CLIP_UFOPEDIA
+    listOrder: 2102
+  - id: STR_SHOTGUN_SHELLS
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_SHOTGUN_SHELLS_UFOPEDIA
+    listOrder: 2151
+  - id: STR_ALLOY_SHOTGUN_SHELLS
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_ALLOY_MANUFACTURING
+    text: STR_ALLOY_SHOTGUN_SHELLS_UFOPEDIA
+    listOrder: 2152
+  - id: STR_ASSAULT_RIFLE_CLIP
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_ASSAULT_RIFLE_CLIP_UFOPEDIA
+    listOrder: 2201
+  - id: STR_IMP_ASSAULT_RIFLE_CLIP
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_ALLOY_MANUFACTURING
+    text: STR_IMP_ASSAULT_RIFLE_CLIP_UFOPEDIA
+    listOrder: 2202
+  - id: STR_MARKSMANS_RIFLE_CLIP
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_MARKSMANS_RIFLE_CLIP_UFOPEDIA
+    listOrder: 2301
+  - id: STR_IMP_MARKSMANS_RIFLE_CLIP
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_ALLOY_MANUFACTURING
+    text: STR_IMP_MARKSMANS_RIFLE_CLIP_UFOPEDIA
+    listOrder: 2302
+  - id: STR_SNIPER_RIFLE_AMMO
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_SNIPER_RIFLE_AMMO_UFOPEDIA
+    listOrder: 2401
+  - id: STR_IMP_SNIPER_RIFLE_AMMO
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_ALLOY_MANUFACTURING
+    text: STR_IMP_SNIPER_RIFLE_AMMO_UFOPEDIA
+    listOrder: 2402
+  - id: STR_SAW_AP_AMMO
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_SAW_AP_AMMO_UFOPEDIA
+    listOrder: 2501
+  - id: STR_IMP_SAW_AP_AMMO
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_ALLOY_MANUFACTURING
+    text: STR_IMP_SAW_AP_AMMO_UFOPEDIA
+    listOrder: 2502
+  - id: STR_MGL_HE_AMMO
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_MGL_HE_AMMO_UFOPEDIA
+    listOrder: 2551
+  - id: STR_MGL_I_AMMO
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_MGL_I_AMMO_UFOPEDIA
+    listOrder: 2552
+  - id: STR_MGL_AP_AMMO
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_MGL_AP_AMMO_UFOPEDIA
+    listOrder: 2553
+  - id: STR_MGL_IMP_HE_AMMO
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_ALLOY_MANUFACTURING
+    text: STR_MGL_IMP_HE_AMMO_UFOPEDIA
+    listOrder: 2556
+  - id: STR_MGL_IMP_I_AMMO
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_ALLOY_MANUFACTURING
+    text: STR_MGL_IMP_I_AMMO_UFOPEDIA
+    listOrder: 2557
+  - id: STR_MGL_IMP_AP_AMMO
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_ALLOY_MANUFACTURING
+    text: STR_MGL_IMP_AP_AMMO_UFOPEDIA
+    listOrder: 2558
+  - id: STR_SMALL_ROCKET
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_APFSDS_ROCKET_UFOPEDIA
+    listOrder: 2611
+  - id: STR_LARGE_ROCKET
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_LARGE_ROCKET_UFOPEDIA
+    listOrder: 2612
+  - id: STR_APFSDS_ROCKET
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_APFSDS_ROCKET_UFOPEDIA
+    listOrder: 2621
+  - id: STR_INCENDIARY_ROCKET
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_INCENDIARY_ROCKET_UFOPEDIA
+    listOrder: 2622
+  - id: STR_IMP_SMALL_ROCKET
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_ALLOY_MANUFACTURING
+    text: STR_IMP_SMALL_ROCKET_UFOPEDIA
+    listOrder: 2631
+  - id: STR_IMP_LARGE_ROCKET
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_ALLOY_MANUFACTURING
+    text: STR_IMP_LARGE_ROCKET_UFOPEDIA
+    listOrder: 2632
+  - id: STR_IMP_APFSDS_ROCKET
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_ALLOY_MANUFACTURING
+    text: STR_IMP_APFSDS_ROCKET_UFOPEDIA
+    listOrder: 2641
+  - id: STR_IMP_INCENDIARY_ROCKET
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_ALLOY_MANUFACTURING
+    text: STR_IMP_INCENDIARY_ROCKET_UFOPEDIA
+    listOrder: 2642
+ # Armor
+  - id: STR_KEVLAR_URBAN_UC
+    type_id: 5
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_KEVLAR_URBAN_UFOPEDIA
+  - id: STR_TACTICAL_URBAN_UC
+    type_id: 5
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_TACTICAL_URBAN_UFOPEDIA
+  - id: STR_IMP_KEVLAR_URBAN_UC
+    type_id: 5
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_IMP_KEVLAR_URBAN_UFOPEDIA
+    requires:
+      - STR_ALIEN_ALLOYS
+  - id: STR_IMP_TACTICAL_URBAN_UC
+    type_id: 5
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_IMP_TACTICAL_URBAN_UFOPEDIA
+    requires:
+      - STR_ALIEN_ALLOYS
+# disable replaced weapons
+  - id: STR_PISTOL
+    section: STR_NOT_AVAILABLE
+  - id: STR_RIFLE
+    section: STR_NOT_AVAILABLE
+  - id: STR_HEAVY_CANNON
+    section: STR_NOT_AVAILABLE
+  - id: STR_AUTO_CANNON
+    section: STR_NOT_AVAILABLE
+# Shotgun stuff
+  - id: STR_SHOTGUN
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_SHOTGUN_UFOPEDIA
+    listOrder: 2150
+  - id: STR_REINFORCED_SHOTGUN
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_REINFORCED_SHOTGUN_UFOPEDIA
+    requires:
+      - STR_REINFORCED_SHOTGUN
+    listOrder: 2151
+  - id: STR_ELERIUM_SHOTGUN_SHELLS
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_ELERIUM_SHOTGUN_SHELLS
+# New Pure Research
+  - id: STR_ALLOY_MANUFACTURING
+    type_id: 8
+    section: STR_ALIEN_RESEARCH_UC
+    requires:
+      - STR_ALLOY_MANUFACTURING
+    text: STR_ALLOY_MANUFACTURING_UFOPEDIA
+    listOrder: 11910
+  - id: STR_ALLOY_AEROSPACE
+    type_id: 8
+    section: STR_ALIEN_RESEARCH_UC
+    requires:
+      - STR_ALLOY_AEROSPACE
+    text: STR_ALLOY_AEROSPACE_UFOPEDIA
+    listOrder: 11920
+# Craft Weapons
+  - id: STR_AVALANCHE
+    type_id: 2
+    section: STR_XCOM_CRAFT_ARMAMENT
+    text: STR_AVALANCHE_NONUKE_UFOPEDIA
+    image_id: AVALANCHE
+    listOrder: 655
+  - id: STR_STINGRAY
+    type_id: 2
+    section: STR_XCOM_CRAFT_ARMAMENT
+    text: STR_STINGRAY_ET_UFOPEDIA
+    listOrder: 600
+  - id: STR_WASP_MISSILE_UC
+    type_id: 2
+    section: STR_XCOM_CRAFT_ARMAMENT
+    image_id: WASP
+    text: STR_WASP_MISSILE_UFOPEDIA
+    listOrder: 650
+# new alloy craft weapons
+  - id: STR_HORNET_MISSILE_UC
+    type_id: 2
+    section: STR_XCOM_CRAFT_ARMAMENT
+    image_id: HORNET
+    text: STR_HORNET_MISSILE_UFOPEDIA
+    requires:
+      - STR_ALLOY_AEROSPACE
+    listOrder: 660
+  - id: STR_BARRACUDA_MISSILE_UC
+    type_id: 2
+    section: STR_XCOM_CRAFT_ARMAMENT
+    image_id: BARRACUDA
+    text: STR_BARRACUDA_MISSILE_UFOPEDIA
+    requires:
+      - STR_ALLOY_AEROSPACE
+    listOrder: 665
+  - id: STR_TSUNAMI_MISSILE_UC
+    type_id: 2
+    section: STR_XCOM_CRAFT_ARMAMENT
+    image_id: TSUNAMI
+    text: STR_TSUNAMI_MISSILE_UFOPEDIA
+    requires:
+      - STR_ALLOY_AEROSPACE
+    listOrder: 670
+  - id: STR_SMALL_RADAR_SYSTEM
+    type_id: 6
+    section: STR_BASE_FACILITIES
+    text: STR_SMALL_RADAR_ETSYSTEM_UFOPEDIA
+  - id: STR_LARGE_RADAR_SYSTEM
+    type_id: 6
+    section: STR_BASE_FACILITIES
+    text: STR_LARGE_RADAR_ETSYSTEM_UFOPEDIA
+facilities:
+  - type: STR_SMALL_RADAR_SYSTEM
+    radarChance: 30
+    radarRange: 1250
+  - type: STR_LARGE_RADAR_SYSTEM
+    radarRange: 2250
+    radarChance: 15
+manufacture:
+# New Armor
+  - name: STR_IMP_KEVLAR_URBAN
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_ALIEN_ALLOYS
+    space: 12
+    time: 100
+    cost: 6000
+    requiredItems:
+      STR_KEVLAR_URBAN: 1
+      STR_ALIEN_ALLOYS: 1
+    listOrder: 2650
+  - name: STR_IMP_TACTICAL_URBAN
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_ALIEN_ALLOYS
+    space: 12
+    time: 130
+    cost: 9000
+    requiredItems:
+      STR_TACTICAL_URBAN: 1
+      STR_ALIEN_ALLOYS: 1
+    listOrder: 2660
+# Improved Alloy Ammo
+  - name: STR_IMP_FIVE_SEVEN_PDW_CLIP
+    category: STR_AMMUNITION
+    requires:
+      - STR_ALLOY_MANUFACTURING
+    space: 1
+    time: 5
+    cost: 100
+    listOrder: 803
+  - name: STR_IMP_MAGNUM_AMMO
+    category: STR_AMMUNITION
+    requires:
+      - STR_ALLOY_MANUFACTURING
+    space: 1
+    time: 3
+    cost: 200
+    listOrder: 806
+  - name: STR_IMP_SMG_CLIP
+    category: STR_AMMUNITION
+    requires:
+      - STR_ALLOY_MANUFACTURING
+    space: 1
+    time: 6
+    cost: 125
+    listOrder: 809
+  - name: STR_IMP_ASSAULT_RIFLE_CLIP
+    category: STR_AMMUNITION
+    requires:
+      - STR_ALLOY_MANUFACTURING
+    space: 1
+    time: 6
+    cost: 250
+    listOrder: 812
+  - name: STR_IMP_MARKSMANS_RIFLE_CLIP
+    category: STR_AMMUNITION
+    requires:
+      - STR_ALLOY_MANUFACTURING
+    space: 1
+    time: 4
+    cost: 325
+    listOrder: 815
+  - name: STR_IMP_SNIPER_RIFLE_AMMO
+    category: STR_AMMUNITION
+    requires:
+      - STR_ALLOY_MANUFACTURING
+    space: 1
+    time: 8
+    cost: 500
+    listOrder: 819
+  - name: STR_IMP_SAW_AP_AMMO
+    category: STR_AMMUNITION
+    requires:
+      - STR_ALLOY_MANUFACTURING
+    space: 1
+    time: 8
+    cost: 650
+    listOrder: 821
+  - name: STR_MGL_IMP_AP_AMMO
+    category: STR_AMMUNITION
+    requires:
+      - STR_ALLOY_MANUFACTURING
+    space: 1
+    time: 3
+    cost: 400
+    listOrder: 824
+  - name: STR_MGL_IMP_HE_AMMO
+    category: STR_AMMUNITION
+    requires:
+      - STR_ALLOY_MANUFACTURING
+    space: 1
+    time: 3
+    cost: 475
+    listOrder: 827
+  - name: STR_MGL_IMP_I_AMMO
+    category: STR_AMMUNITION
+    requires:
+      - STR_ALLOY_MANUFACTURING
+    space: 1
+    time: 3
+    cost: 475
+    listOrder: 827
+  - name: STR_IMP_SMALL_ROCKET
+    category: STR_AMMUNITION
+    requires:
+      - STR_ALLOY_MANUFACTURING
+    space: 1
+    time: 3
+    cost: 650
+    listOrder: 830
+  - name: STR_IMP_LARGE_ROCKET
+    category: STR_AMMUNITION
+    requires:
+      - STR_ALLOY_MANUFACTURING
+    space: 2
+    time: 5
+    cost: 1250
+    listOrder: 833
+  - name: STR_IMP_INCENDIARY_ROCKET
+    category: STR_AMMUNITION
+    requires:
+      - STR_ALLOY_MANUFACTURING
+    space: 2
+    time: 4
+    cost: 1500
+    listOrder: 836
+  - name: STR_IMP_APFSDS_ROCKET
+    category: STR_AMMUNITION
+    requires:
+      - STR_ALLOY_MANUFACTURING
+    space: 2
+    time: 5
+    cost: 1250
+    listOrder: 839
+  - name: STR_IMP_SSRL
+    category: STR_WEAPON
+    requires:
+      - STR_ALLOY_MANUFACTURING
+    space: 3
+    time: 7
+    cost: 1750
+    listOrder: 842
+  - name: STR_IMP_GRENADE
+    category: STR_WEAPON
+    requires:
+      - STR_ALLOY_MANUFACTURING
+    space: 1
+    time: 3
+    cost: 400
+    listOrder: 845
+  - name: STR_IMP_PROXIMITY_GRENADE
+    category: STR_WEAPON
+    requires:
+      - STR_ALLOY_MANUFACTURING
+    space: 1
+    time: 4
+    cost: 525
+    listOrder: 848
+  - name: STR_IMP_INCENDIARY_GRENADE
+    category: STR_WEAPON
+    requires:
+      - STR_ALLOY_MANUFACTURING
+    space: 1
+    time: 4
+    cost: 250
+    listOrder: 851
+  - name: STR_IMP_HIGH_EXPLOSIVE
+    category: STR_WEAPON
+    requires:
+      - STR_ALLOY_MANUFACTURING
+    space: 2
+    time: 6
+    cost: 200
+    listOrder: 854
+  - name: STR_IMP_FRAG_SATCHEL
+    category: STR_WEAPON
+    requires:
+      - STR_ALLOY_MANUFACTURING
+    space: 2
+    time: 7
+    cost: 1000
+    listOrder: 857
+  - name: STR_REINFORCED_SHOTGUN
+    category: STR_WEAPON
+    requires:
+      - STR_REINFORCED_SHOTGUN
+    space: 4
+    time: 820
+    cost: 18000
+    listOrder: 860
+  - name: STR_ALLOY_SHOTGUN_SHELLS
+    category: STR_AMMUNITION
+    requires:
+      - STR_ALLOY_MANUFACTURING
+    space: 4
+    time: 5
+    cost: 400
+    listOrder: 861
+  - name: STR_ELERIUM_SHOTGUN_SHELLS # DISABLED
+    category: STR_AMMUNITION
+    requires:
+      - STR_ELERIUM_SHOTGUN_SHELLS
+      - STR_ALIENS_ONLY
+    space: 4
+    time: 10
+    cost: 4000
+    requiredItems:
+      STR_ELERIUM_115: 1
+# aircraft weapons
+# Hornet
+  - name: STR_HORNET_MISSILES
+    category: STR_CRAFT_WEAPON
+    requires:
+      - STR_ALLOY_AEROSPACE
+    space: 3
+    time: 50
+    cost: 1500
+    requiredItems:
+      STR_ALIEN_ALLOYS: 1
+    listOrder: 81
+  - name: STR_HORNET_MISSILE_LAUNCHER
+    category: STR_CRAFT_WEAPON
+    requires:
+      - STR_ALLOY_AEROSPACE
+    space: 5
+    time: 100
+    cost: 7500
+    requiredItems:
+      STR_ALIEN_ALLOYS: 1
+    listOrder: 82
+# Barracuda
+  - name: STR_BARRACUDA_MISSILES
+    category: STR_CRAFT_WEAPON
+    requires:
+      - STR_ALLOY_AEROSPACE
+    space: 3
+    time: 80
+    cost: 3000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 1
+    listOrder: 84
+  - name: STR_BARRACUDA_MISSILE_LAUNCHER
+    category: STR_CRAFT_WEAPON
+    requires:
+      - STR_ALLOY_AEROSPACE
+    space: 5
+    time: 150
+    cost: 10000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 1
+    listOrder: 85
+# Tsunami
+  - name: STR_TSUNAMI_MISSILES
+    category: STR_CRAFT_WEAPON
+    requires:
+      - STR_ALLOY_AEROSPACE
+    space: 3
+    time: 100
+    cost: 9000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 1
+    listOrder: 87
+  - name: STR_TSUNAMI_MISSILE_LAUNCHER
+    category: STR_CRAFT_WEAPON
+    requires:
+      - STR_ALLOY_AEROSPACE
+    space: 5
+    time: 200
+    cost: 15000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 1
+    listOrder: 88
+# unfortunately, startingBase needs be complete, no matter what you want to add/remove
+startingBase:
+  facilities:
+    - type: STR_ACCESS_LIFT
+      x: 2
+      y: 2
+    - type: STR_HANGAR
+      x: 2
+      y: 0
+    - type: STR_HANGAR
+      x: 0
+      y: 4
+    - type: STR_HANGAR
+      x: 4
+      y: 4
+    - type: STR_LIVING_QUARTERS
+      x: 3
+      y: 2
+    - type: STR_LIVING_QUARTERS
+      x: 1
+      y: 2
+    - type: STR_GENERAL_STORES
+      x: 2
+      y: 3
+    - type: STR_LABORATORY
+      x: 3
+      y: 3
+    - type: STR_WORKSHOP
+      x: 4
+      y: 3
+    - type: STR_SMALL_RADAR_SYSTEM
+      x: 1
+      y: 3
+  crafts:
+    - type: STR_SKYRANGER
+      id: 1
+      fuel: 1500
+      damage: 0
+      items:
+        STR_GRENADE: 8
+        STR_INCENDIARY_GRENADE: 2
+        STR_SNIPER_RIFLE_AMMO: 4 # instead of STR_HC_AP_AMMO (x2)
+        # STR_HC_HE_AMMO: 2 removed
+        STR_SNIPER_RIFLE: 1 # instead of STR_HEAVY_CANNON
+        STR_FIVE_SEVEN_PDW: 2 # instead of STR_PISTOL
+        STR_FIVE_SEVEN_PDW_CLIP: 4 # instead of STR_PISTOL_CLIP
+        STR_MAGNUM: 1 #
+        STR_MAGNUM_AMMO: 2 #
+        STR_ASSAULT_RIFLE: 3 # instead of STR_RIFLE Removed 3
+        STR_ASSAULT_RIFLE_CLIP: 6 # instead of STR_RIFLE_CLIP Removed 6
+        STR_MARKSMANS_RIFLE: 1
+        STR_MARKSMANS_RIFLE_CLIP: 2
+        STR_SHOTGUN: 1 # added one replacing Rifles
+        STR_SHOTGUN_SHELLS: 3 # added three replacing rifle clips
+        STR_SMG: 2 # added two
+        STR_SMG_CLIP: 4 # added four
+        STR_SSRL: 2 # added two
+        STR_SAW: 2 #added two
+        STR_SAW_AP_AMMO: 4 #added four
+      status: STR_READY
+    - type: STR_INTERCEPTOR
+      id: 1
+      fuel: 1000
+      damage: 0
+      weapons:
+        - type: STR_STINGRAY
+          ammo: 6
+        - type: STR_CANNON_UC
+          ammo: 200
+      status: STR_READY
+    - type: STR_INTERCEPTOR
+      id: 2
+      fuel: 1000
+      damage: 0
+      weapons:
+        - type: STR_STINGRAY
+          ammo: 6
+        - type: STR_CANNON_UC
+          ammo: 200
+  items:
+    STR_WASP_MISSILE_LAUNCHER: 1
+    STR_WASP_MISSILES: 20
+    STR_STINGRAY_LAUNCHER: 1
+    STR_STINGRAY_MISSILES: 25
+    STR_AVALANCHE_LAUNCHER: 1
+    STR_AVALANCHE_MISSILES: 10
+    STR_CANNON: 1
+    STR_CANNON_ROUNDS_X50: 2
+    STR_GRENADE: 5
+    STR_SAW: 1 # instead of STR_AUTO_CANNON
+    STR_SAW_AP_AMMO: 6 # instead of STR_AC_AP_AMMO
+    STR_SMG: 2 # 
+    STR_SMG_CLIP: 4 # 
+    STR_SNIPER_RIFLE_AMMO: 6 # instead of STR_HC_AP_AMMO
+    STR_SNIPER_RIFLE: 1 # instead of STR_HEAVY_CANNON
+    STR_FIVE_SEVEN_PDW: 2 # instead of STR_PISTOL
+    STR_FIVE_SEVEN_PDW_CLIP: 4 # instead of STR_PISTOL
+    STR_MAGNUM: 1 #
+    STR_MAGNUM_AMMO: 2 #
+    STR_ASSAULT_RIFLE: 2 # instead of STR_RIFLE
+    STR_ASSAULT_RIFLE_CLIP: 8 # instead of STR_RIFLE_CLIP
+    STR_MGL: 1
+    STR_MGL_HE_AMMO: 2
+    STR_MGL_IMP_I_AMMO: 1
+    STR_MGL_AP_AMMO: 1
+    STR_ROCKET_LAUNCHER: 1
+    STR_SMALL_ROCKET: 4
+    STR_LARGE_ROCKET: 2
+    STR_INCENDIARY_ROCKET: 2
+    STR_SMOKE_GRENADE: 5
+    STR_INCENDIARY_GRENADE: 2
+  scientists: 10
+  engineers: 10
+extraStrings:
+  - type: en-US
+    strings:
+      STR_FIVE_SEVEN_PDW: Machine Pistol
+      STR_FIVE_SEVEN_PDW_UFOPEDIA: Designed jointly by CZ and the Russian firm IZHMASH, the standard X-Com sidearm is a machine pistol firing a 5.7mm tungsten core AP round, with select-fire capability and a 18 round magazine.
+      STR_MAGNUM: Magnum Revolver
+      STR_MAGNUM_UFOPEDIA: While not initially apportioned for the procurement program for X-Com, a number of customized heavy revolvers have found their way into the X-Com armory and additional weapons can be purchased through special channels. Shooting a tungsten core .454 Casull magnum AP round, the damage potential of this weapon is almost as massive as it's kick, or as big as the nearly blinding fireball from the barrel.
+      STR_ASSAULT_RIFLE: Assault Rifle
+      STR_ASSAULT_RIFLE_UFOPEDIA: Developed by both Colt and FN for the X-Com project, this assault rifle utilizes the SOCOM tested 6.8mm spc round, with a steel tipped, tungsten core AP bullet. The weapon's magazine holds 30 rounds.
+      STR_SNIPER_RIFLE: Sniper Rifle
+      STR_SNIPER_RIFLE_UFOPEDIA: This bolt action bullpup sniper rifle fires the fearsome .50 caliber BMG round and is typically classified as an anti-materiel weapon, suited for destroying structures and light armored vehicles. While cumbersome, this weapon is accurate out to two kilometers and has horrific wounding potential.
+      STR_SAW: SAW
+      STR_SAW_UFOPEDIA: The Squad-Automatic-Weapon, or SAW combines the 5.56mm AP round with an extremely high rate of fire, allowing a soldier to carry the suppressive fire of a light machinegun and not hinder their mobility too greatly.
+      STR_SHOTGUN: Shotgun
+      STR_REINFORCED_SHOTGUN: Reinforced Shotgun
+      STR_ELERIUM_SHOTGUN_SHELLS: Elerium Shotgun Shells
+      STR_SHOTGUN_UFOPEDIA: The standard issue X-Com tactical shotgun is a custom design based on the classic Remington 870 combat shotgun. It uses 3 inch magnum 12 gauge rounds loaded with tungsten flechettes to deliver large amounts of damage to targets at close range. However, the low penetrative power and spread of the projectiles limits its effectiveness against armored targets or at long ranges.
+      STR_REINFORCED_SHOTGUN_UFOPEDIA: As the only conventional weapon that can benefit from an all neo-alloy construction, this select-fire shotgun features a stronger, narrower barrel compared to the conventional counterpart. This allows it to fire higher velocity ammunition, providing greater stopping power.
+      STR_MARKSMANS_RIFLE: Marksman's Rifle
+      STR_MARKSMANS_RIFLE_UFOPEDIA: Designed for precision shooting for a more mobile squad, the Marksman's rifle exists between the heavier and immobile anti-materiel rifle, and the standard assault rifle. The weapon was designed and accuratized by engineers at Colt and H&K for semi-automatic firing and utilizes the 7.62mm NATO round with a tungsten core AP bullet.
+      STR_SMG: Submachine Gun
+      STR_SMG_UFOPEDIA: This classic H&K weapon was redesigned for the specific needs the X-Com project to use a tungsten core, steel tipped +p+ 9mm round. Constructed with recoil compensation and paired assault strap, the weapon can be used one handed. This weapon is well suited for building entries as it is much more manuverable than the heavier assault rifles and more accurate than the machine pistol. It utilizes a 35 round Mag.   
+      STR_SSRL: SSRL
+      STR_SSRL_UFOPEDIA: A disposable single-shot rocket launcher (designated SSRL) manufactured by Bazalt & Dynamit Nobel Defence and uses a tight-pattern shaped-explosive warhead.  It has a small explosive pattern, making it ineffective as a suppressive anti-personnel weapon, but effective against alien heavy weapons platforms.
+      STR_IMP_SSRL: ISSRL
+      STR_IMP_SSRL_UFOPEDIA: The Balalt & Dynamit Nobel Defence disposable single-shot rocket launcher, modified to use alien alloy manufacturing techniques to strengthen the launcher and use an rocket created using alien nano-construction techniques. The rocket should provide 33% more penetrative power compared to the previous design.
+      #STR_ROCKET_LAUNCHER_UFOPEDIA: This breach loading rocket launcher produced by Raytheon with munitions from Dynamit Nobel Defence can fire four different semi-guided rocket types.
+      STR_ROCKET_LAUNCHER_FAUXONE: Rocket Launcher
+      STR_ROCKET_LAUNCHER_FAUXONE_UFOPEDIA: This breach loading rocket launcher produced by Raytheon with munitions from Dynamit Nobel Defence can fire four different semi-guided rocket types listed in the following entries.
+      STR_ROCKET_LAUNCHER_FAUXTWO: "Rocket Launcher Continued"
+      STR_ROCKET_LAUNCHER_FAUXTWO_UFOPEDIA: Incendiary and Sabot Rockets
+      STR_ROCKET_LAUNCHER_FAUXTHREE: "Rocket Launcher Continued"
+      STR_ROCKET_LAUNCHER_FAUXTHREE_UFOPEDIA: Alloy Explosive Rockets
+      STR_ROCKET_LAUNCHER_FAUXFOUR: "Rocket Launcher Continued"
+      STR_ROCKET_LAUNCHER_FAUXFOUR_UFOPEDIA: Alloy Incendiary and Sabot Rockets
+      STR_MGL: Multiple Grenade Launcher
+      STR_MGL_UFOPEDIA: This cutting edge multiple grenade launcher by Milkor holds six 40mm grenades in a side loading revolver style magazine. It is reinforced and has an improved recoil system allowing it to fire more potent medium velocity rounds. 
+      STR_MGL_FAUX: "MGL Continued" #Multiple Grenade Launcher
+      STR_MGL_FAUX_UFOPEDIA: Alloy munitions for the MGL are listed here.
+      STR_INCENDIARY_GRENADE: Incendiary Grenade
+      STR_INCENDIARY_GRENADE_UFOPEDIA: This grenade contains a dual incendiary charge of white phosphorus and thermite with a small RDX explosive charge for dispersal of the three molten metals.
+      STR_HIGH_EXPLOSIVE: High Explosive Satchel
+      STR_HIGH_EXPLOSIVE_UFOPEDIA: A demolition charge composed of one kilo of polymerized HMX crafted into a shaped charge.  While this explosive is powerful, the area-of-effect is rather small.
+      STR_FRAG_SATCHEL: Frag Satchel
+      STR_FRAG_SATCHEL_UFOPEDIA: An anti-personnel charge composed of one kilo of HMX explosive and a half kilo of AR-500 steel ball bearings for fragmentation. Appropriate for clearing buildings and anti-personnel applications, it lacks the concentrated power of the breaching charge. 
+      STR_IMP_HIGH_EXPLOSIVE: Enhanced HE Satchel
+      STR_IMP_HIGH_EXPLOSIVE_UFOPEDIA: A demolition charge composed of one kilo of octanitrocubane synthsized via the alien alloy manufacturing process.  While significantly more potent than the HMX explosive satchel, the area-of-effect is limited with this charge.      
+      STR_IMP_INCENDIARY_GRENADE: Enhanced Incendiary Grenade
+      STR_IMP_INCENDIARY_GRENADE_UFOPEDIA: This grenade contains nano-constructed white phosphorus and thermite 'snowflakes' with a small octanitrocubane explosive charge for dispersal of the three molten metals.
+      STR_IMP_FRAG_SATCHEL: Enhanced Frag Satchel
+      STR_IMP_FRAG_SATCHEL_UFOPEDIA: An anti-personnel charge constructed with octanitrocubane explosive and tungsten doped alien alloys for fragmentation.
+      STR_IMP_PROXIMITY_GRENADE: Enhanced Proximity Grenade
+      STR_IMP_PROXIMITY_GRENADE_UFOPEDIA: An anti-personnel charge constructed with octanitrocubane and tungsten doped alien alloys for fragmentation, but with a proximity sensor for area denial.
+      STR_IMP_GRENADE: Enhanced Frag Grenade
+      STR_IMP_GRENADE_UFOPEDIA: The standard fragmentation grenade design, enhanced by octanitrocubane explosive and tungsten doped alien alloys for the casing.
+      # New Level 0 armor
+      STR_KEVLAR_URBAN: LIGHT ARMOR (URBAN)
+      STR_KEVLAR_URBAN_UC: LIGHT ARMOR (URBAN)
+      STR_KEVLAR_URBAN_UFOPEDIA: Adapted from typical SWAT team use, this light armor vest produced by Dragon Skin is constructed to X-com's specifications. Using a 24 layer special aramid blend and an overlapping weave of lighter carbon fiber-reinforced silicon carbide disks, this armor provides adequate protection, while not impairing the mobility of the soldier.
+      STR_TACTICAL_URBAN: TACTICAL ARMOR (URBAN)
+      STR_TACTICAL_URBAN_UC: TACTICAL ARMOR (URBAN)
+      STR_TACTICAL_URBAN_UFOPEDIA: Composed of 36 layers of aramids blended for strength and heat resistance and backed by heavy duty overlapping carbon fiber-reinforced silicon carbide disks, this tactical vest specially produced for X-com by Dragon Skin is the best protection current human technology can provide. However, this level of protection does tend to hinder a soldier's movements.
+      # New Level 0.5 armor
+      STR_IMP_KEVLAR_URBAN: ALLOYED L. ARMOR(URBAN)
+      STR_IMP_KEVLAR_URBAN_UC: ALLOYED L. ARMOR(URBAN)
+      STR_IMP_KEVLAR_URBAN_UFOPEDIA: Starting from the light armor vest, this armor has been enhanced by the replacement of the weave of armor disks with alien alloy disks scavenged from UFO crash sites.  It should provide improved protection from both alien and human small arms and explosives all at a lighter weight.
+      STR_IMP_TACTICAL_URBAN: ALLOYED TAC. ARMOR (URBAN)
+      STR_IMP_TACTICAL_URBAN_UC: ALLOYED TAC. ARMOR (URBAN)
+      STR_IMP_TACTICAL_URBAN_UFOPEDIA: Taking the standard tactical armor and using lighter overlapping carbon fiber-reinforced silicon carbide disks backed with scavenged alien alloys, this enhanced tactical vest should provide improved protection in the field against alien weaponry and explosives.
+      # New Research Subjects
+      STR_ALLOY_MANUFACTURING: Alloy Manufacturing
+      STR_ALLOY_MANUFACTURING_UFOPEDIA: Research into the alloys used in alien craft and weaponry opened up new avenues of super-material construction. While this research permits the creation of the precise rare-earth doped alloys used by the alien forces, this construction technology is more effective and efficient at creating 'super alloys' than terrestrial electrical sintering, or chemical vapor deposition. Creating new alloys with this methodology will facilitate the manufacture of new armor, improved small arms and allow for further research into directed-energy weapon technology.{NEWLINE}{NEWLINE}Additionally, this technology can be used to synthesize new chemical compounds for a variety of applications from explosives, power cells to medical technology.
+      # Craft Weapons
+      STR_WASP_MISSILE: Wasp Missile
+      STR_WASP_MISSILES: Wasp Missiles
+      STR_WASP_MISSILE_UC: WASP
+      STR_WASP_MISSILE_LAUNCHER: Wasp Launcher
+      STR_WASP_MISSILE_UFOPEDIA: THIS LIGHT WEIGHT SRAAM FROM THALES AIR DEFENSE HAS A VECTORED THRUST SYSTEM AND A POWERFUL PROPULSION SYSTEM. WHILE THE WARHEAD IS RATHER WEAK, AN INTERCEPTOR CAN CARRY A NUMBER OF THESE FAST-FIRING MISSILES.
+      STR_STINGRAY_ET_UFOPEDIA: USING THE AIM-132 AS A BASE, THIS PLATFORM IS FITTED WITH VECTORED THRUST ENGINES AND ARMED WITH A WARHEAD WITH A HEAVY FRAGMENTATION CHARGE.
+      STR_AVALANCHE_NONUKE_UFOPEDIA: BUILT ON THE AIM-120 PLATFORM, EQUIPED WITH VECTORED THRUST ENGINES AND ARMED WITH A WARHEAD WITH THREE KINETIC PENETRATORS, THIS MISSILE IS THE LONGEST RANGE AAM WITH SUFFICIENT MANUVERABLITY TO BE VIABLE AGAINST ALIEN CRAFT.
+# new alloy craft weapons
+      STR_HORNET_MISSILE: Hornet Missile
+      STR_HORNET_MISSILES: Hornet Missiles
+      STR_HORNET_MISSILE_UC: HORNET
+      STR_HORNET_MISSILE_LAUNCHER: Hornet Launcher
+      STR_HORNET_MISSILE_UFOPEDIA: LEVERAGING THE MASTERY OF ALLOY MANUFACTURING, RESEARCHERS DEVISED AN ENHANCED VERSION OF THE WASP MISSILE SYSTEM. WITH IMPROVED PROPULSION, WARHEAD YIELD AND RANGE.
+      STR_BARRACUDA_MISSILE: Barracuda Missile
+      STR_BARRACUDA_MISSILES: Barracuda Missiles
+      STR_BARRACUDA_MISSILE_UC: BARRACUDA
+      STR_BARRACUDA_MISSILE_LAUNCHER: Barracuda Launcher
+      STR_BARRACUDA_MISSILE_UFOPEDIA: CONSTRUCTED WITH UNDERSTANDING OF NEW ALLOY MANUFACTURING PROCESS, THIS NEW MISSILE IS AN IMPROVEMENT ON THE STINGRAY MISSILE, WITH A MORE POWERFUL WARHEAD, ALIEN ALLOY CONTROL SURFACES AND A POTENT SOLID FUEL ROCKET ENGINE. 
+      STR_TSUNAMI_MISSILE: Tsunami Missile
+      STR_TSUNAMI_MISSILES: Tsunami Missiles
+      STR_TSUNAMI_MISSILE_UC: TSUNAMI
+      STR_TSUNAMI_MISSILE_LAUNCHER: Tsunami Launcher
+      STR_TSUNAMI_MISSILE_UFOPEDIA: WITH NEXT-GENERATION MATERIALS CREATED THROUGH THE ALLOY MANUFACTURING PROCESS, THIS UPDATED VERSION OF THE AVALANCHE MISSILE HAS A MORE POTENT WARHEAD, FASTER ENGINES AND GREATLY IMPROVED AVIONICS AND AGILITY.
+      STR_SMALL_RADAR_ETSYSTEM_UFOPEDIA: A short range passive radar system with an effective range of approximately 500 nautical miles and is linked to satellite systems for ground search. Each small radar system on base has a 10% chance of detecting an average sized object at that range every 10 minutes. 
+      STR_LARGE_RADAR_ETSYSTEM_UFOPEDIA: A long range passive radar system with an effective range of approximately 1100 nautical miles and is linked to satellite systems for ground search. Each large radar system on base has a 5% chance of detecting an average sized object at that range every 10 minutes. 
+      STR_ALLOY_AEROSPACE: Alloy Aerospace
+      STR_ALLOY_AEROSPACE_UFOPEDIA: With the understanding gleaned from the alien alloy manufacturing process, the techniques for creating super alloys and chemical compounds suited for explosive warheads, penetrators and propellant can be applied to aircraft weaponry.  This should improve our air to air weaponry greatly.
+      # Ammo
+      STR_FIVE_SEVEN_PDW_CLIP: Machine Pistol Mag
+      STR_FIVE_SEVEN_PDW_CLIP_UFOPEDIA: The machine pistol magazine holds 18 5.7x28mm armor-piercing rounds. Amongst the first generation of pistol rounds designed specifically defeating soft body armor, the 5.7x28mm round is a high velocity round that is essentially a case-shortened version of the 5.56x45mm rifle round used by the X-com squad automatic weapon. 
+      STR_IMP_FIVE_SEVEN_PDW_CLIP: Alloy Machine Pistol Mag
+      STR_IMP_FIVE_SEVEN_PDW_CLIP_UFOPEDIA: This mag is stacked with 18 rounds of blue tinged 5.7x28mm rounds, all constructed with the new alien alloy manufacturing methods. These rounds have vastly improved propellant and the sinter-alloyed bullets offer increased penetration against the armor used by the alien forces, with superior frangibility characteristics as compared to conventional rounds.
+      STR_MAGNUM_AMMO: Magnum Speedloader
+      STR_MAGNUM_AMMO_UFOPEDIA: Unlike most revolvers, the speed loader for the .454 magnum only holds five cartridges, as opposed to six in a standard revolver. With a case that seems more suited for a rifle round and a massive tungsten carbide armor-piercing bullet, this round makes the weapon difficult to use, from loading to firing.
+      STR_IMP_MAGNUM_AMMO: Alloy Magnum Speedloader
+      STR_IMP_MAGNUM_AMMO_UFOPEDIA: With the simple mechanism behind the revolver, it was possible to replace the brass casing for the cartridge with improved alloys. This alloy casing permits an increased powder-charge of enhanced propellant, and much higher pressures to drive the newly designed alloy rounds in this speed loader. Despite improvements, this is still a punishing weapon to use.
+      STR_SHOTGUN_SHELLS: Shotgun Shells
+      STR_SHOTGUN_SHELLS_UFOPEDIA: Attached to a stripper-clip carrier, these three-inch magnum shotshells have a full brass case for reliable loading and to contain the powerful powder-charge.  This round fires 32 steel flechettes instead of buckshot, giving this weapon some chance to penetrate alien armor. Like all shotshells, this round loses effectiveness quickly over distance.
+      STR_ALLOY_SHOTGUN_SHELLS: Alloy Shotgun Shells
+      STR_ALLOY_SHOTGUN_SHELLS_UFOPEDIA: Packed with more powerful alloy-technology propellant and stronger, heavier flechettes, these alloy shotgun shells should carry much more wounding power than conventional shotgun shells.
+      STR_ASSAULT_RIFLE_CLIP: Assault Rifle Mag
+      STR_ASSAULT_RIFLE_CLIP_UFOPEDIA: After testing a number of different cartridges, the X-com team selected the 6.8mm SPC round for the assault rifle fielded by the squads as a compromise between bullet weight and velocity, all while using a trusted platform. Small changes were made to STANAG type magazines to accommodate 30 rounds of the heavier, armor-piercing cartridges.
+      STR_IMP_ASSAULT_RIFLE_CLIP: Alloy Assault Rifle Mag
+      STR_IMP_ASSAULT_RIFLE_CLIP_UFOPEDIA: After trivial changes were made to the standard X-com assault rifle, the new alloy ammo can be fielded with the assault rifle without requiring a redesigned weapon. The enhanced hepta-octanitrocubane propellant and alloy 'sandwich' bullet design enhances both armor penetration and wounding power.
+      STR_SNIPER_RIFLE_AMMO: Sniper Rifle Mag
+      STR_SNIPER_RIFLE_AMMO_UFOPEDIA: After abandoning submunition use, or using a more precise round, the X-com team decided to field a sniper rifle using the stalwart .50 BMG round. While the magazine can only hold a handful of armor-piercing rounds, the weapon's sheer power should be able to overcome any personal armor fielded by the enemy.
+      STR_IMP_SNIPER_RIFLE_AMMO: Alloy Sniper Rifle Mag
+      STR_IMP_SNIPER_RIFLE_AMMO_UFOPEDIA: The unlocking of the alien alloy manufacturing techniques allowed the design team to enhance the already fearsome .50 BMG round. The hepta-octanitrocubane propellant and the massive alloy layered bullet is tailored for better penetration and wounding power.
+      STR_SAW_AP_AMMO: SAW Ammo Box
+      STR_SAW_AP_AMMO_UFOPEDIA: A padded aluminum box holds fifty belted rounds of 5.56x45mm light rifle ammunition. The heavy tungsten penetrator and over-pressure rounds, while compromising some of the wounding power of the cartridge, allows for greater penetration of armored targets.
+      STR_IMP_SAW_AP_AMMO: Alloy SAW Ammo Box
+      STR_IMP_SAW_AP_AMMO_UFOPEDIA: While it required small changes to the action of the weapon, the azure-tinted improved rounds for the squad automatic weapon should allow for a marked improvement in performance, both in penetration and wounding power.
+      STR_MARKSMANS_RIFLE_CLIP: Marksmans Rifle Mag
+      STR_MARKSMANS_RIFLE_CLIP_UFOPEDIA: Using the workhorse 7.62x51mm rifle around, this fifteen round magazine of armor-piercing rounds is second in penetrating power only to it's larger sister the sniper rifle. A full tungsten carbide bullet emphasizes breeching alien armor at the expense of wounding capability.
+      STR_IMP_MARKSMANS_RIFLE_CLIP: Alloy Marksmans Rifle Mag
+      STR_IMP_MARKSMANS_RIFLE_CLIP_UFOPEDIA: Small changes were made to the bolt and magwell to accommodate fifteen of the new azure-frosted alloy technology rounds for the marksman's rifle. With improved propellant performance and an tailored alloy round, this cartridge should perform better than previous iterations.
+      STR_SMG_CLIP: SMG Mag
+      STR_SMG_CLIP_UFOPEDIA: This 35 round extended magazine, redesigned by H&K, is customized for reliably feeding armor-piercing rounds. The 9mm +P+ cartridge is adopted from the Russian over-pressure version of this venerable and common caliber, capped with a tungsten carbide AP bullet. While not completely optimal for engaging alien armor, the platform is familiar and reliable and recoil is quite manageable.
+      STR_IMP_SMG_CLIP: Alloy SMG Mag
+      STR_IMP_SMG_CLIP_UFOPEDIA: The new propellant and blue tinted 9mm alloy bullet give this round superior penetration and wounding power as compared to conventional technology. Paired with the new alloy internals for the weapon and improved recoil compensation, the changes of weapon handling characteristics with the new potent cartridges are trivial, while making the weapon markedly more effective in the field.
+      STR_APFSDS_ROCKET: APFSDS Rocket
+      STR_APFSDS_ROCKET_UFOPEDIA: Created by Dynamit Nobel Defence this rocket is two stage munition that utilizes an armor-piercing fin-stabilized discarding-sabot (APFSDS) armor penetrator. This rocket is designed for anti-tank use against a single target, since it lacks an explosive charge at the target.
+      STR_IMP_APFSDS_ROCKET: Alloy APFSDS Rocket
+      STR_IMP_APFSDS_ROCKET_UFOPEDIA: The kinetic penetrator for this improved armor-piercing fin-stabilized discarding-sabot rocket is composed of layered super alloys, and is significantly stronger than the conventional sabot. Combined with the nitrocubane propellants, this rocket should be approximately 30% more effective.
+      STR_LARGE_ROCKET: Heavy Rocket
+      STR_LARGE_ROCKET_UFOPEDIA: This conventional Dynamit Nobel Defence heavy high explosive (HE) rocket is composed of a pure RDX explosive warhead and designated for multipurpose use. With a very large explosive radius, this rocket is effective in anti-tank role, anti-personnel, and fortification demolition roles.
+      STR_IMP_LARGE_ROCKET: Enhanced Heavy Rocket
+      STR_IMP_LARGE_ROCKET_UFOPEDIA: The capability afforded to produce large amounts of high-power nitrocubane explosives by the alloy manufacturing techniques, provides much of the improvement to this high-explosive rocket. Both the explosive power and the radius is greatly improved compared to the conventional rocket.
+      STR_SMALL_ROCKET: Light Rocket
+      STR_SMALL_ROCKET_UFOPEDIA: Condensed down to the essential components, this Dynamit Nobel Defence high explosive anti-tank (HEAT) rocket is small enough to be carried on the belt. While an effective anti-tank weapon, with a small RDX warhead backed with a mild steel penetrator, this rocket is smaller than the other munitions used, and only has a small explosive footprint, making it ill-suited for anti-personnel use.
+      STR_IMP_SMALL_ROCKET: Enhanced Light Rocket
+      STR_IMP_SMALL_ROCKET_UFOPEDIA: The entirety of this rocket has been enhanced with the new alloy manufacturing techniques the casing is replaced with lighter and stronger alloys, the rocket composite propellants are enhanced by heptanitrocubane, the prime explosive now a heptanitrocubane / octanitrocubane blend and the penetrator is composed of super alloys. While the explosive radius is larger, this weapon is suited for anti-tank use, not anti-personnel
+      STR_INCENDIARY_ROCKET: Incendiary Rocket
+      STR_INCENDIARY_ROCKET_UFOPEDIA: Since flame throwers were deemed too hazardous for transport in the confines of the Skyranger, Dynamit Nobel Defence was contracted to produce a combination thermobaric and incendiary rocket. A layered white phosphorus and thermate warhead is dispersed by a RDX charge on detonation, spreading molten metal over a wide radius.
+      STR_IMP_INCENDIARY_ROCKET: Alloy Incendiary Rocket
+      STR_IMP_INCENDIARY_ROCKET_UFOPEDIA: Similar techniques that are used to produce alien alloys are applied to produce the nano-scale thermite and thermate compounds used in this incendiary rocket.  Also with the lighter alloy casing, and high potency rocket fuel, the incendiary payload is increased in the warhead, which will produce a larger burn-area and increased heat blast on detonation.
+      STR_MGL_HE_AMMO: MGL HE Rounds
+      STR_MGL_HE_AMMO_UFOPEDIA: This medium velocity 40mm high explosive grenade for the MGL is designed to be multi-role for both anti-armor and anti-personnel use. 
+      STR_MGL_I_AMMO: MGL I Rounds
+      STR_MGL_I_AMMO_UFOPEDIA: This medium velocity 40mm incendiary grenade for the MGL filled with a thermate, thermite and white phosphorus charge coupled with a RDX explosive for dispersal.
+      STR_MGL_AP_AMMO: MGL AP Rounds
+      STR_MGL_AP_AMMO_UFOPEDIA: Different from the other 40mm medium velocity rounds, this shell is filled with nearly two dozen tungsten flechettes which allows for the MGL to be used as an impromptu shotgun in close quarters.
+      STR_MGL_IMP_HE_AMMO: MGL Alloy HE Rounds
+      STR_MGL_IMP_HE_AMMO_UFOPEDIA: This 40mm High explosive grenade for the MGL is improved in almost every way, from the shell's propellant to the nitrocubane high explosive warhead, giving it both more potent wounding capability, and an increased explosive radius.
+      STR_MGL_IMP_I_AMMO: MGL Alloy I Rounds
+      STR_MGL_IMP_I_AMMO_UFOPEDIA: With an improved propellant and nano scale triple incendiary design, this new 40mm Incendiary grenade is a vast improvement over the conventional round.
+      STR_MGL_IMP_AP_AMMO: MGL Alloy AP Rounds
+      STR_MGL_IMP_AP_AMMO_UFOPEDIA: Different from the other 40mm medium velocity rounds, this shell is filled with nearly two dozen super alloy flechettes which allows for the MGL to be used as an impromptu shotgun in close quarters.
+  - type: fr
+    strings:
+      STR_FIVE_SEVEN_PDW: Pistolet
+      STR_FIVE_SEVEN_PDW_UFOPEDIA: Conçu conjointement par la République tchèque et la société russe IZHMASH, l'arme de poing X-Com standard est un pistolet mitrailleur tirant un noyau 5.7mm de tungstène, avec capacité de "tirs sélectifs" et un chargeur de 18 cartouches.
+      STR_FIVE_SEVEN_PDW_CLIP: Chargeur Pistolet
+      STR_IMP_FIVE_SEVEN_PDW_CLIP: Chargeur Pistolet ^
+      STR_MAGNUM: Revolver Magnum
+      STR_MAGNUM_UFOPEDIA: Bien qu'initialement "non approuvés" pour faire parti de l'arsenal  X-Com, un certain nombre de revolvers lourds personnalisés y ont trouvé leur place et sont accessibles via des fournisseurs spéciaux.{NEWLINE}Doté d'un noyau de tungstène .454 Casull, le potentiel de dégâts de cette arme est redoutable.
+      STR_MAGNUM_AMMO: Chargeur Revolver Magnum
+      STR_IMP_MAGNUM_AMMO: Chargeur Revolver Magnum ^
+      STR_ASSAULT_RIFLE: Fusil d'Assaut
+      STR_ASSAULT_RIFLE_UFOPEDIA: Développé par Colt et FN (Fabrique Nationale d'Hersta) pour le projet X-Com, ce fusil d'assaut utilise le SOCOM (United States Special Operations Command) 6.8 mm Remington SPC (Special Purpose Cartridge), avec une pointe en acier et un noyau de tungstène.{NEWLINE}{NEWLINE}Le chargeur contient 30 cartouches.
+      STR_ASSAULT_RIFLE_CLIP: Chargeur Fusil d'Assaut
+      STR_IMP_ASSAULT_RIFLE_CLIP: Chargeur Fusil d'Assaut ^
+      STR_SNIPER_RIFLE: Fusil de Sniper
+      STR_SNIPER_RIFLE_UFOPEDIA: Ce fusil de précision utilise le calibre .50 BMG (Browning Machine Gun) et est classé comme arme "anti-matériel" pouvant détruire les structures environnantes ainsi que les blindés légers.{NEWLINE}{NEWLINE}Bien que lourde, cette arme est précise jusqu'à deux kilomètres et peut infliger de cruelles blessures ou une mort certaine.
+      STR_SNIPER_RIFLE_AMMO: Chargeur Fusil de Sniper
+      STR_IMP_SNIPER_RIFLE_AMMO: Chargeur Fusil de Sniper ^
+      STR_SAW: Arme d'Appui
+      STR_SAW_UFOPEDIA: L'Arme Légère d'Appui utilise le calibre 5.56mm et fait feu à une cadence très élevée, permettant ainsi au soldat d'effectuer un tir de suppression (couvrir un allié) tout en conservant son importante mobilité sur le champ de bataille.
+      STR_SAW_AP_AMMO: Chargeur Arme d'Appui
+      STR_IMP_SAW_AP_AMMO: Chargeur Arme d'Appui ^
+      STR_SHOTGUN: Fusil
+      STR_REINFORCED_SHOTGUN: Fusil Renforcé
+      STR_SHOTGUN_SHELLS: Chargeur Fusil
+      STR_ALLOY_SHOTGUN_SHELLS: Chargeur Fusil ^
+      STR_ELERIUM_SHOTGUN_SHELLS: Chargeur Fusil à L'Elerium
+      STR_SHOTGUN_UFOPEDIA: Le fusil de chasse tactique X-Com est un design personnalisé basé sur le classique Remington 870.  Il utilise le calibre 12 (3 pouces) chargé de fléchettes en tungstène pour infliger un maximum de dommage à courte portée.{NEWLINE}Cependant, son faible pouvoir de pénétration et la propagation des projectiles limite son efficacité contre les cibles blindées ou à longue distance.
+      STR_REINFORCED_SHOTGUN_UFOPEDIA:  En utilisant les propriétés des alliages extraterrestres, ce fusil de chasse semi-automatique est doté d'un baril plus étroit et solide si on le compare à la version traditionnelle. Cela lui permet de tirer des munitions à vitesse plus élevée.
+      STR_MARKSMANS_RIFLE: Fusil Marksman
+      STR_MARKSMANS_RIFLE_UFOPEDIA: Conçu pour le tir de précision tout en maintenant l'équipe plus mobile, le fusil de tireur d'élite est un compromis entre une arme "anti-matériel" plus lourde et immobile et le fusil d'assaut standard. Imaginé et optimisé par les ingénieurs de Colt & HK (Heckler & Koch), il est semi-automatique et utilise le calibre 7.62mm OTAN avec un noyau de tungstène.
+      STR_MARKSMANS_RIFLE_CLIP: Chargeur Fusil Marksman
+      STR_IMP_MARKSMANS_RIFLE_CLIP: Chargeur Fusil Marksman ^
+      STR_SMG: Mitraillette
+      STR_SMG_UFOPEDIA: Arme classique HK redessinée pour les besoins spécifiques du projet X-Com, la cartouche est un noyau de tungstène en acier incliné 9mm. Construite avec compensation de recul et jumelée avec une sangle d'assaut, l'arme peut être utilisée d'une seule main tout en étant bien adaptée pour investir les bâtiments car elle est plus maniable que le fusil d'assaut et plus précise que le pistolet mitrailleur. Le chargeur contient 35 balles.
+      STR_SMG_CLIP: Chargeur Mitraillette
+      STR_IMP_SMG_CLIP: Chargeur Mitraillette ^
+      STR_SSRL: Bazooka Jetable
+      STR_SSRL_UFOPEDIA: Un bazooka jetable tirant un seul coup (ogive explosive), fabriqué par Bazalt (Russie) & Dynamit Nobel (Allemagne).{NEWLINE}{NEWLINE}En atteignant la cible, l'explosion produite est confinée dans un espace restreint, ce qui en fait une arme antipersonnel peu efficace mais redoutable contre les plates-formes d'armes lourdes extraterrestres.
+      STR_IMP_SSRL: Bazooka Jetable ^
+      STR_IMP_SSRL_UFOPEDIA: Bazooka jetable fabriqué par Bazalt (Russie) & Dynamit Nobel (Allemagne), modifié et renforci en utilisant des alliages extraterrestres.{NEWLINE}{NEWLINE}Élaboré à l'aide de techniques de nanotechnologie très sophistiquées, le projectile a une puissance accrue de 33% si on le compare au modèle précédent.
+      STR_APFSDS_ROCKET: Roquette Antiblindage
+      STR_SMALL_ROCKET: Petite Roquette
+      STR_ROCKET_LAUNCHER_UFOPEDIA: Ce lance-roquettes à chargement par la culasse est produit par Raytheon (entreprise américaine {systèmes de défense, électronique & aérospatial}) avec des munitions de Dynamit Nobel (Allemagne). Il peut tirer quatre types de fusées semi-guidées.
+      STR_INCENDIARY_GRENADE: Grenade Incendiaire
+      STR_INCENDIARY_GRENADE_UFOPEDIA: Cette grenade contient du phosphore blanc et de la thermite (mélange d'aluminium métallique et d'oxyde d'un autre métal, généralement l'oxyde de fer) ainsi qu'une petite charge RDX (composé chimique très stable considéré comme l'un des explosifs militaires les plus puissants) pour une dispersion optimum des composantes en fusion.
+      STR_HIGH_EXPLOSIVE: Explosif HMX
+      STR_HIGH_EXPLOSIVE_UFOPEDIA: Une charge de démolition composée d'un kilo de HMX (High Melting point eXplosive) polymérisé.{NEWLINE}{NEWLINE}Bien que ce soit un explosif très puissant, la zone affectée est plutôt restreinte.
+      STR_FRAG_SATCHEL: Explosif HMX à Fragmentation
+      STR_FRAG_SATCHEL_UFOPEDIA: Une charge antipersonnel composée d'un kilo de HMX (High Melting point eXplosive) et de 500 grammes de billes en acier AR-500 (Abrasion Resistant steel).{NEWLINE}{NEWLINE}Destinée à mettre hors de combat les ennemis, que ce soit dans les immeubles ou sur le terrain, sa puissance n'est pas aussi "concentrée" que l'explosif HMX conventionnel.
+      STR_IMP_HIGH_EXPLOSIVE: Explosif HMX ^
+      STR_IMP_HIGH_EXPLOSIVE_UFOPEDIA: Une charge de démolition composée d'un kilo d'octanitrocubane (explosif "non nucléaire" le plus puissant jamais obtenu par l'homme) synthétisé via le processus de fabrication de l'alliage extraterrestre.{NEWLINE}{NEWLINE}Bien que beaucoup plus puissant que l'explosif HMX, la zone affectée est limitée.      
+      STR_IMP_INCENDIARY_GRENADE: Grenade Incendiaire ^
+      STR_IMP_INCENDIARY_GRENADE_UFOPEDIA: Cette grenade conçue à l'aide de la nanotechnologie contient du phosphore blanc et de la thermite (mélange d'aluminium métallique et d'oxyde d'un autre métal, généralement l'oxyde de fer) sous forme de "flocons de neige", ainsi qu'une petite charge explosive d'octanitrocubane pour une dispersion optimum des composantes en fusion.
+      STR_IMP_FRAG_SATCHEL: Explosif HMX à Fragmentation ^
+      STR_IMP_FRAG_SATCHEL_UFOPEDIA: Une charge explosive antipersonnel composée d'octanitrocubane ainsi que de tungstène fusionné à de l'alliage extraterrestre pour la fragmentation.
+      STR_IMP_PROXIMITY_GRENADE: Grenade de Proximité ^
+      STR_IMP_PROXIMITY_GRENADE_UFOPEDIA: Une charge explosive antipersonnel composée d'octanitrocubane ainsi que de tungstène fusionné à de l'alliage extraterrestre pour la fragmentation.{NEWLINE}{NEWLINE}Un capteur de présence déclenche l'explosion si l'on approche trop près.
+      STR_IMP_GRENADE: Grenade ^
+      STR_IMP_GRENADE_UFOPEDIA: Une grenade de fragmentation inspirée du modèle standard, composée d'octanitrocubane (explosif) ainsi que de tungstène fusionné à de l'alliage extraterrestre (servant d'enveloppe).
+      STR_IMP_SMALL_ROCKET: Petite Roquette ^
+      STR_IMP_LARGE_ROCKET: Grande Roquette ^
+      STR_IMP_INCENDIARY_ROCKET: Roquette Incendiaire ^
+      STR_IMP_APFSDS_ROCKET: Roquette Antiblindage ^
+      # New Level 0 armor
+      STR_KEVLAR_ARCTIC: Gilet 1  (Arctique)
+      STR_KEVLAR_ARCTIC_UC: Gilet 1  (Arctique)
+      STR_KEVLAR_ARCTIC_UFOPEDIA: Inspirée de l'unité spécialisée SWAT (Special Weapons and Tactics), cette armure légère produite par Pinnacle Armor (compagnie américaine bien connue pour sa veste ballistique "Dragon Skin") est adaptée selon les spécifications de X-Com. 24 couches d'un mélange unique d'aramide chevauchées par des disques légers de carbure de silicium renforcés de fibres de carbone offrent une protection adéquate tout en ne nuisant pas à la mobilité.
+      STR_KEVLAR_JUNGLE: Gilet 1  (Jungle)
+      STR_KEVLAR_JUNGLE_UC: Gilet 1  (Jungle)
+      STR_KEVLAR_JUNGLE_UFOPEDIA: Inspirée de l'unité spécialisée SWAT (Special Weapons and Tactics), cette armure légère produite par Pinnacle Armor (compagnie américaine bien connue pour sa veste ballistique "Dragon Skin") est adaptée selon les spécifications de X-Com. 24 couches d'un mélange unique d'aramide chevauchées par des disques légers de carbure de silicium renforcés de fibres de carbone offrent une protection adéquate tout en ne nuisant pas à la mobilité.
+      STR_KEVLAR_URBAN: Gilet 1  (Urbain)
+      STR_KEVLAR_URBAN_UC: Gilet 1  (Urbain)
+      STR_KEVLAR_URBAN_UFOPEDIA: Inspirée de l'unité spécialisée SWAT (Special Weapons and Tactics), cette armure légère produite par Pinnacle Armor (compagnie américaine bien connue pour sa veste ballistique "Dragon Skin") est adaptée selon les spécifications de X-Com. 24 couches d'un mélange unique d'aramide chevauchées par des disques légers de carbure de silicium renforcés de fibres de carbone offrent une protection adéquate tout en ne nuisant pas à la mobilité.
+      STR_TACTICAL_URBAN: Gilet 2  (Urbain)
+      STR_TACTICAL_URBAN_UC: Gilet 2  (Urbain)
+      STR_TACTICAL_URBAN_UFOPEDIA: Composé d'un mélange spécial de 36 couches d'aramide accentuant la solidité et la résistance à la chaleur; chevauché par de lourds disques de carbure de silicium renforcés de fibres de carbone, ce gilet tactique produit par Pinnacle Armor (compagnie américaine connue pour sa veste ballistique "Dragon Skin") selon les spécifications de X-Com offre la meilleure protection possible en tenant compte de la technologie disponible, mais réduit la mobilité.
+      STR_TACTICAL_JUNGLE: Gilet 2  (Jungle)
+      STR_TACTICAL_JUNGLE_UC: Gilet 2  (Jungle)
+      STR_TACTICAL_JUNGLE_UFOPEDIA: Composé d'un mélange spécial de 36 couches d'aramide accentuant la solidité et la résistance à la chaleur; chevauché par de lourds disques de carbure de silicium renforcés de fibres de carbone, ce gilet tactique produit par Pinnacle Armor (compagnie américaine connue pour sa veste ballistique "Dragon Skin") selon les spécifications de X-Com offre la meilleure protection possible en tenant compte de la technologie disponible, mais réduit la mobilité.
+      STR_TACTICAL_ARCTIC: Gilet 2  (Arctique)
+      STR_TACTICAL_ARCTIC_UC: Gilet 2  (Arctique)
+      STR_TACTICAL_ARCTIC_UFOPEDIA: Composé d'un mélange spécial de 36 couches d'aramide accentuant la solidité et la résistance à la chaleur; chevauché par de lourds disques de carbure de silicium renforcés de fibres de carbone, ce gilet tactique produit par Pinnacle Armor (compagnie américaine connue pour sa veste ballistique "Dragon Skin") selon les spécifications de X-Com offre la meilleure protection possible en tenant compte de la technologie disponible, mais réduit la mobilité.
+      # New Level 0.5 armor
+      STR_IMP_KEVLAR_ARCTIC: Gilet 1^ (Arctique)
+      STR_IMP_KEVLAR_ARCTIC_UC: Gilet 1^ (Arctique)
+      STR_IMP_KEVLAR_ARCTIC_UFOPEDIA: L'armure légère a été renforcée en remplaçant les disques habituels qui la composaient par ceux trouvés sur les sites d'écrasement d'OVNI.{NEWLINE}{NEWLINE}Elle devrait offrir une meilleure protection face aux armes et explosifs de faible puissance extraterrestres.
+      STR_IMP_KEVLAR_JUNGLE: Gilet 1^ (Jungle)
+      STR_IMP_KEVLAR_JUNGLE_UC: Gilet 1^ (Jungle)
+      STR_IMP_KEVLAR_JUNGLE_UFOPEDIA: L'armure légère a été renforcée en remplaçant les disques habituels qui la composaient par ceux trouvés sur les sites d'écrasement d'OVNI.{NEWLINE}{NEWLINE}Elle devrait offrir une meilleure protection face aux armes et explosifs de faible puissance extraterrestres.
+      STR_IMP_KEVLAR_URBAN: Gilet 1^ (Urbain)
+      STR_IMP_KEVLAR_URBAN_UC: Gilet 1^ (Urbain)
+      STR_IMP_KEVLAR_URBAN_UFOPEDIA: L'armure légère a été renforcée en remplaçant les disques habituels qui la composaient par ceux trouvés sur les sites d'écrasement d'OVNI.{NEWLINE}{NEWLINE}Elle devrait offrir une meilleure protection face aux armes et explosifs de faible puissance extraterrestres.
+      STR_IMP_TACTICAL_ARCTIC: Gilet 2^ (Arctique)
+      STR_IMP_TACTICAL_ARCTIC_UC: Gilet 2^ (Arctique)
+      STR_IMP_TACTICAL_ARCTIC_UFOPEDIA: L'armure tactique de base a été améliorée en utilisant des disques de carbure de silicium renforcés de fibres de carbone plus légers et recouverts d'alliages aliens recyclés.{NEWLINE}{NEWLINE}Cela devrait fournir une meilleure protection face à l'arsenal extraterrestre.
+      STR_IMP_TACTICAL_URBAN: Gilet 2^ (Urbain)
+      STR_IMP_TACTICAL_URBAN_UC: Gilet 2^ (Urbain)
+      STR_IMP_TACTICAL_URBAN_UFOPEDIA: L'armure tactique de base a été améliorée en utilisant des disques de carbure de silicium renforcés de fibres de carbone plus légers et recouverts d'alliages aliens recyclés.{NEWLINE}{NEWLINE}Cela devrait fournir une meilleure protection face à l'arsenal extraterrestre.
+      STR_IMP_TACTICAL_JUNGLE: Gilet 2^ (Jungle)
+      STR_IMP_TACTICAL_JUNGLE_UC: Gilet 2^ (Jungle)
+      STR_IMP_TACTICAL_JUNGLE_UFOPEDIA: L'armure tactique de base a été améliorée en utilisant des disques de carbure de silicium renforcés de fibres de carbone plus légers et recouverts d'alliages aliens recyclés.{NEWLINE}{NEWLINE}Cela devrait fournir une meilleure protection face à l'arsenal extraterrestre.
+      # New Research Subjects
+      STR_ALLOY_MANUFACTURING: Fabrication d'Alliage
+      STR_ALLOY_MANUFACTURING_UFOPEDIA: L'analyse du matériel utilisé pour la construction de vaisseaux ou d'armes extraterrestres nous a profondément éclairé.{NEWLINE}{NEWLINE}Un frittage (chauffer une poudre sans la mener jusqu'à la fusion) magnétique et une pression inductive nous permettraient de reproduire ces alliages étrangers et ainsi confectionner de nouvelles armes et armures.
+extraSprites:
+  - type: BIGOBS.PCK
+    files:
+      10057: Resources/WolframLance/SniperRifle/SniperRifle.gif
+      10058: Resources/WolframLance/SniperRifle/SniperRifleAmmo.gif
+      10059: Resources/WolframLance/SniperRifle/SniperRifleImpAmmo.gif
+      10060: Resources/WolframLance/Shotgun/Shotgun.gif
+      10061: Resources/WolframLance/Shotgun/ReinforcedShotgun.gif
+      10062: Resources/WolframLance/Shotgun/ShotgunAmmo.gif
+      10063: Resources/WolframLance/Shotgun/AlloyShotgunAmmo.gif
+      10164: Resources/WolframLance/Shotgun/EleriumShotgunAmmo.gif # Temp Fix
+      10201: Resources/WolframLance/Explosives/HighExplosive.gif
+      10203: Resources/WolframLance/Explosives/ImpHighExplosive.gif
+      10211: Resources/WolframLance/Explosives/FragSatchel.gif
+      10213: Resources/WolframLance/Explosives/ImpFragSatchel.gif
+      10221: Resources/WolframLance/Explosives/FragGrenade.gif
+      10222: Resources/WolframLance/Explosives/ImpFragGrenade.gif
+      10231: Resources/WolframLance/Explosives/ProximityGrenade.gif
+      10232: Resources/WolframLance/Explosives/ImpProximityGrenade.gif
+      10301: Resources/WolframLance/AssaultRifle/AssaultRifle.gif
+      10303: Resources/WolframLance/AssaultRifle/AssaultRifleAmmo.gif
+      10307: Resources/WolframLance/AssaultRifle/AssaultRifleImpAmmo.gif
+      10401: Resources/WolframLance/EMRifle/EMRifle2.gif
+      10405: Resources/WolframLance/EMRifle/EMRifleAmmo.gif
+      10407: Resources/WolframLance/EMRifle/EMRifleImpAmmo.gif
+      10428: Resources/WolframLance/MGL/MGL.gif
+      10439: Resources/WolframLance/MGL/MGLAmmoHE.gif 
+      10441: Resources/WolframLance/MGL/MGLAmmoI.gif 
+      10443: Resources/WolframLance/MGL/MGLAmmoAP.gif
+      10455: Resources/WolframLance/MGL/MGLImpAmmoHE.gif 
+      10457: Resources/WolframLance/MGL/MGLImpAmmoI.gif
+      10459: Resources/WolframLance/MGL/MGLImpAmmoAP.gif
+      10501: Resources/WolframLance/SMG/SMG.gif
+      10502: Resources/WolframLance/SMG/SMGAmmo.gif
+      10505: Resources/WolframLance/SMG/SMGImpAmmo.gif
+      10601: Resources/WolframLance/IncendiaryGrenade/IncenGren.gif
+      10603: Resources/WolframLance/IncendiaryGrenade/IncenGrenImp.gif
+      10681: Resources/WolframLance/SSRL/SSRL.gif
+      10683: Resources/WolframLance/SSRL/ISSRL.gif
+      10691: Resources/WolframLance/RocketLauncher/APFSDSRocket.gif
+      10692: Resources/WolframLance/RocketLauncher/SmallRocket.gif
+      10693: Resources/WolframLance/RocketLauncher/ImpAPFSDSRocket.gif
+      10694: Resources/WolframLance/RocketLauncher/SmallRocketImp.gif
+      10697: Resources/WolframLance/RocketLauncher/ImpLargeRocket.gif
+      10698: Resources/WolframLance/RocketLauncher/ImpIncendiaryRocket.gif
+      10701: Resources/WolframLance/Magnum/Magnum.gif
+      10702: Resources/WolframLance/Magnum/MagnumAmmo.gif
+      10707: Resources/WolframLance/Magnum/MagnumImpAmmo.gif
+      10801: Resources/WolframLance/SAW/Saw.gif
+      10802: Resources/WolframLance/SAW/SawAmmo.gif
+      10809: Resources/WolframLance/SAW/SawImpAmmo.gif
+      10901: Resources/WolframLance/MachinePistol/MachinePistol.gif
+      10903: Resources/WolframLance/MachinePistol/MachinePistolClip.gif
+      10904: Resources/WolframLance/MachinePistol/MachinePistolImpClip.gif
+  - type: FLOOROB.PCK
+    files:
+      10074: Resources/WolframLance/Shotgun/ShotgunF.gif
+      10075: Resources/WolframLance/Shotgun/ReinforcedShotgunF.gif
+      10076: Resources/WolframLance/Shotgun/ShotgunAmmoF.gif
+      10091: Resources/WolframLance/Shotgun/AlloyShotgunAmmoF.gif # Fixed from 77
+      10178: Resources/WolframLance/Shotgun/EleriumShotgunAmmoF.gif
+      10079: Resources/WolframLance/SniperRifle/SniperRiflef.gif
+      10080: Resources/WolframLance/SniperRifle/SniperRifleAmmof.gif
+      10202: Resources/WolframLance/Explosives/HighExplosivef.gif
+      10212: Resources/WolframLance/Explosives/FragSatchelf.gif
+      10225: Resources/WolframLance/Explosives/FragGrenadef.gif
+      10234: Resources/WolframLance/Explosives/ImpProximityGrenadef.gif
+      10302: Resources/WolframLance/AssaultRifle/AssaultRiflef.gif
+      10304: Resources/WolframLance/AssaultRifle/AssaultRifleAmmof.gif
+      10402: Resources/WolframLance/EMRifle/EMRifle2f.gif
+      10406: Resources/WolframLance/EMRifle/EMRifleAmmof.gif
+      10429: Resources/WolframLance/MGL/MGLf.gif
+      10440: Resources/WolframLance/MGL/MGLAmmoHEf.gif 
+      10442: Resources/WolframLance/MGL/MGLAmmoIf.gif
+      10444: Resources/WolframLance/MGL/MGLAmmoAPf.gif
+      10460: Resources/WolframLance/MGL/MGLImpAmmoHEf.gif 
+      10462: Resources/WolframLance/MGL/MGLImpAmmoIf.gif
+      10464: Resources/WolframLance/MGL/MGLImpAmmoAPf.gif
+      10503: Resources/WolframLance/SMG/SMGf.gif
+      10504: Resources/WolframLance/SMG/SMGAmmof.gif
+      10602: Resources/WolframLance/IncendiaryGrenade/IncenGrenf.gif
+      10604: Resources/WolframLance/IncendiaryGrenade/IncenGrenf.gif
+      10682: Resources/WolframLance/SSRL/SSRLf.gif
+      10690: Resources/WolframLance/RocketLauncher/ImpLargeRocketf.gif
+      10695: Resources/WolframLance/RocketLauncher/APFSDSRocketf.gif
+      10696: Resources/WolframLance/RocketLauncher/SmallRocketf.gif
+      10699: Resources/WolframLance/RocketLauncher/ImpIncendiaryRocketf.gif
+      10703: Resources/WolframLance/Magnum/Magnumf.gif
+      10704: Resources/WolframLance/Magnum/MagnumAmmof.gif
+      10803: Resources/WolframLance/SAW/Sawf.gif
+      10804: Resources/WolframLance/SAW/SawAmmof.gif
+      10902: Resources/WolframLance/MachinePistol/MachinePistolf.gif
+  - type: HANDOB.PCK
+    width: 128
+    height: 80
+    subX: 32
+    subY: 40
+    files:
+      10275: Resources/WolframLance/Shotgun/ShotgunH.gif
+      10445: Resources/WolframLance/SniperRifle/SniperRifleh.gif
+      10285: Resources/WolframLance/Shotgun/ReinforcedShotgunH.gif
+      10410: Resources/WolframLance/EMRifle/EMRifle2h.gif
+      10430: Resources/WolframLance/MGL/MGLh.gif
+      10815: Resources/WolframLance/SAW/Sawh.gif
+  - type: HANDOB.PCK
+    width: 256
+    height: 40
+    subX: 32
+    subY: 40
+    files:
+      10240: Resources/WolframLance/Explosives/HighExplosiveh.gif
+      10250: Resources/WolframLance/Explosives/FragSatchelh.gif
+      10260: Resources/WolframLance/Explosives/FragGrenadeh.gif
+      10310: Resources/WolframLance/AssaultRifle/AssaultRifleh.gif
+      10510: Resources/WolframLance/SMG/SMGh.gif
+      10710: Resources/WolframLance/Magnum/Magnumh.gif
+  - type: HANDOB.PCK
+    files:
+      10340: Resources/WolframLance/SSRL/HandOb/
+  - type: Projectiles
+    height: 3
+    width: 57
+    subX: 3
+    subY: 3
+    files:
+      10350: Resources/WolframLance/SniperRifle/BulletSprite.png
+# Kevlar Urban Start
+  - type: MAN_1uF0.SPK 
+    singleImage: true
+    files:
+      0: Resources/WolframLance/Armor/Urban/man_1f0.gif
+  - type: MAN_1uF1.SPK
+    singleImage: true
+    files:
+      0: Resources/WolframLance/Armor/Urban/man_1f1.gif
+  - type: MAN_1uF2.SPK
+    singleImage: true
+    files:
+      0: Resources/WolframLance/Armor/Urban/man_1f2.gif
+  - type: MAN_1uF3.SPK
+    singleImage: true
+    files:
+      0: Resources/WolframLance/Armor/Urban/man_1f3.gif
+  - type: MAN_1uM0.SPK
+    singleImage: true
+    files:
+      0: Resources/WolframLance/Armor/Urban/man_1m0.gif
+  - type: MAN_1uM1.SPK
+    singleImage: true
+    files:
+      0: Resources/WolframLance/Armor/Urban/man_1m1.gif
+  - type: MAN_1uM2.SPK
+    singleImage: true
+    files:
+      0: Resources/WolframLance/Armor/Urban/man_1m2.gif
+  - type: MAN_1uM3.SPK
+    singleImage: true
+    files:
+      0: Resources/WolframLance/Armor/Urban/man_1m3.gif
+  - type: XCOM_1u.PCK
+    width: 256
+    height: 1400
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/WolframLance/Armor/Urban/BScapeView/Kevlar/ETUrbanKevlar.png
+# start of UrbanCombat tactical
+  - type: MAN_1DSuF0.SPK 
+    singleImage: true
+    files:
+      0: Resources/WolframLance/Armor/Urban/man_Df0.gif
+  - type: MAN_1DSuF1.SPK
+    singleImage: true
+    files:
+      0: Resources/WolframLance/Armor/Urban/man_Df1.gif
+  - type: MAN_1DSuF2.SPK
+    singleImage: true
+    files:
+      0: Resources/WolframLance/Armor/Urban/man_Df2.gif
+  - type: MAN_1DSuF3.SPK
+    singleImage: true
+    files:
+      0: Resources/WolframLance/Armor/Urban/man_Df3.gif
+  - type: MAN_1DSuM0.SPK
+    singleImage: true
+    files:
+      0: Resources/WolframLance/Armor/Urban/man_Dm0.gif
+  - type: MAN_1DSuM1.SPK
+    singleImage: true
+    files:
+      0: Resources/WolframLance/Armor/Urban/man_Dm1.gif
+  - type: MAN_1DSuM2.SPK
+    singleImage: true
+    files:
+      0: Resources/WolframLance/Armor/Urban/man_Dm2.gif
+  - type: MAN_1DSuM3.SPK
+    singleImage: true
+    files:
+      0: Resources/WolframLance/Armor/Urban/man_Dm3.gif
+  - type: XCOM_1DSu.PCK
+    width: 256
+    height: 1400
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/WolframLance/Armor/Urban/BScapeView/Tactical/ETUrbanTactical.png
+  - type: BIGOBS.PCK
+    files:
+      10064: Resources/WolframLance/Armor/BigObs.gif
+  - type: FLOOROB.PCK
+    files:
+      10077: Resources/WolframLance/Armor/FloorOb.gif
+# CRAFT Weapons
+  - type: WASP
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/WolframLance/CraftWeapon/WaspUfopedia.gif
+  - type: BASEBITS.PCK
+    files:
+      83: Resources/WolframLance/CraftWeapon/Basebits/Wasp.gif
+  - type: INTICON.PCK
+    files:
+      40: Resources/WolframLance/CraftWeapon/CraftIcons/Wasp.gif
+  - type: AVALANCHE
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/WolframLance/CraftWeapon/AvalancheUfopedia.gif
+  - type: BASEBITS.PCK
+    files:
+      86: Resources/WolframLance/CraftWeapon/Basebits/Tsunami.gif
+  - type: INTICON.PCK
+    files:
+      43: Resources/WolframLance/CraftWeapon/CraftIcons/Tsunami.gif
+# new alloy craft weapons
+  - type: HORNET
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/WolframLance/CraftWeapon/HornetUfopedia.gif
+  - type: BASEBITS.PCK
+    files:
+      84: Resources/WolframLance/CraftWeapon/Basebits/Wasp.gif
+  - type: INTICON.PCK
+    files:
+      41: Resources/WolframLance/CraftWeapon/CraftIcons/Wasp.gif
+  - type: BARRACUDA
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/WolframLance/CraftWeapon/BarracudaUfopedia.gif
+  - type: BASEBITS.PCK
+    files:
+      85: Resources/WolframLance/CraftWeapon/Basebits/Barracuda.gif
+  - type: INTICON.PCK
+    files:
+      42: Resources/WolframLance/CraftWeapon/CraftIcons/Barracuda.gif
+  - type: TSUNAMI
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/WolframLance/CraftWeapon/TsunamiUfopedia.gif
+  - type: BASEBITS.PCK
+    files:
+      86: Resources/WolframLance/CraftWeapon/Basebits/Tsunami.gif
+  - type: INTICON.PCK
+    files:
+      43: Resources/WolframLance/CraftWeapon/CraftIcons/Tsunami.gif
+extraSounds:
+  - type: BATTLE.CAT
+    files:
+      10055: Resources/WolframLance/Shotgun/Fire.wav
+      10056: Resources/WolframLance/Shotgun/Fire2.wav
+      10081: Resources/WolframLance/SniperRifle/Sounds/fire.wav
+      10082: Resources/WolframLance/AssaultRifle/Sounds/fire.wav
+      10083: Resources/WolframLance/EMRifle/Sounds/fire.wav
+      10084: Resources/WolframLance/SMG/Sounds/fire.wav
+      10438: Resources/WolframLance/MGL/Sounds/fire.wav
+      10668: Resources/WolframLance/SSRL/Sounds/fire.wav
+      10705: Resources/WolframLance/Magnum/Sounds/fire.wav
+      10805: Resources/WolframLance/SAW/Sounds/fire.wav
+      10905: Resources/WolframLance/MachinePistol/Sounds/fire.wav
+  - type: GEO.CAT
+    files:
+      10390: Resources/WolframLance/CraftWeapon/Sounds/rocketslow.wav
+      10391: Resources/WolframLance/CraftWeapon/Sounds/rocket.wav
+      10392: Resources/WolframLance/CraftWeapon/Sounds/rocketfast.wav

@@ -1,0 +1,220 @@
+--= 313 Equal Terms 2.0 Modification for Open-X-Com =--
+By KingMob4313 and Ickschuss. Created for X-Com: Ufo Defense May 2000.
+Last updated Aug 2016.
+
+BETA BETA BETA BETA BETA BETA BETA BETA BETA BETA Version 2.0b022 BETA BETA BETA BETA BETA BETA BETA BETA BETA BETA
+
+Installation: 
+Please See the 'ET_Install.pdf' file for full, detailed install instructions.
+
+There are now four rulesets included in each package: 
+1-3) Three for the main mods, containing modded info for all three tiers 
+  4) A miscellaneous ruleset 
+    a) this contains small changes to related to the mod 
+    b) adjusts the accuracy of aliens to make up for the changed accuracies of plasma weapons
+	c) adds an item to the alien base map
+
+== Required 'Advanced'/'Mods' settings == 
+'UFO Extender accuracy' - Range Based Accuracy is an ABSOLUTE NECESSITY for proper balance.
+
+-- Suggested Settings --
+Explosion Height 3
+TFTD Damage Formula
+Aliens Pickup Weapons
+
+-- Other mods I like added --
+ImprovedLivingQuarters
+LukesExtraUfos
+Terrain Pack by Hobbes
+
+NOTE: 
+HWPs are only partially tested.
+
+The mod has three portions:
+
+-= Wolfram Lance =-
+Named after the German name for tungsten, since the gunpowder weapons all use tungsten-carbide as penetrators.  Gunpowder weapons lack damage potential compared to later weapon technologies, but still have the highest cyclic rates in the game; firing more rounds per time-unit than other weapon classes.
+
+-= Coherency =- 
+Laser weapons, while more potent and much more accurate in autofire modes than gunpowder weapons, are inferior in aimed accuracy to other weapon classes and lack the lethality of plasma weapons.
+
+-= Fourth State =- 
+Plasma is the fourth state of matter, and the Plasma weapons inflict incomparable damage, while lacking some of the accuracy or rate of fire compared to the other weapon types
+
+Overall, weapons have a certain amount of utility throughout the game, while still making upgrading technology levels worthwhile.  Because of this, researching the weapon technology trees now takes longer, to afford more utility to the earlier tiers.
+
+The tier-list
+0: Gunpower
+0.5: Alloy
+1: Laser
+2: Plasma
+3: In next DLC
+
+Wolfram Lance: 
+ - New purchasable conventional armor
+   - Class III SWAT style armor
+   - Class IV tactical armor
+ - New weapons classes and system
+   - Reworked small arms replacing existing firearms: Machine Pistol, Magnum Revolver, Submachine Gun, Squad Automatic Weapon / Saw, Designated Marksman's Rifle, Sniper Rifle
+   - New explosives: Small Rocket, APFSDS Rocket, Incendiary Grenade, Frag Satchel, Multiple Grenade Launcher, Single-Shot Rocket Launcher (SSRL)
+ - Reworked Interceptors and Weapons
+   - New Wasp light Air-to-Air missile
+   - Stingray and Avalanche adjusted for balance
+   - Starting interceptor toughness weakened 40%
+ - Expansion of alloy technology
+   - Basic Alien Alloys research can be re-purposed into improved conventional armor
+   - Alien Alloy research leads to Alloy Manufacturing
+     - With this technology, construction of improved explosives, small arms ammunition and personal armor is possible
+	 - The technology allows for research into Directed Energy Weapons (Lasers)
+   - Alloy Manufacturing leads to Alloy Aerospace
+	 - Permits construction of enhanced Air-to-Air Weapons
+ - New HWP tanks
+   - Four new tanks replacing existing tanks
+     - General Machine Gun with 40mm Grenade launcher
+	 - Heavy Rocket Launcher with Submachine Gun
+	 - Light Rocket Launcher with Light Machine Gun
+	 - Fully Automatic 40mm Grenade Launcher with Submachine Gun
+   - Tanks much tougher, but are reduced in effectiveness with damage
+ - Armor now protects in a different fashion
+   - armor affords a similar protective value as before.
+     - All hits now have higher chance of inflicting some damage, even with low damage weapon hits 
+     - Higher damage weapon hits do somewhat less damage
+ - Small & Large Radar adjusted for balance
+ 
+Coherency:
+ - Expanded Armor Types all requiring Alloy Manufacturing
+   - Added Heavy Personal Armor
+ - Alloy Manufacturing leads to Alloy Aerospace
+     - Allows for construction of an enhanced conventional interceptor
+ - Reworked and Expanded Air-to-Air Weapons
+   - Laser Cannon is now a long range, somewhat inaccurate and slow firing weapon
+   - Pulse Laser is a short range, high-rate-of-fire weapon
+ - New weapons classes and system
+   - New weapons replace existing weapons with the following: Pistol, Magnum, SMG, Assault Rifle, Marksmans Rifle, Sniper Rifle, LMG all using the laser technology.
+ - Two new tanks replacing existing laser tank
+   - Laser Cannon with Enhanced 40mm Grenade Launcher
+   - Laser GMG with Enhanced 40mm Grenade Launcher
+
+Fourth State:
+ - Expanded Power Suit and Flying armor types
+   - Added Scout Power Armor and Scout Flying Power Armor
+ - Complete rework of the existing Plasma weapons.
+   - Human Plasma weapons now include the following: Magnum, SMG, Marksmans Rifle, Sniper Rifle, LMG.
+   - Plasma Weapon research now has further requirements past the weapons themselves.
+   - Certain plasma weapons cannot be manufactured by the X-Com team.
+   - All alien plasma weapons cannot be used by X-com forces, they must be converted first.
+ - Reworked and Expanded Air-to-Air Weapons
+   - Rebalanced the Plasma Cannon
+   - Added Pulse Plasma: a short range, high-rate-of-fire weapon
+   - Fusion Ball Launcher is rebalanced
+ - Hyperwave Decoder is now harder to research
+ - Two new tanks replacing existing plasma and blaster launcher tank
+   - Plasma Cannon with 40mm Grenade Launcher with Alien Grenade warhead
+   - Plasma GMG with 40mm Grenade Launcher with Alien Grenade warhead
+   - Blaster Bomb / Fusion Rocket with Plasma SMG
+
+Version 2.0b022
+--== Current ==--
+Release for Nightlies and Prime (1.0) Version.
+Added new 'ET_Install.pdf' with install instructions.
+
+Version 2.0b020
+Shortened up Wasp/hornet fire noise.
+Fixed Alloy Ammo Price
+Allow Laser ARifle research after Magnum Research.
+Fixed existing armor to read correctly
+Price Changes:
+ - Mind Probe up to 500k
+ - Sectoid Corpses to 15k (reduced)
+ - Floater Corpses to 35k
+ - Cyberdisc Corpse to 50k
+ - Sectopod Corpse to 65k 
+   
+Version 2.0b010
+New release for OpenXcom Nightly
+Combined armor sprite sheets for 0 & 0.5 armors.
+Fixed case sensitivity for *nix systems (I hope)
+Switched craft light rocket sound
+
+-= Current Release Details =-
+OpenXcom 1.0 release Version && OpenXcom Nightly Release
+Current Status: Playable -- not fully tested. Released as Beta.
+Bugs: Full complement of HWP have not been fully tested.
+SHOWSTOPPER: Possible tech deadend if 'Hyperwave Encoder' does not spawn in Alien Base missions.
+
+--= Future Plans =--
+OpenXcom Extended Release
+In planning/evaluation stage. Code at 80%
+Proposed Changes:
+ - armor vs penetration and armor damage behavior
+ - reload times
+ - recoil rules
+ - miscellaneous gear
+ - melee weapons
+ - other bits.
+
+Contributions:
+Testing and feedback: Arthanor, Dioxine, Falko, ivandogovich, niculinux, NoelBuddy, pkrcel, RSSwizard, SIMON and Solarius Scorch
+French Translation: Infini
+
+Aircraft Missiles
+Sprites: XOps & KingMob4313
+YAML: KingMob4313
+Sounds: KingMob4313
+
+Conventional HWP
+Sprites: KingMob4313
+YAML: KingMob4313 & Dioxine
+Sounds: KingMob4313
+
+Machine Pistol, Magnum, SMG, Assault Rifle, Small Rocket, Incendiary Grenade, APFSDS Rocket, High Explosive, Frag Satchel, Frag Grenade, MGL launcher
+Yaml Code, Sprites and Sounds: KingMob4313 
+
+SAW
+Sprites: KingMob4313 & Dioxine
+Yaml Code: KingMob4313
+
+Shotgun
+Sprites: Ryskeliini & Warboy1982
+Yaml Code: Ryskeliini, Warboy1982, KingMob4313 & Dioxine
+
+Sniper Rifle
+Sprites: Toshiaki2115, Warboy1982 & KingMob4313
+Yaml Code: Warboy1982 & KingMob4313
+Sounds: KingMob4313
+
+Designated Marksman's Rifle (Marksmans Rifle)
+Sprites: Chiko & KingMob4313
+Yaml Code & Sounds: KingMob4313
+
+SSRL
+Sprites: Ryskeliini & KingMob4313
+Yaml Code & Sounds: KingMob4313
+
+Conventional Armor:
+Sprites: Warboy1982 & Fox105iwsp & KingMob4313
+Yaml Code: KingMob4313 & Fox105iwsp
+
+Yaml reorganization: yrizoud (version 0.86)
+
+Laser Weapons 
+Sprites: Rockfish & KingMob4313
+YAML: KingMob4313
+Sounds: 343 Industries & KingMob4313
+
+Alloy Armor
+Sprites: harald_gray, Robin & Kingmob4313
+YAML: harald_gray & KingMob4313
+
+Alloy Interceptor
+Sprites: Shadow
+YAML: KingMob4313 & Shadow
+
+All Plasma:
+Sprites: Shadow, Solarius Scorch, Dioxine, KingMob4313
+Yaml: KingMob4313
+Sounds: 343 Industries & KingMob4313
+
+Power Armors:
+Sprites: harald_gray
+Yaml: KingMob4313

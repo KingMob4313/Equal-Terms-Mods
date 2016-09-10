@@ -1,0 +1,176 @@
+﻿# Equal Terms 2.0
+# Based on the original Equal Terms mod created for X-com in 2000 by Ickschuss & Shortstop4313
+# version 2.0 for OpenXcom
+# This is the miscellaneous changes for the Equal Terms Mods.
+items:
+  - type: STR_SECTOID_CORPSE
+    costSell: 15000
+  - type: STR_MIND_PROBE
+    costSell: 500000
+  - type: STR_FLOATER_CORPSE
+    costSell: 35000
+  - type: STR_CYBERDISC_CORPSE
+    costSell: 50000
+  - type: STR_SECTOPOD_CORPSE
+    costSell: 65000
+startingTime:
+  second: 0
+  minute: 0
+  hour: 12
+  weekday: 4
+  day: 1
+  month: 1
+  year: 2015
+items:
+  - type: STR_ELECTRO_FLARE
+    size: 0.1
+    costBuy: 60
+    costSell: 40
+    weight: 2 # 3
+    bigSprite: 55
+    floorSprite: 72
+    power: 15
+    battleType: 10
+    armor: 8
+# This is the miscellaneous changes for the units for the Equal Terms Mods. With the decreased accuracy of the plasma weapons
+# alien units firing accuracy needed to be adjusted
+units:
+  - type: STR_SECTOID_SOLDIER
+    stats:
+      firing: 65
+  - type: STR_SECTOID_ENGINEER
+    stats:
+      firing: 65
+  - type: STR_SECTOID_MEDIC
+    stats:
+      firing: 65
+  - type: STR_SECTOID_NAVIGATOR
+    stats:
+      firing: 65
+  - type: STR_SECTOID_LEADER
+    stats:
+      firing: 65
+  - type: STR_SECTOID_COMMANDER
+    stats:
+      firing: 62
+  - type: STR_FLOATER_SOLDIER
+    stats:
+      firing: 62
+  - type: STR_FLOATER_ENGINEER
+    stats:
+      firing: 62
+  - type: STR_FLOATER_NAVIGATOR
+    stats:
+      firing: 62
+  - type: STR_FLOATER_MEDIC
+    stats:
+      firing: 62
+  - type: STR_FLOATER_LEADER
+    stats:
+      firing: 62
+  - type: STR_FLOATER_COMMANDER
+    stats:
+      firing: 62
+  - type: STR_SNAKEMAN_SOLDIER
+    stats:
+      firing: 71
+  - type: STR_SNAKEMAN_ENGINEER
+    stats:
+      firing: 71
+  - type: STR_SNAKEMAN_NAVIGATOR
+    stats:
+      firing: 71
+  - type: STR_SNAKEMAN_LEADER
+    stats:
+      firing: 71
+  - type: STR_SNAKEMAN_COMMANDER
+    stats:
+      firing: 71
+  - type: STR_MUTON_NAVIGATOR
+    stats:
+      firing: 66
+  - type: STR_MUTON_ENGINEER
+    stats:
+      firing: 66
+  - type: STR_MUTON_SOLDIER
+    stats:
+      firing: 66
+  - type: STR_ETHEREAL_SOLDIER
+    stats:
+      firing: 86
+  - type: STR_ETHEREAL_LEADER
+    stats:
+      firing: 86
+  - type: STR_ETHEREAL_COMMANDER
+    stats:
+      firing: 86
+# New terrain values for the planted 'Hyper Wave Encoder"
+# This is currently parsed out for the OXC 1.0
+terrains:
+  - name: UBASE
+    mapDataSets:
+      - BLANKS
+      - U_BASE
+      - U_WALL02
+      - U_PODS
+      - BRAIN
+    largeBlockLimit: 3
+    mapBlocks:
+      - name: UBASE_00
+        width: 20
+        length: 20
+        type: 7
+        items:
+          STR_HYPER_WAVE_ENCODER:
+            - [9, 11, 2]
+      - name: UBASE_01
+        width: 20
+        length: 20
+      - name: UBASE_02
+        width: 20
+        length: 20
+      - name: UBASE_03
+        width: 20
+        length: 20
+      - name: UBASE_04
+        width: 10
+        length: 10
+        type: 6
+      - name: UBASE_05
+        width: 10
+        length: 10
+      - name: UBASE_06
+        width: 10
+        length: 10
+      - name: UBASE_07
+        width: 10
+        length: 10
+        type: 4
+      - name: UBASE_08
+        width: 10
+        length: 10
+      - name: UBASE_09
+        width: 10
+        length: 10
+      - name: UBASE_10
+        width: 10
+        length: 10
+      - name: UBASE_11
+        width: 10
+        length: 10
+#       UBASE_12 is impassable, 13 and 14 are apparently unused.
+#       in the interest of preserving an original experience,
+#       they have been disabled. delete the hashes to re-enable.
+#      - name: UBASE_12
+#        width: 10
+#        length: 10
+#      - name: UBASE_13
+#        width: 10
+#        length: 10
+#      - name: UBASE_14
+#        width: 10
+#        length: 10
+      - name: UBASE_15
+        width: 20
+        length: 20
+        type: 8

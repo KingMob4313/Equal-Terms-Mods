@@ -1,0 +1,84 @@
+--= 313 Equal Terms 2.0 Modification for Open-X-Com =--
+By KingMob4313 and Ickschuss. Created for X-Com: Ufo Defense May 2000.
+Last updated Aug 2016.
+
+BETA BETA BETA BETA BETA BETA BETA BETA  BETA BETA BETA BETA BETA BETA BETA 
+BETA BETA BETA BETA BETA BETA Version 2.0b022 BETA BETA BETA BETA BETA BETA 
+BETA BETA BETA BETA BETA BETA BETA BETA  BETA BETA BETA BETA BETA BETA BETA 
+
+Installation: 
+Please See the 'ET_Install.pdf' file for detailed install instructions.
+
+== Required 'Advanced'/'Mods' settings == 
+'UFO Extender accuracy' - Range Based Accuracy is an ABSOLUTE NECESSITY for proper balance.
+
+-- Suggested Settings --
+Explosion Height 3
+TFTD Damage Formula
+Aliens Pickup Weapons
+
+-- Other mods I like added --
+ImprovedLivingQuarters
+LukesExtraUfos
+Terrain Pack by Hobbes
+
+The mod has three portions:
+
+-= Wolfram Lance =-
+The gunpowder teir weapons lack damage potential compared to later weapon technologies, but still have the highest cyclic rates in the game: firing more rounds per time-unit than other weapon classes. 
+
+-= Coherency =- 
+Laser weapons, while more potent and much more accurate in autofire modes than gunpowder weapons, are inferior in aimed accuracy to other weapon classes and lack the lethality of plasma weapons.
+
+-= Fourth State =- 
+Plasma weapons inflict incomparable damage, while lacking some of the accuracy or rate of fire compared to the other weapon types.
+
+Overall, weapons have a certain amount of utility throughout the game, while still making upgrading technology levels worthwhile.  Because of this, researching the weapon technology trees now takes longer, to afford more utility to the earlier tiers.
+
+The tier-list
+0: Gunpower
+0.5: Alloy
+1: Laser
+2: Plasma
+3: In next DLC
+
+Version 2.0b022
+--== Current ==--
+Release for Nightlies and Prime (1.0) Version.
+Added new 'ET_Install.pdf' with install instructions.
+
+Version 2.0b020
+Shortened up Wasp/hornet fire noise.
+Fixed Alloy Ammo Price
+Allow Laser ARifle research after Magnum Research.
+Fixed existing armor to read correctly
+Price Changes:
+ - Mind Probe up to 500k
+ - Sectoid Corpses to 15k (reduced)
+ - Floater Corpses to 35k
+ - Cyberdisc Corpse to 50k
+ - Sectopod Corpse to 65k 
+NOTE: HWPs are only partially tested.   
+
+Version 2.0b010
+New release for OpenXcom Nightly
+Combined armor sprite sheets for 0 & 0.5 armors.
+Fixed case sensitivity for *nix systems (I hope)
+Switched craft light rocket sound
+
+-= Current Release Details =-
+OpenXcom 1.0 release Version && OpenXcom Nightly Release
+Current Status: Playable -- not fully tested. Released as Beta.
+Bugs: Full complement of HWP have not been fully tested.
+SHOWSTOPPER: Possible tech deadend if 'Hyperwave Encoder' does not spawn in Alien Base missions.
+
+--= Future Plans =--
+OpenXcom Extended Release
+In planning/evaluation stage. Code at 80%
+Proposed Changes:
+ - armor vs penetration and armor damage behavior
+ - reload times
+ - recoil rules
+ - miscellaneous gear
+ - melee weapons
+ - other bits.

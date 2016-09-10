@@ -1,0 +1,150 @@
+# Armor repair ruleset for Equal Terms, optional.
+# Pkrcel  authored on Sept 9 2014
+
+# - Oct 18 2014: Initial Release - All values to be balanced
+
+# Adding Recover: true to most armors corpses
+# Adding costsell & listorder
+items:
+  - type: STR_CORPSE_ARMOR
+    name: STR_CORPSE
+    recover: true
+    costSell: 8000
+    listOrder: 10601
+  - type: STR_CORPSE_HEAVY_PERSONAL_ARMOR
+    name: STR_CORPSE
+    recover: true
+    costSell: 8000
+    listOrder: 10611
+  - type: STR_CORPSE_SCOUT_POWER_ARMOR
+    name: STR_CORPSE
+    recover: true
+    costSell: 4000
+    listOrder: 10511
+  - type: STR_CORPSE_SUIT
+    name: STR_CORPSE
+    recover: true
+    costSell: 20000
+    listOrder: 10701
+  - type: STR_CORPSE_FLYING_ARMOR
+    name: STR_CORPSE
+    recover: true
+    costSell: 30000
+    listOrder: 10801
+  - type: STR_CORPSE_SCOUT_FLYING_ARMOR
+    name: STR_CORPSE
+    recover: true
+    costsell: 30000
+    listorder: 10811
+#New Manufacturing for Repair
+manufacture:
+  - name: STR_REPAIR_PERSONAL_ARMOR
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_PERSONAL_ARMOR
+    space: 0
+    time: 100
+    cost: 5000
+    requiredItems:
+      STR_CORPSE_ARMOR: 1
+      STR_ALIEN_ALLOYS: 1
+    producedItems:
+      STR_PERSONAL_ARMOR: 1
+    listOrder: 2701
+  - name: STR_REPAIR_HEAVY_PERSONAL_ARMOR
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_HEAVY_PERSONAL_ARMOR
+    space: 0
+    time: 100
+    cost: 5000
+    requiredItems:
+      STR_CORPSE_HEAVY_PERSONAL_ARMOR: 1
+    producedItems:
+      STR_HEAVY_PERSONAL_ARMOR: 1
+    listOrder: 2610
+  - name: STR_REPAIR_SCOUT_POWER_ARMOR
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_SCOUT_POWER_ARMOR
+    space: 0
+    time: 300
+    cost: 10000
+    requiredItems:
+      STR_CORPSE_SCOUT_POWER_ARMOR: 1
+      STR_ALIEN_ALLOYS: 2
+      STR_ELERIUM_115: 1
+    producedItems:
+      STR_SCOUT_POWER_ARMOR: 1
+    listOrder: 2710
+  - name: STR_REPAIR_POWER_SUIT
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_POWER_SUIT
+    space: 0
+    time: 300
+    cost: 10000
+    requiredItems:
+      STR_CORPSE_SUIT: 1
+      STR_ALIEN_ALLOYS: 2
+      STR_ELERIUM_115: 1
+    producedItems:
+      STR_POWER_SUIT: 1
+    listOrder: 2801
+  - name: STR_REPAIR_FLYING_SUIT
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_FLYING_SUIT
+    space: 0
+    time: 400
+    cost: 10000
+    requiredItems:
+      STR_CORPSE_FLYING_SUIT: 1
+      STR_ALIEN_ALLOYS: 2
+      STR_ELERIUM_115: 1
+    producedItems:
+      STR_FLYING_SUIT: 1
+    listOrder: 2901
+  - name: STR_REPAIR_SCOUT_FLYING_ARMOR
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_SCOUR_FLYING_ARMOR
+    space: 0
+    time: 400
+    cost: 10000
+    requiredItems:
+      STR_CORPSE_SCOUT_FLYING_ARMOR: 1
+      STR_ALIEN_ALLOYS: 2
+      STR_ELERIUM_115: 1
+    producedItems:
+      STR_SCOUR_FLYING_ARMOR: 1
+    listOrder: 2901
+extraStrings:
+  - type: en-US
+    strings:
+      STR_CORPSE_ARMOR: Damaged Personal Armor
+      STR_REPAIR_PERSONAL_ARMOR: Personal Armor Repair
+      STR_CORPSE_SUIT: Damaged Power Armor
+      STR_REPAIR_POWER_SUIT: Power Armor Repair
+      STR_CORPSE_FLYING_SUIT: Damaged Flying Armor
+      STR_REPAIR_FLYING_SUIT: Flying Armor Repair
+      STR_CORPSE_SCOUT_POWER_ARMOR: Damaged Scout Power Armor
+      STR_REPAIR_SCOUT_POWER_ARMOR: Scout Power Armor Repair
+      STR_CORPSE_HEAVY_PERSONAL_ARMOR: Damaged Heavy Armor
+      STR_REPAIR_HEAVY_PERSONAL_ARMOR: Heavy Armor Repair
+      STR_CORPSE_SCOUT_FLYING_ARMOR: Damaged Scout Flying Armor
+      STR_REPAIR_SCOUT_FLYING_ARMOR: Scout Flying Armor Repair
+  - type: en-GB
+    strings:
+      STR_CORPSE_ARMOR: Damaged Personal Armor
+      STR_REPAIR_PERSONAL_ARMOR: Personal Armor Repair
+      STR_CORPSE_SUIT: Damaged Power Armor
+      STR_REPAIR_POWER_SUIT: Power Armor Repair
+      STR_CORPSE_FLYING_SUIT: Damaged Flying Armor
+      STR_REPAIR_FLYING_SUIT: Flying Armor Repair
+      STR_CORPSE_SCOUT_POWER_ARMOR: Damaged Scout Power Armor
+      STR_REPAIR_SCOUT_POWER_ARMOR: Scout Power Armor Repair
+      STR_CORPSE_HEAVY_PERSONAL_ARMOR: Damaged Heavy Armor
+      STR_REPAIR_HEAVY_PERSONAL_ARMOR: Heavy Armor Repair
+      STR_CORPSE_SCOUT_FLYING_ARMOR: Damaged Scout Flying Armor
+      STR_REPAIR_SCOUT_FLYING_ARMOR: Scout Flying Armor Repair

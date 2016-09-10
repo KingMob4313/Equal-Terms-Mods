@@ -1,0 +1,148 @@
+Current Plan:
+Testing for OXC 1.0 release: 
+Create Battlescape Save Game
+ - Edit in all the weapons
+ - put people in various armors.
+ - Set one enemy with 255 hp and 1 TU.
+ - Test for weapon crashes, black boxes on graphics.
+
+FIX THIS:
+- Check into HWP fully.
+  - Check amount amounts, sizes, prices.
+
+Next Beta Release
+Superalloys [Trade Good - Alloy Manufacturing] (5k / Cost 2k -- Short Time)
+Nitrocubane [Trade Good - Alloy Manufacturing] (2.5k / Cost 850 -- Longer Time)
+Nanoscale Lithium Batteries [Trade Good - Laser Weapons] (10k / 2500 - Long Time)
+Plasma Capacitor Cells [Trade Good - At least 2 Plasma Clips + Plasma Weapons] (15k / 2500 + 3 alien alloys)
+
+== Finish OXC 1.0 changes and verify.
+ 
+Testing for Nightly Release -- FIXED --
+- Pass Forward changes to graphics and rulefiles. -- FIXED --
+- Pass out just the extra armor file -- FIXED --
+ - Combine tilesheet -- FIXED --
+ - Fix palettes of tilesheet -- FIXED --
+ - Change ruleset to get armor tile sheet to work -- FIXED --
+ - Create test battlescape file -- FIXED --
+   - Use same sort of setup as in 1.0 check -- FIXED --
+   - Retest everything -- FIXED --
+
+== Finish Nightly changes and verify. ==
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2015:
+[BREAKING - Nightly] Armor flags for changing to match race need to be re-enabled and palettes fixed
+STR_IMP_TANK_CHASSIS needs ufopedia write up. BROKEN!
+Fix Alloy ammo to make purple stripe more obvious.
+
+
+
+Fix Small launcher price (lower) -- FIXED --
+Fix Small Launcher requirements -- FIXED --
+Add Small Launcher graphics -- FIXED --
+
+STR_IMP_TANK_CHASSIS needs name -- FIXED --
+ALL HWP ammos are not done as if single shot -- Done --
+  - Issue now is all Aux weapons actually work as if clips. -- FIXED --
+40mm Alien MGL grenade - Make one more Faux entry for the MGL.
+40mm HWP AGL ammo still showing on floor. -- FIXED --
+Same with SMG ammo for HWP -- FIXED --
+
+
+HoverTank/Plasma still appears for some reason. --FIXED-- 
+
+Fix all tanks to use the correct format for the YAML:
+  1) put 'builtInWeapons:' at the unit level
+    a) First weapon(item) should match the name of the tank
+	  i) Weapon and ammo do not belong in the builtInWeapons section(see below)
+	b) Aux weapon and ammo should be on in the 'builtInWeapons:' section
+  2) 'fixedWeapon:' on the weapon(item)
+  3) turretType: on the main weapon(item)
+  4) 'allowInv: false' on the armor
+  5) Comment out ammo UFOpedia entries and bigobs
+-- WL -Done- (weight and size not done)
+-- C -Done- (weight and size not done)
+-- FS -Done- (weight and size not done)
+
+Fix all HWP weaponry ammo:
+  - All weapons actually have the right clipsize
+    - fix costs of weapons
+	- fix 'size' of weapons 
+	- fix name to reflect the number of shots (see cannon ammo)
+	- try to figure out why it's showing on the floor
+	  - BigSprite is what's used, but that's what shows in the hand.
+	    - Remove sprite and ufopedia entry just for HWP weapons and it should solve
+HoverTank/Plasma still appears for some reason. --FIXED-- 
+
+Fix the following: --FIXED-- 
+HWP FUSION ROCKET - HWP Fusion Rocket Ammo DONE
+HWP HEAVY IMPROVED ROCKET - HWP Heavy Improved Rocket Ammo DONE
+HWP LIGHT IMPROVED ROCKET - HWP Light Improved Rocket Ammo DONE
+HWP 40MM IMPROVED GRENADE - HWP 40mm Improved Grenade DONE
+BELTED HWP 40MM GRENADE - HWP Belted 40mm Grenade DONE
+HWP HEAVY ROCKET AMMO - HWP Heavy Rocket Ammo DONE
+HWP LIGHT ROCKET AMMO - HWP Light Rocket Ammo DONE
+HWP LMG AMMO - HWP LMG Ammo DONE
+HWP SMG AMMO - HWP SMG Ammo DONE
+HWP GMG AMMO - HWP GMG Ammo DONE
+
+Some confusion between tank versions. Make sure stats are all consistent. --FIXED-- 
+
+--FIXED-- 
+GMG -- GL -- THERE  DONE
+HRocket -- SMG -- THERE  DONE
+LRocket -- LMG -- THERE  DONE
+A GL -- SMG -- THERE  DONE
+	
+L Cannon -- GL+ -- THERE  DONE
+L GMG -- GL+ -- THERE  DONE
+IHRocket -- L SMG -- THERE  DONE
+ILRocket -- L LMG -- THERE  DONE
+	
+P Cannon -- GL+A -- THERE  DONE
+P GMG -- GL+A -- THERE  DONE
+Launcher -- SMG -- THERE  DONE
+
+--FIXED-- 
+Ammo and base values for tanks. [May need HP adjustment again]  DONE
+
+--FIXED-- 
+Missing Shotgun Shells DONE
+Put Avalanche before hornet DONE 
+Where is Heavy Rocket Description? DONE
+Incendiary as well DONE
+Fix Retaliator description DONE
+
+--FIXED-- 
+Make worksheet and make sure that all guns (and ammo for Wolfram) are showing DONE
+
+old:
+
+Change all Alien HWP explosive resistance all HWP save for the reaper have a base explosive resistance of 0.4 . SO 1.0 = 0.4 
+ 
+Fix Sectopod:  Will have an elerium laser autofire monster.  Like a full auto laser tank cannon -10 or -15.
+ 
+IMP_TANK_CHASSIS is required for building laser tanks, but I may have it wired up wrong.
+
+Fix the purchase list-orders for:
+
+Weapons + Ammo
+
+
+Change plasma sniper ammo to cost 2 elerium
+ 
+[Rejected] This has been a massive issue with my high accuracy weapons, that they tend to do great in anyone's hands... and I've been trying to think of ways of solving it.  But you mentioning it here will really set me to work tomorrow.  Back to Excel. I'm thinking of having the Sniper Rifle at 200% accuracy, but drops by a huge amount at range, like around 7-12?   The big thing about the sniper rifle is that honestly, at the ranges shown visually in the game, no one would need more than an ACOG (low magnification of around 1.5 to 2) type sight for high accuracy work... 

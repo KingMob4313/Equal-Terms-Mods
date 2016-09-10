@@ -1,0 +1,426 @@
+﻿# Equal Terms FourthState Tanks 
+items:
+  - type: STR_HOVERTANK_PLASMA # disabled
+    costBuy: 0
+    requires:
+      - STR_ALIENS_ONLY
+  - type: STR_HOVERTANK_PLASMA_CANNON
+    size: 6
+    costSell: 980000
+    transferTime: 96
+    weight: 1
+    bigSprite: 60332
+    floorSprite: 0
+    handSprite: 0
+    bulletSprite: 8
+    fireSound: 18
+    hitSound: 60337
+    power: 150
+    damageType: 5
+    hitAnimation: 46
+    accuracySnap: 58
+    accuracyAimed: 105
+    tuSnap: 40
+    tuAimed: 60
+    battleType: 1
+    fixedWeapon: true
+    maxRange: 200
+    aimRange: 125
+    snapRange: 16
+    minRange: 8
+    dropoff: 1
+    clipSize: -1
+    invWidth: 2
+    invHeight: 3
+    turretType: 3
+  - type: STR_HOVERTANK_PLASMA_GMG
+    size: 6
+    costSell: 980000
+    transferTime: 96
+    weight: 1
+    bigSprite: 60329
+    floorSprite: 0
+    handSprite: 0
+    bulletSprite: 8
+    fireSound: 60333
+    hitSound: 19
+    hitAnimation: 46
+    power: 90
+    damageType: 5
+    clipSize: -1
+    accuracyAuto: 40
+    tuAuto: 40
+    accuracySnap: 58
+    tuSnap: 39
+    maxRange: 200
+    snapRange: 19
+    autoRange: 30
+    minRange: 6
+    dropoff: 1
+    autoShots: 4
+    bulletSpeed: 10
+    battleType: 1
+    fixedWeapon: true
+    turretType: 2
+    invWidth: 2
+    invHeight: 3
+  - type: STR_HOVERTANK_LAUNCHER
+    size: 6
+    costSell: 1043000
+    transferTime: 96
+    weight: 1
+    bigSprite: 36 #60328
+    floorSprite: 0
+    handSprite: 0
+    bulletSprite: 10
+    fireSound: 53
+    compatibleAmmo:
+      - STR_HWP_FUSION_BOMB
+    accuracyAimed: 100
+    tuAimed: 66
+    battleType: 1
+    fixedWeapon: true
+    waypoint: true
+    #invWidth: 1
+    #invHeight: 1
+    turretType: 4
+# AUX Weapons
+  - type: AUX_HOVERTANK_PLASMA_SMG
+    weight: 1
+    bigSprite: 60331
+    bulletSprite: 5
+    fireSound: 60336
+    hitSound: 19
+    hitAnimation: 36
+    power: 35
+    damageType: 4
+    clipSize: -1
+    accuracyAuto: 55
+    tuAuto: 40
+    accuracySnap: 55
+    tuSnap: 36
+    maxRange: 125
+    snapRange: 15
+    autoRange: 20
+    minRange: 3
+    dropoff: 1
+    battleType: 1
+    autoShots: 5
+    bulletSpeed: 10
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+  - type: AUX_HOVERTANK_ALIEN_GLAUNCHER
+    weight: 1
+    bigSprite: 60325 
+    bulletSprite: 9
+    fireSound: 60334
+    compatibleAmmo:
+      - AUX_HWP_ALIEN_GLAUNCHER
+    accuracySnap: 50
+    tuSnap: 39
+    accuracyAimed: 110
+    tuAimed: 60
+    maxRange: 200
+    aimRange: 100
+    snapRange: 35
+    minRange: 7
+    battleType: 1
+    fixedWeapon: true
+    arcingShot: true
+    dropoff: 2
+    bulletSpeed: -1
+    invWidth: 2
+    invHeight: 3
+# Tank Weapons Ammo
+  - type: STR_HWP_FUSION_BOMB
+    size: 0.6
+    costSell: 31500
+    transferTime: 48
+    weight: 1
+    bigSprite: 36 #60328
+    floorSprite: 35
+    hitSound: 0
+    hitAnimation: 0
+    power: 140
+    damageType: 3
+    clipSize: 8
+    battleType: 2
+    invWidth: 2
+    invHeight: 3
+    blastRadius: 11
+  - type: AUX_HWP_ALIEN_GLAUNCHER
+    size: 0.10
+    costSell: 550
+    transferTime: 24
+    weight: 1
+    bigSprite: 60325
+    floorSprite: 16
+    hitSound: 0
+    hitAnimation: 0
+    power: 70
+    damageType: 3
+    clipSize: 32
+    battleType: 2
+    blastRadius: 4
+    invWidth: 2
+    invHeight: 3 
+    listOrder: 1442
+armors:
+  - type: HOVERTANK_ARMOR_ET
+    spriteSheet: TANKS.PCK
+    corpseBattle:
+      - HOVERTANK_CORPSE_1
+      - HOVERTANK_CORPSE_2
+      - HOVERTANK_CORPSE_3
+      - HOVERTANK_CORPSE_4
+    frontArmor: 45
+    sideArmor: 35
+    rearArmor: 30
+    underArmor: 30
+    loftempsSet: [ 92, 89, 90, 91 ]
+    drawingRoutine: 2
+    constantAnimation: true
+    damageModifier:
+      - 0.4
+      - 0.4
+      - 0.1
+      - 0.16
+      - 0.45
+      - 0.40
+      - 0.0
+      - 0.3
+      - 0.4
+      - 0.0
+    allowInv: false
+    movementType: 1
+units:
+  - type: STR_HOVERTANK_PLASMA_CANNON
+    race: STR_HOVERTANK_PLASMA_CANNON
+    stats:
+      tu: 70
+      stamina: 100
+      health: 130
+      bravery: 110
+      reactions: 0
+      firing: 100
+      throwing: 0
+      strength: 90
+      psiStrength: 100
+      psiSkill: 0
+      melee: 70
+    armor: HOVERTANK_ARMOR_ET
+    standHeight: 16
+    kneelHeight: 16
+    value: 20
+    deathSound: 23
+    moveSound: 14
+    energyRecovery: 50
+    builtInWeapons:
+      - AUX_HOVERTANK_ALIEN_GLAUNCHER
+      - AUX_HWP_ALIEN_GLAUNCHER
+  - type: STR_HOVERTANK_PLASMA_GMG
+    race: STR_HOVERTANK_PLASMA_GMG
+    stats:
+      tu: 70
+      stamina: 100
+      health: 130
+      bravery: 110
+      reactions: 0
+      firing: 100
+      throwing: 0
+      strength: 90
+      psiStrength: 100
+      psiSkill: 0
+      melee: 70
+    armor: HOVERTANK_ARMOR_ET
+    standHeight: 16
+    kneelHeight: 16
+    value: 20
+    deathSound: 23
+    moveSound: 14
+    energyRecovery: 50
+    builtInWeapons:
+      - AUX_HOVERTANK_ALIEN_GLAUNCHER
+      - AUX_HWP_ALIEN_GLAUNCHER
+  - type: STR_HOVERTANK_LAUNCHER
+    race: STR_HOVERTANK_LAUNCHER
+    stats:
+      tu: 70
+      stamina: 100
+      health: 130
+      bravery: 110
+      reactions: 0
+      firing: 100
+      throwing: 0
+      strength: 90
+      psiStrength: 100
+      psiSkill: 0
+      melee: 70
+    armor: HOVERTANK_ARMOR_ET
+    standHeight: 16
+    kneelHeight: 16
+    value: 20
+    deathSound: 23
+    moveSound: 14
+    energyRecovery: 50
+    builtInWeapons:
+      - AUX_HOVERTANK_PLASMA_SMG
+research:
+  - name: STR_HOVER_TANK_CHASSIS
+    cost: 100
+    points: 10
+    dependencies:
+      - STR_IMP_TANK_CHASSIS
+      - STR_PERSONAL_ANTIGRAV
+ # Changed Tanks
+  - name: STR_HOVERTANK_PLASMA_CANNON
+    cost: 50
+    points: 10
+    dependencies:
+      - STR_SNIPER_PLASMA
+      - STR_HOVER_TANK_CHASSIS
+      - STR_ALIEN_GRENADE
+  - name: STR_HOVERTANK_PLASMA_GMG
+    cost: 50
+    points: 10
+    dependencies:
+      - STR_PLASMA_DMR
+      - STR_PLASMA_LMG
+      - STR_HOVER_TANK_CHASSIS
+      - STR_ALIEN_GRENADE
+  - name: STR_HOVERTANK_LAUNCHER
+    cost: 50
+    points: 10
+    dependencies:
+      - STR_FUSION_MISSILE
+      - STR_BLASTER_LAUNCHER
+      - STR_HOVER_TANK_CHASSIS
+      - STR_PLASMA_SMG
+manufacture:
+  - name: STR_HOVERTANK_PLASMA
+    category: STR_HEAVY_WEAPONS_PLATFORM
+    requires:
+      - STR_ALIENS_ONLY
+  - name: STR_HOVERTANK_PLASMA_CANNON
+    category: STR_HEAVY_WEAPONS_PLATFORM
+    requires:
+      - STR_HOVERTANK_PLASMA_CANNON
+    space: 30
+    time: 1200
+    cost: 850000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 5
+      STR_ELERIUM_115: 30
+  - name: STR_HOVERTANK_PLASMA_GMG
+    category: STR_HEAVY_WEAPONS_PLATFORM
+    requires:
+      - STR_HOVERTANK_PLASMA_GMG
+    space: 30
+    time: 1200
+    cost: 850000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 5
+      STR_ELERIUM_115: 25
+  - name: STR_HOVERTANK_LAUNCHER
+    category: STR_HEAVY_WEAPONS_PLATFORM
+    requires:
+      - STR_HOVERTANK_LAUNCHER
+    space: 30
+    time: 1200
+    cost: 900000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 8
+      STR_ELERIUM_115: 25
+  - name: STR_HWP_FUSION_BOMB
+    category: STR_HWP_CANNON_SHELLS
+    requires:
+      - STR_FUSION_MISSILE
+    space: 25
+    time: 400
+    cost: 15000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 8
+      STR_ELERIUM_115: 5
+  - name: AUX_HWP_ALIEN_GLAUNCHER
+    category: STR_HWP_CANNON_SHELLS
+    requires:
+      - STR_ALIEN_GRENADE
+    space: 2
+    time: 200
+    cost: 6700
+    requiredItems:
+      STR_ELERIUM_115: 2
+ufopaedia:
+  - id: STR_HOVERTANK_PLASMA
+    type_id: 3
+    section: STR_NOT_AVAILABLE #should disable
+    requires:
+      - STR_ALIENS_ONLY
+    text: STR_HOVERTANK_PLASMA_UFOPEDIA
+  - id: STR_HOVERTANK_PLASMA_CANNON
+    type_id: 3
+    section: STR_HEAVY_WEAPONS_PLATFORMS
+    requires:
+      - STR_HOVERTANK_PLASMA_CANNON
+    text: STR_HOVERTANK_PLASMA_CANNON_UFOPEDIA
+    weapon: STR_HOVERTANK_PLASMA_CANNON
+  - id: STR_HOVERTANK_PLASMA_GMG
+    type_id: 3
+    section: STR_HEAVY_WEAPONS_PLATFORMS
+    requires:
+      - STR_HOVERTANK_PLASMA_GMG
+    text: STR_HOVERTANK_PLASMA_GMG_UFOPEDIA
+    weapon: STR_HOVERTANK_PLASMA_GMG
+  - id: STR_HOVERTANK_LAUNCHER
+    type_id: 3
+    section: STR_HEAVY_WEAPONS_PLATFORMS
+    requires:
+      - STR_HOVERTANK_LAUNCHER
+    text: STR_HOVERTANK_LAUNCHER_UFOPEDIA
+    weapon: STR_HOVERTANK_LAUNCHER
+# Need ammo ufopedia entries
+  - id: STR_HWP_FUSION_BOMB
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_FUSION_MISSILE
+    text: STR_HWP_FUSION_BOMB_UFOPEDIA
+  - id: AUX_HWP_ALIEN_GLAUNCHER
+    type_id: 4
+    #section: STR_WEAPONS_AND_EQUIPMENT
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_ALIEN_GRENADE
+    text: AUX_HWP_ALIEN_GLAUNCHER
+extraStrings:
+  - type: en-US
+    strings:
+      STR_HOVERTANK_PLASMA_CANNON: Tank/Plasma Cannon
+      STR_HOVERTANK_PLASMA_CANNON_UFOPEDIA: This small unmanned combat vehicle was designed from the ground up by X-Com team. This remote controlled combat vehicle is clad in alien technology super-alloy armor, equiped with a anti-grav hover module and armed with a heavy plasma cannon and grenade launcher with an alien grenade warhead.
+      # ---
+      STR_HOVERTANK_PLASMA_GMG: Tank/Plasma GMG
+      STR_HOVERTANK_PLASMA_GMG_UFOPEDIA: This small unmanned combat vehicle was designed from the ground up by X-Com team. This remote controlled combat vehicle is clad in alien technology super-alloy armor, equiped with a anti-grav hover module and armed with a plasma GMG and grenade launcher with an alien grenade warhead.
+      # ---
+      STR_HOVERTANK_LAUNCHER: Tank/Fusion Rocket
+      STR_HWP_FUSION_BOMB: HWP FUSION ROCKET
+      STR_HOVERTANK_LAUNCHER_UFOPEDIA: This small unmanned combat vehicle was designed from the ground up by X-Com team. This remote controlled combat vehicle is clad in alien alien technology super-alloy armor, equiped with a anti-grav hover module and armed with an fusion bomb launcher and plasma submachine gun coaxial gun.
+      STR_HWP_FUSION_BOMB_UFOPEDIA: The Launcher Hovertank holds 8 of these guided elerium fueled explosives.
+      # ---
+      AUX_HOVERTANK_PLASMA_SMG: HWP Plasma SMG
+      # ---      
+extraSprites:
+  - type: BIGOBS.PCK
+    files:
+      60325: Resources/FourthState/HWP/AGLauncher/AGLauncherHE.gif
+      60328: Resources/FourthState/HWP/FusionLauncher/FusionBomb.gif
+      60329: Resources/FourthState/HWP/PGMG/PGMG.gif
+      60331: Resources/FourthState/HWP/PSMG/PSMG.gif
+      60332: Resources/FourthState/HWP/PCannon/PCannon.gif
+extraSounds:
+  - type: BATTLE.CAT
+    files:
+      60333: Resources/FourthState/HWP/PGMG/Sounds/fire.wav
+      60334: Resources/FourthState/HWP/AGLauncher/Sounds/fire.wav
+      60336: Resources/FourthState/HWP/PSMG/Sounds/fire.wav
+      60337: Resources/FourthState/HWP/PCannon/Sounds/fire.wav

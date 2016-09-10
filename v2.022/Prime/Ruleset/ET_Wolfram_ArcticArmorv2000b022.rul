@@ -1,0 +1,335 @@
+﻿items:
+  - type: STR_KEVLAR_ARCTIC
+    size: 0.4
+    costBuy: 4000
+    costSell: 3100
+    listOrder: 10510
+  - type: STR_CORPSE_KEVLAR_ARCTIC
+    name: STR_CORPSE
+    weight: 24
+    bigSprite: 64
+    floorSprite: 77
+    invWidth: 2
+    invHeight: 3
+    armor: 30
+    recover: false
+# Tactical
+  - type: STR_TACTICAL_ARCTIC
+    size: 0.5
+    costBuy: 6000
+    costSell: 4500
+    listOrder: 10512
+  - type: STR_CORPSE_TACTICAL_ARCTIC
+    name: STR_CORPSE
+    weight: 28
+    bigSprite: 64
+    floorSprite: 77
+    invWidth: 2
+    invHeight: 3
+    armor: 30
+    recover: false
+# Enhanced Armor
+  - type: STR_IMP_KEVLAR_ARCTIC
+    size: 0.4
+    costSell: 6600
+    listOrder: 10515
+#  - type: STR_CORPSE_KEVLAR_ARCTIC
+#    name: STR_CORPSE
+#    weight: 24
+#    bigSprite: 64
+#    floorSprite: 77
+#    invWidth: 2
+#    invHeight: 3
+#    armor: 30
+#    recover: false
+  - type: STR_IMP_TACTICAL_ARCTIC
+    size: 0.5
+    costSell: 9500
+    listOrder: 10517
+#  - type: STR_CORPSE_TACTICAL_ARCTIC
+#    name: STR_CORPSE
+#    weight: 28
+#    bigSprite: 64
+#    floorSprite: 77
+#    invWidth: 2
+#    invHeight: 3
+#    armor: 30
+#    recover: false
+armors:
+# Standard Armors
+  - type: STR_KEVLAR_ARCTIC_UC
+    spriteSheet: XCOM_1a.PCK
+    spriteInv: MAN_1a
+    corpseItem: STR_CORPSE_KEVLAR_ARCTIC
+    storeItem: STR_KEVLAR_ARCTIC
+    loftemps: 3
+    weight: 5
+    frontArmor: 16
+    sideArmor: 9
+    rearArmor: 14
+    underArmor: 5
+    spriteFaceGroup: 6
+    spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163] #M0 F0 M1 F1 M2 F2 M3 F3
+    spriteHairGroup: 9
+    spriteHairColor: [144, 144, 164, 164, 245, 245, 166, 166] #M0 F0 M1 F1 M2 F2 M3 F3
+    stats:
+      tu: -2
+      stamina: -3
+      reactions: -1
+      throwing: -2
+      strength: 0
+    damageModifier:
+      - 1.0
+      - 0.9
+      - 0.9
+      - 0.97
+      - 0.98
+      - 1.0
+      - 1.0
+      - 0.95
+      - 1.0
+      - 1.0
+  - type: STR_TACTICAL_ARCTIC_UC
+    spriteSheet: XCOM_1DSa.PCK
+    spriteInv: MAN_1DSa
+    corpseItem: STR_CORPSE_TACTICAL_ARCTIC
+    storeItem: STR_TACTICAL_ARCTIC
+    loftemps: 3
+    weight: 7
+    frontArmor: 22
+    sideArmor: 16
+    rearArmor: 18
+    underArmor: 10
+    spriteFaceGroup: 6
+    spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163] #M0 F0 M1 F1 M2 F2 M3 F3
+    spriteHairGroup: 9
+    spriteHairColor: [144, 144, 164, 164, 245, 245, 166, 166] #M0 F0 M1 F1 M2 F2 M3 F3
+    stats:
+      tu: -4
+      stamina: -5
+      reactions: -3
+      firing: -1
+      throwing: -3
+    damageModifier:
+      - 1.0
+      - 0.8
+      - 0.75
+      - 0.90
+      - 0.95
+      - 0.98
+      - 0.97
+      - 0.92
+      - 1.0
+      - 1.0
+# Enhanced Armor
+  - type: STR_IMP_KEVLAR_ARCTIC_UC
+    spriteSheet: XCOM_1a.PCK
+    spriteInv: MAN_1a
+    corpseItem: STR_CORPSE_KEVLAR_ARCTIC
+    storeItem: STR_IMP_KEVLAR_ARCTIC
+    loftemps: 3
+    weight: 4
+    frontArmor: 24
+    sideArmor: 18
+    rearArmor: 21
+    underArmor: 8
+    spriteFaceGroup: 6
+    spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163] #M0 F0 M1 F1 M2 F2 M3 F3
+    spriteHairGroup: 9
+    spriteHairColor: [144, 144, 164, 164, 245, 245, 166, 166] #M0 F0 M1 F1 M2 F2 M3 F3
+    stats:
+      tu: -2
+      stamina: -2
+      reactions: -1
+      throwing: -2
+      strength: 0
+    damageModifier:
+      - 1.0
+      - 0.7
+      - 0.85
+      - 0.95
+      - 0.88
+      - 0.93
+      - 0.92
+      - 0.90
+      - 1.0
+      - 1.0
+  - type: STR_IMP_TACTICAL_ARCTIC_UC
+    spriteSheet: XCOM_1DSa.PCK
+    spriteInv: MAN_1DSa
+    corpseItem: STR_CORPSE_TACTICAL_ARCTIC
+    storeItem: STR_IMP_TACTICAL_ARCTIC
+    loftemps: 3
+    weight: 5
+    frontArmor: 32
+    sideArmor: 24
+    rearArmor: 28
+    underArmor: 15
+    spriteFaceGroup: 6
+    spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163] #M0 F0 M1 F1 M2 F2 M3 F3
+    spriteHairGroup: 9
+    spriteHairColor: [144, 144, 164, 164, 245, 245, 166, 166] #M0 F0 M1 F1 M2 F2 M3 F3
+    stats:
+      tu: -4
+      stamina: -4
+      reactions: -3
+      firing: -1
+      throwing: -3
+    damageModifier:
+      - 1.0
+      - 0.65
+      - 0.70
+      - 0.80
+      - 0.82
+      - 0.86
+      - 0.94
+      - 0.88
+      - 1.0
+      - 1.0 
+ufopaedia:
+  - id: STR_KEVLAR_ARCTIC_UC
+    type_id: 5
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_KEVLAR_ARCTIC_UFOPEDIA
+  - id: STR_TACTICAL_ARCTIC_UC
+    type_id: 5
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_TACTICAL_ARCTIC_UFOPEDIA
+  - id: STR_IMP_KEVLAR_ARCTIC_UC
+    type_id: 5
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_IMP_KEVLAR_ARCTIC_UFOPEDIA
+    requires:
+      - STR_ALIEN_ALLOYS
+  - id: STR_IMP_TACTICAL_ARCTIC_UC
+    type_id: 5
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_IMP_TACTICAL_ARCTIC_UFOPEDIA
+    requires:
+      - STR_ALIEN_ALLOYS
+manufacture:
+#New Armor
+  - name: STR_IMP_KEVLAR_ARCTIC
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_ALIEN_ALLOYS
+    space: 12
+    time: 100
+    cost: 6000
+    requiredItems:
+      STR_KEVLAR_ARCTIC: 1
+      STR_ALIEN_ALLOYS: 1
+  - name: STR_IMP_TACTICAL_ARCTIC
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_ALIEN_ALLOYS
+    space: 12
+    time: 130
+    cost: 9000
+    requiredItems:
+      STR_TACTICAL_ARCTIC: 1
+      STR_ALIEN_ALLOYS: 1
+extraStrings:
+  - type: en-US
+    strings:
+      # New Level 0 armor
+      STR_KEVLAR_ARCTIC: LIGHT ARMOR (ARCTIC)
+      STR_KEVLAR_ARCTIC_UC: LIGHT ARMOR (ARCTIC)
+      STR_KEVLAR_ARCTIC_UFOPEDIA: Adapted from typical SWAT team use, this light armor vest produced by Dragon Skin is constructed to X-com's specifications. Using a 24 layer special aramid blend and an overlapping weave of lighter carbon fiber-reinforced silicon carbide disks, this armor provides adequate protection, while not impairing the mobility of the soldier.
+      STR_TACTICAL_ARCTIC: TACTICAL ARMOR (ARCTIC)
+      STR_TACTICAL_ARCTIC_UC: TACTICAL ARMOR (ARCTIC)
+      STR_TACTICAL_ARCTIC_UFOPEDIA: Composed of 36 layers of aramids blended for strength and heat resistance and backed by heavy duty overlapping carbon fiber-reinforced silicon carbide disks, this tactical vest specially produced for X-com by Dragon Skin is the best protection current human technology can provide. However, this level of protection does tend to hinder a soldier's movements.
+      # New Level 0.5 armor
+      STR_IMP_KEVLAR_ARCTIC: ALLOYED L. ARMOR(ARCTIC)
+      STR_IMP_KEVLAR_ARCTIC_UC: ALLOYED L. ARMOR (ARCTIC)
+      STR_IMP_KEVLAR_ARCTIC_UFOPEDIA: Starting from the light armor vest, this armor has been enhanced by the replacement of the weave of armor disks with alien alloy disks scavenged from UFO crash sites.  It should provide improved protection from both alien and human small arms and explosives all at a lighter weight.
+      STR_IMP_TACTICAL_ARCTIC: ALLOYED TAC. ARMOR (ARCTIC)
+      STR_IMP_TACTICAL_ARCTIC_UC: ALLOYED TAC. ARMOR (ARCTIC)
+      STR_IMP_TACTICAL_ARCTIC_UFOPEDIA: Taking the standard tactical armor and using lighter overlapping carbon fiber-reinforced silicon carbide disks backed with scavenged alien alloys, this enhanced tactical vest should provide improved protection in the field against alien weaponry and explosives.
+extraSprites:
+# Kevlar Arctic Start
+  - type: MAN_1aF0.SPK 
+    singleImage: true
+    files:
+      0: Resources/WolframLance/Armor/Arctic/man_1f0.gif
+  - type: MAN_1aF1.SPK
+    singleImage: true
+    files:
+      0: Resources/WolframLance/Armor/Arctic/man_1f1.gif
+  - type: MAN_1aF2.SPK
+    singleImage: true
+    files:
+      0: Resources/WolframLance/Armor/Arctic/man_1f2.gif
+  - type: MAN_1aF3.SPK
+    singleImage: true
+    files:
+      0: Resources/WolframLance/Armor/Arctic/man_1f3.gif
+  - type: MAN_1aM0.SPK
+    singleImage: true
+    files:
+      0: Resources/WolframLance/Armor/Arctic/man_1m0.gif
+  - type: MAN_1aM1.SPK
+    singleImage: true
+    files:
+      0: Resources/WolframLance/Armor/Arctic/man_1m1.gif
+  - type: MAN_1aM2.SPK
+    singleImage: true
+    files:
+      0: Resources/WolframLance/Armor/Arctic/man_1m2.gif
+  - type: MAN_1aM3.SPK
+    singleImage: true
+    files:
+      0: Resources/WolframLance/Armor/Arctic/man_1m3.gif
+  - type: XCOM_1a.PCK
+    width: 256
+    height: 1400
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/WolframLance/Armor/Arctic/BScapeView/Kevlar/ETArcticKevlar.png
+# start of Arctic tactical
+  - type: MAN_1DSaF0.SPK 
+    singleImage: true
+    files:
+      0: Resources/WolframLance/Armor/Arctic/man_Df0.gif
+  - type: MAN_1DSaF1.SPK
+    singleImage: true
+    files:
+      0: Resources/WolframLance/Armor/Arctic/man_Df1.gif
+  - type: MAN_1DSaF2.SPK
+    singleImage: true
+    files:
+      0: Resources/WolframLance/Armor/Arctic/man_Df2.gif
+  - type: MAN_1DSaF3.SPK
+    singleImage: true
+    files:
+      0: Resources/WolframLance/Armor/Arctic/man_Df3.gif
+  - type: MAN_1DSaM0.SPK
+    singleImage: true
+    files:
+      0: Resources/WolframLance/Armor/Arctic/man_Dm0.gif
+  - type: MAN_1DSaM1.SPK
+    singleImage: true
+    files:
+      0: Resources/WolframLance/Armor/Arctic/man_Dm1.gif
+  - type: MAN_1DSaM2.SPK
+    singleImage: true
+    files:
+      0: Resources/WolframLance/Armor/Arctic/man_Dm2.gif
+  - type: MAN_1DSaM3.SPK
+    singleImage: true
+    files:
+      0: Resources/WolframLance/Armor/Arctic/man_Dm3.gif
+  - type: XCOM_1DSa.PCK
+    width: 256
+    height: 1400
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/WolframLance/Armor/Arctic/BScapeView/Tactical/ETArcticTactical.png
+  - type: BIGOBS.PCK
+    files:
+      64: Resources/WolframLance/Armor/BIGOBS.gif
+  - type: FLOOROB.PCK
+    files:
+      77: Resources/WolframLance/Armor/FLOOROB.gif

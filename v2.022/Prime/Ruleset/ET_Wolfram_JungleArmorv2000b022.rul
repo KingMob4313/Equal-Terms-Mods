@@ -1,0 +1,317 @@
+﻿items:
+  - type: STR_KEVLAR_JUNGLE
+    size: 0.4
+    costBuy: 4000
+    costSell: 3100
+    listOrder: 10510
+  - type: STR_CORPSE_KEVLAR_JUNGLE
+    name: STR_CORPSE
+    weight: 24
+    bigSprite: 64
+    floorSprite: 77
+    invWidth: 2
+    invHeight: 3
+    armor: 30
+    recover: false
+# Tactical
+  - type: STR_TACTICAL_JUNGLE
+    size: 0.5
+    costBuy: 6000
+    costSell: 4500
+    listOrder: 10512
+  - type: STR_CORPSE_TACTICAL_JUNGLE
+    name: STR_CORPSE
+    weight: 28
+    bigSprite: 64
+    floorSprite: 77
+    invWidth: 2
+    invHeight: 3
+    armor: 30
+    recover: false
+# Enhanced Armor
+  - type: STR_IMP_KEVLAR_JUNGLE
+    size: 0.4
+    costSell: 6600
+    listOrder: 10515
+  - type: STR_IMP_TACTICAL_JUNGLE
+    size: 0.5
+    costSell: 9500
+    listOrder: 10517
+armors:
+# Standard Armors
+  - type: STR_KEVLAR_JUNGLE_UC
+    spriteSheet: XCOM_1j.PCK
+    spriteInv: MAN_1j
+    corpseItem: STR_CORPSE_KEVLAR_JUNGLE
+    storeItem: STR_KEVLAR_JUNGLE
+    loftemps: 3
+    weight: 5
+    frontArmor: 16
+    sideArmor: 9
+    rearArmor: 14
+    underArmor: 5
+    spriteFaceGroup: 6
+    spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163] #M0 F0 M1 F1 M2 F2 M3 F3
+    spriteHairGroup: 9
+    spriteHairColor: [144, 144, 164, 164, 245, 245, 166, 166] #M0 F0 M1 F1 M2 F2 M3 F3
+    stats:
+      tu: -2
+      stamina: -3
+      reactions: -1
+      throwing: -2
+      strength: 0
+    damageModifier:
+      - 1.0
+      - 0.9
+      - 0.9
+      - 0.97
+      - 0.98
+      - 1.0
+      - 1.0
+      - 0.95
+      - 1.0
+      - 1.0
+  - type: STR_TACTICAL_JUNGLE_UC
+    spriteSheet: XCOM_1DSj.PCK
+    spriteInv: MAN_1DSj
+    corpseItem: STR_CORPSE_TACTICAL_JUNGLE
+    storeItem: STR_TACTICAL_JUNGLE
+    loftemps: 3
+    weight: 7
+    frontArmor: 22
+    sideArmor: 16
+    rearArmor: 18
+    underArmor: 10
+    spriteFaceGroup: 6
+    spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163] #M0 F0 M1 F1 M2 F2 M3 F3
+    spriteHairGroup: 9
+    spriteHairColor: [144, 144, 164, 164, 245, 245, 166, 166] #M0 F0 M1 F1 M2 F2 M3 F3
+    stats:
+      tu: -4
+      stamina: -5
+      reactions: -3
+      firing: -1
+      throwing: -3
+    damageModifier:
+      - 1.0
+      - 0.8
+      - 0.75
+      - 0.90
+      - 0.95
+      - 0.98
+      - 0.97
+      - 0.92
+      - 1.0
+      - 1.0 
+# Enhanced Armor
+  - type: STR_IMP_KEVLAR_JUNGLE_UC
+    spriteSheet: XCOM_1j.PCK
+    spriteInv: MAN_1j
+    corpseItem: STR_CORPSE_KEVLAR_JUNGLE
+    storeItem: STR_IMP_KEVLAR_JUNGLE
+    loftemps: 3
+    weight: 4
+    frontArmor: 24
+    sideArmor: 18
+    rearArmor: 21
+    underArmor: 8
+    spriteFaceGroup: 6
+    spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163] #M0 F0 M1 F1 M2 F2 M3 F3
+    spriteHairGroup: 9
+    spriteHairColor: [144, 144, 164, 164, 245, 245, 166, 166] #M0 F0 M1 F1 M2 F2 M3 F3
+    stats:
+      tu: -2
+      stamina: -2
+      reactions: -1
+      throwing: -2
+      strength: 0
+    damageModifier:
+      - 1.0
+      - 0.7
+      - 0.85
+      - 0.95
+      - 0.88
+      - 0.93
+      - 0.92
+      - 0.90
+      - 1.0
+      - 1.0
+  - type: STR_IMP_TACTICAL_JUNGLE_UC
+    spriteSheet: XCOM_1DSj.PCK
+    spriteInv: MAN_1DSj
+    corpseItem: STR_CORPSE_TACTICAL_JUNGLE
+    storeItem: STR_IMP_TACTICAL_JUNGLE
+    loftemps: 3
+    weight: 5
+    frontArmor: 32
+    sideArmor: 24
+    rearArmor: 28
+    underArmor: 15
+    spriteFaceGroup: 6
+    spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163] #M0 F0 M1 F1 M2 F2 M3 F3
+    spriteHairGroup: 9
+    spriteHairColor: [144, 144, 164, 164, 245, 245, 166, 166] #M0 F0 M1 F1 M2 F2 M3 F3
+    stats:
+      tu: -4
+      stamina: -4
+      reactions: -3
+      firing: -1
+      throwing: -3
+    damageModifier:
+      - 1.0
+      - 0.65
+      - 0.70
+      - 0.80
+      - 0.82
+      - 0.86
+      - 0.94
+      - 0.88
+      - 1.0
+      - 1.0 
+ufopaedia:
+  - id: STR_KEVLAR_JUNGLE_UC
+    type_id: 5
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_KEVLAR_JUNGLE_UFOPEDIA
+  - id: STR_TACTICAL_JUNGLE_UC
+    type_id: 5
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_TACTICAL_JUNGLE_UFOPEDIA
+  - id: STR_IMP_KEVLAR_JUNGLE_UC
+    type_id: 5
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_IMP_KEVLAR_JUNGLE_UFOPEDIA
+    requires:
+      - STR_ALIEN_ALLOYS
+  - id: STR_IMP_TACTICAL_JUNGLE_UC
+    type_id: 5
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_IMP_TACTICAL_JUNGLE_UFOPEDIA
+    requires:
+      - STR_ALIEN_ALLOYS
+manufacture:
+#New Armor
+  - name: STR_IMP_KEVLAR_JUNGLE
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_ALIEN_ALLOYS
+    space: 12
+    time: 100
+    cost: 6000
+    requiredItems:
+      STR_KEVLAR_JUNGLE: 1
+      STR_ALIEN_ALLOYS: 1
+  - name: STR_IMP_TACTICAL_JUNGLE
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_ALIEN_ALLOYS
+    space: 12
+    time: 130
+    cost: 9000
+    requiredItems:
+      STR_TACTICAL_JUNGLE: 1
+      STR_ALIEN_ALLOYS: 1
+extraStrings:
+  - type: en-US
+    strings:
+      # New Level 0 armor
+      STR_KEVLAR_JUNGLE: LIGHT ARMOR (JUNGLE)
+      STR_KEVLAR_JUNGLE_UC: LIGHT ARMOR (JUNGLE)
+      STR_KEVLAR_JUNGLE_UFOPEDIA: Adapted from typical SWAT team use, this light armor vest produced by Dragon Skin is constructed to X-com's specifications. Using a 24 layer special aramid blend and an overlapping weave of lighter carbon fiber-reinforced silicon carbide disks, this armor provides adequate protection, while not impairing the mobility of the soldier.
+      STR_TACTICAL_JUNGLE: TACTICAL ARMOR (JUNGLE)
+      STR_TACTICAL_JUNGLE_UC: TACTICAL ARMOR (JUNGLE)
+      STR_TACTICAL_JUNGLE_UFOPEDIA: Composed of 36 layers of aramids blended for strength and heat resistance and backed by heavy duty overlapping carbon fiber-reinforced silicon carbide disks, this tactical vest specially produced for X-com by Dragon Skin is the best protection current human technology can provide. However, this level of protection does tend to hinder a soldier's movements.
+      # New Level 0.5 armor
+      STR_IMP_KEVLAR_JUNGLE: ALLOYED L. ARMOR(JUNGLE)
+      STR_IMP_KEVLAR_JUNGLE_UC: ALLOYED L. ARMOR(JUNGLE)
+      STR_IMP_KEVLAR_JUNGLE_UFOPEDIA: Starting from the light armor vest, this armor has been enhanced by the replacement of the weave of armor disks with alien alloy disks scavenged from UFO crash sites.  It should provide improved protection from both alien and human small arms and explosives all at a lighter weight.
+      STR_IMP_TACTICAL_JUNGLE: ALLOYED TAC. ARMOR (JUNGLE)
+      STR_IMP_TACTICAL_JUNGLE_UC: ALLOYED TAC. ARMOR (JUNGLE)
+      STR_IMP_TACTICAL_JUNGLE_UFOPEDIA: Taking the standard tactical armor and using lighter overlapping carbon fiber-reinforced silicon carbide disks backed with scavenged alien alloys, this enhanced tactical vest should provide improved protection in the field against alien weaponry and explosives.
+extraSprites:
+# Kevlar Jungle Start
+  - type: MAN_1jF0.SPK 
+    singleImage: true
+    files:
+      0: Resources/WolframLance/Armor/Jungle/man_1f0.gif
+  - type: MAN_1jF1.SPK
+    singleImage: true
+    files:
+      0: Resources/WolframLance/Armor/Jungle/man_1f1.gif
+  - type: MAN_1jF2.SPK
+    singleImage: true
+    files:
+      0: Resources/WolframLance/Armor/Jungle/man_1f2.gif
+  - type: MAN_1jF3.SPK
+    singleImage: true
+    files:
+      0: Resources/WolframLance/Armor/Jungle/man_1f3.gif
+  - type: MAN_1jM0.SPK
+    singleImage: true
+    files:
+      0: Resources/WolframLance/Armor/Jungle/man_1m0.gif
+  - type: MAN_1jM1.SPK
+    singleImage: true
+    files:
+      0: Resources/WolframLance/Armor/Jungle/man_1m1.gif
+  - type: MAN_1jM2.SPK
+    singleImage: true
+    files:
+      0: Resources/WolframLance/Armor/Jungle/man_1m2.gif
+  - type: MAN_1jM3.SPK
+    singleImage: true
+    files:
+      0: Resources/WolframLance/Armor/Jungle/man_1m3.gif
+  - type: XCOM_1j.PCK
+    width: 256
+    height: 1400
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/WolframLance/Armor/Jungle/BScapeView/Kevlar/ETJungleKevlar.png
+# start of Jungle tactical
+  - type: MAN_1DSjF0.SPK 
+    singleImage: true
+    files:
+      0: Resources/WolframLance/Armor/Jungle/man_Df0.gif
+  - type: MAN_1DSjF1.SPK
+    singleImage: true
+    files:
+      0: Resources/WolframLance/Armor/Jungle/man_Df1.gif
+  - type: MAN_1DSjF2.SPK
+    singleImage: true
+    files:
+      0: Resources/WolframLance/Armor/Jungle/man_Df2.gif
+  - type: MAN_1DSjF3.SPK
+    singleImage: true
+    files:
+      0: Resources/WolframLance/Armor/Jungle/man_Df3.gif
+  - type: MAN_1DSjM0.SPK
+    singleImage: true
+    files:
+      0: Resources/WolframLance/Armor/Jungle/man_Dm0.gif
+  - type: MAN_1DSjM1.SPK
+    singleImage: true
+    files:
+      0: Resources/WolframLance/Armor/Jungle/man_Dm1.gif
+  - type: MAN_1DSjM2.SPK
+    singleImage: true
+    files:
+      0: Resources/WolframLance/Armor/Jungle/man_Dm2.gif
+  - type: MAN_1DSjM3.SPK
+    singleImage: true
+    files:
+      0: Resources/WolframLance/Armor/Jungle/man_Dm3.gif
+  - type: XCOM_1DSj.PCK
+    width: 256
+    height: 1400
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/WolframLance/Armor/Jungle/BScapeView/Tactical/ETJungleTactical.png
+  - type: BIGOBS.PCK
+    files:
+      64: Resources/WolframLance/Armor/BIGOBS.gif
+  - type: FLOOROB.PCK
+    files:
+      77: Resources/WolframLance/Armor/FLOOROB.gif

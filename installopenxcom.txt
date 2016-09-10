@@ -1,0 +1,53 @@
+First go to: http://openxcom.org/git-builds/ and download the latest nightly.
+
+[Image]
+
+Unzip it to a directory called 'OpenXcom' in your program files (x86) directory.
+
+[Image]
+[Image]
+
+Run the game.
+
+[Image]
+
+Go to options and set up your sounds and graphics (along with filters) to your liking.  Start a game, save it and then exit the game.
+
+[Image]
+[Image]
+
+Download the latest version of my mod at: http://www.openxcom.com/mod/equal-terms-v2-0
+
+[Image]
+
+Inside the zip file, you'll find two folders, inside the 'Nightly' folder are the files you want.
+
+[Image]
+
+Unzip them to the C:\{user}\my documents\openxcom\mods\
+
+[Image]
+
+Run the game again.
+
+[Image]
+
+select the mod
+
+[Image]
+
+also turn on range based accuracy.
+
+[Image]
+
+And turn on the other suggested options if you like.
+
+[Image]
+
+You should be ready to play.
+
+[Image]
+
+If you want the file that places people you know in the game every time you start a game, message me.
+
+[Image]

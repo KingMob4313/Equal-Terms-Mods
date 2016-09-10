@@ -1,0 +1,74 @@
+--= 313 Equal Terms 2.0 Modification for Open-X-Com =--
+By KingMob4313 and Ickschuss. Created for X-Com: Ufo Defense May 2000.
+Last updated Aug 2016.
+
+BETA BETA BETA BETA BETA BETA BETA BETA  BETA BETA BETA BETA BETA BETA BETA 
+BETA BETA BETA BETA BETA BETA Version 2.0b022 BETA BETA BETA BETA BETA BETA 
+BETA BETA BETA BETA BETA BETA BETA BETA  BETA BETA BETA BETA BETA BETA BETA 
+
+
+Contributions:
+Testing and feedback: Arthanor, Dioxine, Falko, ivandogovich, niculinux, NoelBuddy, pkrcel, RSSwizard, SIMON and Solarius Scorch
+French Translation: Infini
+
+Aircraft Missiles
+Sprites: XOps & KingMob4313
+YAML: KingMob4313
+Sounds: KingMob4313
+
+Conventional HWP
+Sprites: KingMob4313
+YAML: KingMob4313 & Dioxine
+Sounds: KingMob4313
+
+Machine Pistol, Magnum, SMG, Assault Rifle, Small Rocket, Incendiary Grenade, APFSDS Rocket, High Explosive, Frag Satchel, Frag Grenade, MGL launcher
+Yaml Code, Sprites and Sounds: KingMob4313 
+
+SAW
+Sprites: KingMob4313 & Dioxine
+Yaml Code: KingMob4313
+
+Shotgun
+Sprites: Ryskeliini & Warboy1982
+Yaml Code: Ryskeliini, Warboy1982, KingMob4313 & Dioxine
+
+Sniper Rifle
+Sprites: Toshiaki2115, Warboy1982 & KingMob4313
+Yaml Code: Warboy1982 & KingMob4313
+Sounds: KingMob4313
+
+Designated Marksman's Rifle (Marksmans Rifle)
+Sprites: Chiko & KingMob4313
+Yaml Code & Sounds: KingMob4313
+
+SSRL
+Sprites: Ryskeliini & KingMob4313
+Yaml Code & Sounds: KingMob4313
+
+Conventional Armor:
+Sprites: Warboy1982 & Fox105iwsp & KingMob4313
+Yaml Code: KingMob4313 & Fox105iwsp
+
+Yaml reorganization: yrizoud (version 0.86)
+
+Laser Weapons 
+Sprites: Rockfish & KingMob4313
+YAML: KingMob4313
+Sounds: 343 Industries & KingMob4313
+
+Alloy Armor
+Sprites: harald_gray, Robin & Kingmob4313
+YAML: harald_gray & KingMob4313
+
+Alloy Interceptor
+Sprites: Shadow
+YAML: KingMob4313 & Shadow
+
+All Plasma:
+Sprites: Shadow, Solarius Scorch, Dioxine, KingMob4313
+Yaml: KingMob4313
+Sounds: 343 Industries & KingMob4313
+
+Power Armors:
+Sprites: harald_gray
+Yaml: KingMob4313
